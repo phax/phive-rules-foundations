@@ -66,9 +66,7 @@
     <ph-cii.version>4.1.2</ph-cii.version>
     <ph-ebinterface.version>8.1.0</ph-ebinterface.version>
     <ph-fatturapa.version>3.1.0</ph-fatturapa.version>
-    <ph-schematron.version>10.0.0</ph-schematron.version>
     <ph-ubl.version>10.2.0</ph-ubl.version>
-    <phive-rules-shared.version>1.0.0-SNAPSHOT</phive-rules-shared.version>
   </properties>
 
   <dependencyManagement>
@@ -83,7 +81,7 @@
       <dependency>
         <groupId>com.helger.schematron</groupId>
         <artifactId>ph-schematron-parent-pom</artifactId>
-        <version>${ph-schematron.version}</version>
+        <version>10.0.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -101,12 +99,12 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-
       <dependency>
         <groupId>com.helger.phive.rules</groupId>
         <artifactId>phive-rules-shared</artifactId>
-        <version>${phive-rules-shared.version}</version>
+        <version>1.0.0</version>
       </dependency>
+      
       <dependency>
         <groupId>com.helger.phive.rules</groupId>
         <artifactId>phive-rules-cii</artifactId>

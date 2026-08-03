@@ -95,7 +95,7 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 
 # News and noteworthy
 
-v5.0.1 - work in progress
+v5.0.1 - 2026-08-03
 * Moved the shared registration SPI and helper classes out into the separate [phive-rules-shared](https://github.com/phax/phive-rules-shared) project (Maven artifact `com.helger.phive.rules:phive-rules-shared`, package `com.helger.phive.rules.shared`).
   The `phive-rules-foundation-api` module was removed; all format modules now depend on `phive-rules-shared`
 
