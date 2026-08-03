@@ -23,7 +23,7 @@ import com.helger.base.enforce.ValueEnforcer;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.fatturapa.CFatturaPA;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 
@@ -37,13 +37,13 @@ public final class FatturaPAValidation
 {
   public static final String GROUP_ID = "it.fatturapa";
 
-  public static final DVRCoordinate VID_FATTURAPA_120 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_FATTURAPA_120 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "invoice",
                                                                                            "1.2.0");
-  public static final DVRCoordinate VID_FATTURAPA_121 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_FATTURAPA_121 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "invoice",
                                                                                            "1.2.1");
-  public static final DVRCoordinate VID_FATTURAPA_122 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_FATTURAPA_122 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "invoice",
                                                                                            "1.2.2");
 

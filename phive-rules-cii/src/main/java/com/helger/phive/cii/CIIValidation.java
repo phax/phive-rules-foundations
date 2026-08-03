@@ -25,7 +25,7 @@ import com.helger.cii.d22b.CCIID22B;
 import com.helger.cii.d25a.CCIID25A;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 
@@ -42,16 +42,16 @@ public final class CIIValidation
   public static final String VERSION_D22B = "D22B";
   public static final String VERSION_D25A = "D25A";
 
-  public static final DVRCoordinate VID_CII_D16B_CROSSINDUSTRYINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_CII_D16B_CROSSINDUSTRYINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "crossindustryinvoice",
                                                                                                            VERSION_D16B);
-  public static final DVRCoordinate VID_CII_D22B_CROSSINDUSTRYINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_CII_D22B_CROSSINDUSTRYINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "crossindustryinvoice",
                                                                                                            VERSION_D22B);
-  public static final DVRCoordinate VID_CII_D22B_CDAR = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_CII_D22B_CDAR = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "cdar",
                                                                                            VERSION_D22B);
-  public static final DVRCoordinate VID_CII_D25A_CROSSINDUSTRYINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_CII_D25A_CROSSINDUSTRYINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "crossindustryinvoice",
                                                                                                            VERSION_D25A);
 

@@ -32,7 +32,7 @@ import com.helger.collection.commons.ICommonsList;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.io.resource.ClassPathResource;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 import com.helger.xml.ls.SimpleLSResourceResolver;
@@ -50,12 +50,10 @@ public final class KSeFValidation
 {
   public static final String GROUP_ID = "pl.ksef";
 
-  @Deprecated
-  public static final DVRCoordinate KSEF_1 = PhiveRulesHelper.createCoordinate (GROUP_ID, "ksef", "1.0.0");
-
-  public static final DVRCoordinate KSEF_2 = PhiveRulesHelper.createCoordinate (GROUP_ID, "ksef", "2.0.0");
-
-  public static final DVRCoordinate KSEF_3 = PhiveRulesHelper.createCoordinate (GROUP_ID, "ksef", "3.0.0");
+  @Deprecated (forRemoval = false)
+  public static final DVRCoordinate KSEF_1 = DVRHelper.createCoordinate (GROUP_ID, "ksef", "1.0.0");
+  public static final DVRCoordinate KSEF_2 = DVRHelper.createCoordinate (GROUP_ID, "ksef", "2.0.0");
+  public static final DVRCoordinate KSEF_3 = DVRHelper.createCoordinate (GROUP_ID, "ksef", "3.0.0");
 
   private static final Logger LOGGER = LoggerFactory.getLogger (KSeFValidation.class);
 
@@ -104,11 +102,11 @@ public final class KSeFValidation
                                                                                  new ClassPathResource ("/external/schemas/1.0.0/schema.xsd",
                                                                                                         _getCL ()));
       VesXmlBuilder.builder ()
-                       .vesID (KSEF_1)
-                       .displayNamePrefix ("KSeF ")
-                       .deprecated ()
-                       .addXSD (aResList)
-                       .registerInto (aRegistry);
+                   .vesID (KSEF_1)
+                   .displayNamePrefix ("KSeF ")
+                   .deprecated ()
+                   .addXSD (aResList)
+                   .registerInto (aRegistry);
     }
 
     {
@@ -118,11 +116,11 @@ public final class KSeFValidation
                                                                                  new ClassPathResource ("/external/schemas/2.0.0/schema.xsd",
                                                                                                         _getCL ()));
       VesXmlBuilder.builder ()
-                       .vesID (KSEF_2)
-                       .displayNamePrefix ("KSeF ")
-                       .notDeprecated ()
-                       .addXSD (aResList, aCustomSchemaCache)
-                       .registerInto (aRegistry);
+                   .vesID (KSEF_2)
+                   .displayNamePrefix ("KSeF ")
+                   .notDeprecated ()
+                   .addXSD (aResList, aCustomSchemaCache)
+                   .registerInto (aRegistry);
     }
 
     {
@@ -132,11 +130,11 @@ public final class KSeFValidation
                                                                                  new ClassPathResource ("/external/schemas/3.0.0/schemat.xsd",
                                                                                                         _getCL ()));
       VesXmlBuilder.builder ()
-                       .vesID (KSEF_3)
-                       .displayNamePrefix ("KSeF ")
-                       .notDeprecated ()
-                       .addXSD (aResList, aCustomSchemaCache)
-                       .registerInto (aRegistry);
+                   .vesID (KSEF_3)
+                   .displayNamePrefix ("KSeF ")
+                   .notDeprecated ()
+                   .addXSD (aResList, aCustomSchemaCache)
+                   .registerInto (aRegistry);
     }
   }
 }

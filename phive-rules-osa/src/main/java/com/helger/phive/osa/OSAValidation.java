@@ -23,7 +23,7 @@ import com.helger.base.enforce.ValueEnforcer;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.io.resource.ClassPathResource;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 
@@ -38,18 +38,18 @@ public final class OSAValidation
   public static final String GROUP_ID = "hu.gov.nav.osa";
 
   // v2.0
-  public static final DVRCoordinate VID_OSA_INVOICE_DATA_20 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_OSA_INVOICE_DATA_20 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "invoice-data",
                                                                                                  "2.0");
-  public static final DVRCoordinate VID_OSA_INVOICE_ANNULMENT_20 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_OSA_INVOICE_ANNULMENT_20 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "invoice-annulment",
                                                                                                       "2.0");
 
   // v3.0
-  public static final DVRCoordinate VID_OSA_INVOICE_DATA_30 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_OSA_INVOICE_DATA_30 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "invoice-data",
                                                                                                  "3.0");
-  public static final DVRCoordinate VID_OSA_INVOICE_ANNULMENT_30 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_OSA_INVOICE_ANNULMENT_30 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "invoice-annulment",
                                                                                                       "3.0");
 

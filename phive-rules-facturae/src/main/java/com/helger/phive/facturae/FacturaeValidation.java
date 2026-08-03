@@ -23,7 +23,7 @@ import com.helger.base.enforce.ValueEnforcer;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.io.resource.ClassPathResource;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 import com.helger.xsds.xmldsig.CXMLDSig;
@@ -38,15 +38,15 @@ public final class FacturaeValidation
 {
   public static final String GROUP_ID = "es.gob";
 
-  @Deprecated
-  public static final DVRCoordinate VID_FACTURAE_300 = PhiveRulesHelper.createCoordinate (GROUP_ID, "facturae", "3.0");
-  @Deprecated
-  public static final DVRCoordinate VID_FACTURAE_310 = PhiveRulesHelper.createCoordinate (GROUP_ID, "facturae", "3.1");
-  public static final DVRCoordinate VID_FACTURAE_320 = PhiveRulesHelper.createCoordinate (GROUP_ID, "facturae", "3.2");
-  public static final DVRCoordinate VID_FACTURAE_321 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  @Deprecated (forRemoval = false)
+  public static final DVRCoordinate VID_FACTURAE_300 = DVRHelper.createCoordinate (GROUP_ID, "facturae", "3.0");
+  @Deprecated (forRemoval = false)
+  public static final DVRCoordinate VID_FACTURAE_310 = DVRHelper.createCoordinate (GROUP_ID, "facturae", "3.1");
+  public static final DVRCoordinate VID_FACTURAE_320 = DVRHelper.createCoordinate (GROUP_ID, "facturae", "3.2");
+  public static final DVRCoordinate VID_FACTURAE_321 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "facturae",
                                                                                           "3.2.1");
-  public static final DVRCoordinate VID_FACTURAE_322 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_FACTURAE_322 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "facturae",
                                                                                           "3.2.2");
 
@@ -71,39 +71,39 @@ public final class FacturaeValidation
 
     // No Schematrons here
     VesXmlBuilder.builder ()
-                     .vesID (VID_FACTURAE_300)
-                     .displayNamePrefix ("Facturae ")
-                     .deprecated ()
-                     .addXSD (CXMLDSig.getXSDResource (),
-                              new ClassPathResource ("/external/schemas/Facturae30.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FACTURAE_300)
+                 .displayNamePrefix ("Facturae ")
+                 .deprecated ()
+                 .addXSD (CXMLDSig.getXSDResource (),
+                          new ClassPathResource ("/external/schemas/Facturae30.xsd", _getCL ()))
+                 .registerInto (aRegistry);
     VesXmlBuilder.builder ()
-                     .vesID (VID_FACTURAE_310)
-                     .displayNamePrefix ("Facturae ")
-                     .deprecated ()
-                     .addXSD (CXMLDSig.getXSDResource (),
-                              new ClassPathResource ("/external/schemas/Facturaev31.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FACTURAE_310)
+                 .displayNamePrefix ("Facturae ")
+                 .deprecated ()
+                 .addXSD (CXMLDSig.getXSDResource (),
+                          new ClassPathResource ("/external/schemas/Facturaev31.xsd", _getCL ()))
+                 .registerInto (aRegistry);
     VesXmlBuilder.builder ()
-                     .vesID (VID_FACTURAE_320)
-                     .displayNamePrefix ("Facturae ")
-                     .notDeprecated ()
-                     .addXSD (CXMLDSig.getXSDResource (),
-                              new ClassPathResource ("/external/schemas/Facturaev3_2.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FACTURAE_320)
+                 .displayNamePrefix ("Facturae ")
+                 .notDeprecated ()
+                 .addXSD (CXMLDSig.getXSDResource (),
+                          new ClassPathResource ("/external/schemas/Facturaev3_2.xsd", _getCL ()))
+                 .registerInto (aRegistry);
     VesXmlBuilder.builder ()
-                     .vesID (VID_FACTURAE_321)
-                     .displayNamePrefix ("Facturae ")
-                     .notDeprecated ()
-                     .addXSD (CXMLDSig.getXSDResource (),
-                              new ClassPathResource ("/external/schemas/Facturaev3_2_1.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FACTURAE_321)
+                 .displayNamePrefix ("Facturae ")
+                 .notDeprecated ()
+                 .addXSD (CXMLDSig.getXSDResource (),
+                          new ClassPathResource ("/external/schemas/Facturaev3_2_1.xsd", _getCL ()))
+                 .registerInto (aRegistry);
     VesXmlBuilder.builder ()
-                     .vesID (VID_FACTURAE_322)
-                     .displayNamePrefix ("Facturae ")
-                     .notDeprecated ()
-                     .addXSD (CXMLDSig.getXSDResource (),
-                              new ClassPathResource ("/external/schemas/Facturaev3_2_2.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FACTURAE_322)
+                 .displayNamePrefix ("Facturae ")
+                 .notDeprecated ()
+                 .addXSD (CXMLDSig.getXSDResource (),
+                          new ClassPathResource ("/external/schemas/Facturaev3_2_2.xsd", _getCL ()))
+                 .registerInto (aRegistry);
   }
 }

@@ -23,7 +23,7 @@ import com.helger.base.enforce.ValueEnforcer;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.io.resource.ClassPathResource;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 
@@ -37,8 +37,8 @@ public final class TEAPPSValidation
 {
   public static final String GROUP_ID = "com.tieto";
 
-  public static final DVRCoordinate VID_TEAPPS_272 = PhiveRulesHelper.createCoordinate (GROUP_ID, "teappsxml", "2.7.2");
-  public static final DVRCoordinate VID_TEAPPS_30 = PhiveRulesHelper.createCoordinate (GROUP_ID, "teappsxml", "3.0");
+  public static final DVRCoordinate VID_TEAPPS_272 = DVRHelper.createCoordinate (GROUP_ID, "teappsxml", "2.7.2");
+  public static final DVRCoordinate VID_TEAPPS_30 = DVRHelper.createCoordinate (GROUP_ID, "teappsxml", "3.0");
 
   private TEAPPSValidation ()
   {}

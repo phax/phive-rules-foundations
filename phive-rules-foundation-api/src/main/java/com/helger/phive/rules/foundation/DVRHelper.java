@@ -23,13 +23,6 @@ import com.helger.annotation.Nonempty;
 import com.helger.annotation.concurrent.Immutable;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.diver.api.version.DVRVersionException;
-import com.helger.io.resource.IReadableResource;
-import com.helger.phive.api.executorset.IValidationExecutorSet;
-import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.api.source.IValidationSource;
-import com.helger.phive.xml.schematron.SchematronNamespaceBeautifier;
-import com.helger.phive.xml.schematron.ValidationExecutorSchematron;
-import com.helger.xml.namespace.IIterableNamespaceContext;
 
 /**
  * Utility class for phive-rules libs.
@@ -37,9 +30,9 @@ import com.helger.xml.namespace.IIterableNamespaceContext;
  * @author Philip Helger
  */
 @Immutable
-public final class PhiveRulesHelper
+public final class DVRHelper
 {
-  private PhiveRulesHelper ()
+  private DVRHelper ()
   {}
 
   /**
@@ -88,23 +81,5 @@ public final class PhiveRulesHelper
     {
       throw new IllegalArgumentException (ex);
     }
-  }
-
-  @NonNull
-  public static ValidationExecutorSchematron createXSLT (@NonNull final IReadableResource aRes,
-                                                         @Nullable final IIterableNamespaceContext aNsCtx)
-  {
-    SchematronNamespaceBeautifier.addMappings (aNsCtx);
-    return ValidationExecutorSchematron.createXSLT (aRes, null, aNsCtx);
-  }
-
-  @NonNull
-  public static <T extends IValidationSource> IValidationExecutorSet <T> requireVESID (@NonNull final IValidationExecutorSetRegistry <T> aRegistry,
-                                                                                       @NonNull final DVRCoordinate aCoord) throws PhiveRulesInitializationException
-  {
-    final var ret = aRegistry.getOfID (aCoord);
-    if (ret == null)
-      throw new PhiveRulesInitializationException (aCoord);
-    return ret;
   }
 }

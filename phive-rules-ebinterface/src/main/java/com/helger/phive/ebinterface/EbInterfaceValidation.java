@@ -23,7 +23,7 @@ import com.helger.base.enforce.ValueEnforcer;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.ebinterface.CEbInterface;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 
@@ -37,15 +37,15 @@ public final class EbInterfaceValidation
 {
   public static final String GROUP_ID = "at.ebinterface";
 
-  public static final DVRCoordinate VID_EBI_30 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "3.0");
-  public static final DVRCoordinate VID_EBI_302 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "3.0.2");
-  public static final DVRCoordinate VID_EBI_40 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "4.0");
-  public static final DVRCoordinate VID_EBI_41 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "4.1");
-  public static final DVRCoordinate VID_EBI_42 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "4.2");
-  public static final DVRCoordinate VID_EBI_43 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "4.3");
-  public static final DVRCoordinate VID_EBI_50 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "5.0");
-  public static final DVRCoordinate VID_EBI_60 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "6.0");
-  public static final DVRCoordinate VID_EBI_61 = PhiveRulesHelper.createCoordinate (GROUP_ID, "invoice", "6.1");
+  public static final DVRCoordinate VID_EBI_30 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "3.0");
+  public static final DVRCoordinate VID_EBI_302 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "3.0.2");
+  public static final DVRCoordinate VID_EBI_40 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "4.0");
+  public static final DVRCoordinate VID_EBI_41 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "4.1");
+  public static final DVRCoordinate VID_EBI_42 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "4.2");
+  public static final DVRCoordinate VID_EBI_43 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "4.3");
+  public static final DVRCoordinate VID_EBI_50 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "5.0");
+  public static final DVRCoordinate VID_EBI_60 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "6.0");
+  public static final DVRCoordinate VID_EBI_61 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "6.1");
 
   private EbInterfaceValidation ()
   {}

@@ -22,7 +22,7 @@ import com.helger.annotation.concurrent.Immutable;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 import com.helger.ubl20.UBL20Marshaller;
@@ -49,1400 +49,1400 @@ public final class UBLValidation
   public static final String VERSION_25 = "2.5-CS01";
 
   // UBL 2.0
-  public static final DVRCoordinate VID_UBL_20_APPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_APPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "applicationresponse",
                                                                                                         VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_ATTACHEDDOCUMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_ATTACHEDDOCUMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "attacheddocument",
                                                                                                      VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_BILLOFLADING = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_BILLOFLADING = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "billoflading",
                                                                                                  VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_CATALOGUE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_CATALOGUE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "catalogue",
                                                                                               VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_CATALOGUEDELETION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_CATALOGUEDELETION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "cataloguedeletion",
                                                                                                       VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_CATALOGUEITEMSPECIFICATIONUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_CATALOGUEITEMSPECIFICATIONUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "catalogueitemspecificationupdate",
                                                                                                                      VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_CATALOGUEPRICINGUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_CATALOGUEPRICINGUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "cataloguepricingupdate",
                                                                                                            VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_CATALOGUEREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_CATALOGUEREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "cataloguerequest",
                                                                                                      VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_CERTIFICATEOFORIGIN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_CERTIFICATEOFORIGIN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "certificateoforigin",
                                                                                                         VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_CREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_CREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                "creditnote",
                                                                                                VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_DEBITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_DEBITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "debitnote",
                                                                                               VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_DESPATCHADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_DESPATCHADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "despatchadvice",
                                                                                                    VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_FORWARDINGINSTRUCTIONS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_FORWARDINGINSTRUCTIONS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "forwardinginstructions",
                                                                                                            VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_FREIGHTINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_FREIGHTINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "freightinvoice",
                                                                                                    VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_INVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_INVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "invoice",
                                                                                             VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_ORDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_ORDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "order",
                                                                                           VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_ORDERCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_ORDERCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "ordercancellation",
                                                                                                       VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_ORDERCHANGE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_ORDERCHANGE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "orderchange",
                                                                                                 VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_ORDERRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_ORDERRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "orderresponse",
                                                                                                   VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_ORDERRESPONSESIMPLE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_ORDERRESPONSESIMPLE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "orderresponsesimple",
                                                                                                         VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_PACKINGLIST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_PACKINGLIST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "packinglist",
                                                                                                 VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_QUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_QUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "quotation",
                                                                                               VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_RECEIPTADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_RECEIPTADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "receiptadvice",
                                                                                                   VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_REMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_REMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "reminder",
                                                                                              VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_REMITTANCEADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_REMITTANCEADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "remittanceadvice",
                                                                                                      VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_REQUESTFORQUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_REQUESTFORQUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "requestforquotation",
                                                                                                         VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_SELFBILLEDCREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_SELFBILLEDCREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "selfbilledcreditnote",
                                                                                                          VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_SELFBILLEDINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_SELFBILLEDINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "selfbilledinvoice",
                                                                                                       VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_STATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_STATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "statement",
                                                                                               VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_TRANSPORTATIONSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_TRANSPORTATIONSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "transportationstatus",
                                                                                                          VERSION_20);
-  public static final DVRCoordinate VID_UBL_20_WAYBILL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_20_WAYBILL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "waybill",
                                                                                             VERSION_20);
 
   // UBL 2.1
-  public static final DVRCoordinate VID_UBL_21_APPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_APPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "applicationresponse",
                                                                                                         VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_ATTACHEDDOCUMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_ATTACHEDDOCUMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "attacheddocument",
                                                                                                      VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_AWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_AWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "awardednotification",
                                                                                                         VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_BILLOFLADING = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_BILLOFLADING = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "billoflading",
                                                                                                  VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CALLFORTENDERS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CALLFORTENDERS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "callfortenders",
                                                                                                    VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CATALOGUE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CATALOGUE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "catalogue",
                                                                                               VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CATALOGUEDELETION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CATALOGUEDELETION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "cataloguedeletion",
                                                                                                       VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CATALOGUEITEMSPECIFICATIONUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CATALOGUEITEMSPECIFICATIONUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "catalogueitemspecificationupdate",
                                                                                                                      VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CATALOGUEPRICINGUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CATALOGUEPRICINGUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "cataloguepricingupdate",
                                                                                                            VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CATALOGUEREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CATALOGUEREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "cataloguerequest",
                                                                                                      VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CERTIFICATEOFORIGIN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CERTIFICATEOFORIGIN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "certificateoforigin",
                                                                                                         VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CONTRACTAWARDNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CONTRACTAWARDNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "contractawardnotice",
                                                                                                         VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CONTRACTNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CONTRACTNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "contractnotice",
                                                                                                    VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_CREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_CREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                "creditnote",
                                                                                                VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_DEBITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_DEBITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "debitnote",
                                                                                               VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_DESPATCHADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_DESPATCHADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "despatchadvice",
                                                                                                    VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_DOCUMENTSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_DOCUMENTSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "documentstatus",
                                                                                                    VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_DOCUMENTSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_DOCUMENTSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "documentstatusrequest",
                                                                                                           VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_EXCEPTIONCRITERIA = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_EXCEPTIONCRITERIA = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "exceptioncriteria",
                                                                                                       VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_EXCEPTIONNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_EXCEPTIONNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "exceptionnotification",
                                                                                                           VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_FORECAST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_FORECAST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "forecast",
                                                                                              VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_FORECASTREVISION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_FORECASTREVISION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "forecastrevision",
                                                                                                      VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_FORWARDINGINSTRUCTIONS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_FORWARDINGINSTRUCTIONS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "forwardinginstructions",
                                                                                                            VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_FREIGHTINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_FREIGHTINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "freightinvoice",
                                                                                                    VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_FULFILMENTCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_FULFILMENTCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "fulfilmentcancellation",
                                                                                                            VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_GOODSITEMITINERARY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_GOODSITEMITINERARY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                        "goodsitemitinerary",
                                                                                                        VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_GUARANTEECERTIFICATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_GUARANTEECERTIFICATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "guaranteecertificate",
                                                                                                          VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_INSTRUCTIONFORRETURNS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_INSTRUCTIONFORRETURNS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "instructionforreturns",
                                                                                                           VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_INVENTORYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_INVENTORYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "inventoryreport",
                                                                                                     VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_INVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_INVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "invoice",
                                                                                             VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_ITEMINFORMATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_ITEMINFORMATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "iteminformationrequest",
                                                                                                            VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_ORDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_ORDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "order",
                                                                                           VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_ORDERCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_ORDERCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "ordercancellation",
                                                                                                       VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_ORDERCHANGE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_ORDERCHANGE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "orderchange",
                                                                                                 VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_ORDERRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_ORDERRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "orderresponse",
                                                                                                   VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_ORDERRESPONSESIMPLE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_ORDERRESPONSESIMPLE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "orderresponsesimple",
                                                                                                         VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_PACKINGLIST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_PACKINGLIST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "packinglist",
                                                                                                 VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_PRIORINFORMATIONNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_PRIORINFORMATIONNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "priorinformationnotice",
                                                                                                            VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_PRODUCTACTIVITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_PRODUCTACTIVITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "productactivity",
                                                                                                     VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_QUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_QUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "quotation",
                                                                                               VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_RECEIPTADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_RECEIPTADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "receiptadvice",
                                                                                                   VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_REMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_REMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "reminder",
                                                                                              VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_REMITTANCEADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_REMITTANCEADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "remittanceadvice",
                                                                                                      VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_REQUESTFORQUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_REQUESTFORQUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "requestforquotation",
                                                                                                         VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_RETAILEVENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_RETAILEVENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "retailevent",
                                                                                                 VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_SELFBILLEDCREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_SELFBILLEDCREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "selfbilledcreditnote",
                                                                                                          VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_SELFBILLEDINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_SELFBILLEDINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "selfbilledinvoice",
                                                                                                       VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_STATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_STATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "statement",
                                                                                               VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_STOCKAVAILABILITYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_STOCKAVAILABILITYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "stockavailabilityreport",
                                                                                                             VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TENDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TENDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "tender",
                                                                                            VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TENDERERQUALIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TENDERERQUALIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "tendererqualification",
                                                                                                           VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TENDERERQUALIFICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TENDERERQUALIFICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "tendererqualificationresponse",
                                                                                                                   VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TENDERRECEIPT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TENDERRECEIPT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "tenderreceipt",
                                                                                                   VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRADEITEMLOCATIONPROFILE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRADEITEMLOCATIONPROFILE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "tradeitemlocationprofile",
                                                                                                              VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRANSPORTATIONSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRANSPORTATIONSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "transportationstatus",
                                                                                                          VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRANSPORTATIONSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRANSPORTATIONSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportationstatusrequest",
                                                                                                                 VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRANSPORTEXECUTIONPLAN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRANSPORTEXECUTIONPLAN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "transportexecutionplan",
                                                                                                            VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRANSPORTEXECUTIONPLANREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRANSPORTEXECUTIONPLANREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "transportexecutionplanrequest",
                                                                                                                   VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRANSPORTPROGRESSSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRANSPORTPROGRESSSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "transportprogressstatus",
                                                                                                             VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRANSPORTPROGRESSSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRANSPORTPROGRESSSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                    "transportprogressstatusrequest",
                                                                                                                    VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRANSPORTSERVICEDESCRIPTION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRANSPORTSERVICEDESCRIPTION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportservicedescription",
                                                                                                                 VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_TRANSPORTSERVICEDESCRIPTIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_TRANSPORTSERVICEDESCRIPTIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                        "transportservicedescriptionrequest",
                                                                                                                        VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_UNAWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_UNAWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "unawardednotification",
                                                                                                           VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_UTILITYSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_UTILITYSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "utilitystatement",
                                                                                                      VERSION_21);
-  public static final DVRCoordinate VID_UBL_21_WAYBILL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_21_WAYBILL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "waybill",
                                                                                             VERSION_21);
 
   // UBL 2.2
-  public static final DVRCoordinate VID_UBL_22_APPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_APPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "applicationresponse",
                                                                                                         VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ATTACHEDDOCUMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ATTACHEDDOCUMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "attacheddocument",
                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_AWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_AWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "awardednotification",
                                                                                                         VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_BILLOFLADING = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_BILLOFLADING = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "billoflading",
                                                                                                  VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_BUSINESSCARD = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_BUSINESSCARD = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "businesscard",
                                                                                                  VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CALLFORTENDERS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CALLFORTENDERS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "callfortenders",
                                                                                                    VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CATALOGUE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CATALOGUE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "catalogue",
                                                                                               VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CATALOGUEDELETION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CATALOGUEDELETION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "cataloguedeletion",
                                                                                                       VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CATALOGUEITEMSPECIFICATIONUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CATALOGUEITEMSPECIFICATIONUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "catalogueitemspecificationupdate",
                                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CATALOGUEPRICINGUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CATALOGUEPRICINGUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "cataloguepricingupdate",
                                                                                                            VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CATALOGUEREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CATALOGUEREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "cataloguerequest",
                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CERTIFICATEOFORIGIN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CERTIFICATEOFORIGIN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "certificateoforigin",
                                                                                                         VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CONTRACTAWARDNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CONTRACTAWARDNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "contractawardnotice",
                                                                                                         VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CONTRACTNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CONTRACTNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "contractnotice",
                                                                                                    VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_CREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_CREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                "creditnote",
                                                                                                VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_DEBITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_DEBITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "debitnote",
                                                                                               VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_DESPATCHADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_DESPATCHADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "despatchadvice",
                                                                                                    VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_DIGITALAGREEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_DIGITALAGREEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "digitalagreement",
                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_DIGITALCAPABILITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_DIGITALCAPABILITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "digitalcapability",
                                                                                                       VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_DOCUMENTSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_DOCUMENTSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "documentstatus",
                                                                                                    VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_DOCUMENTSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_DOCUMENTSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "documentstatusrequest",
                                                                                                           VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ENQUIRY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ENQUIRY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "enquiry",
                                                                                             VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ENQUIRYRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ENQUIRYRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "enquiryresponse",
                                                                                                     VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_EXCEPTIONCRITERIA = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_EXCEPTIONCRITERIA = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "exceptioncriteria",
                                                                                                       VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_EXCEPTIONNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_EXCEPTIONNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "exceptionnotification",
                                                                                                           VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_EXPRESSIONOFINTERESTREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_EXPRESSIONOFINTERESTREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "expressionofinterestrequest",
                                                                                                                 VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_EXPRESSIONOFINTERESTRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_EXPRESSIONOFINTERESTRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                  "expressionofinterestresponse",
                                                                                                                  VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_FORECAST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_FORECAST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "forecast",
                                                                                              VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_FORECASTREVISION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_FORECASTREVISION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "forecastrevision",
                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_FORWARDINGINSTRUCTIONS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_FORWARDINGINSTRUCTIONS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "forwardinginstructions",
                                                                                                            VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_FREIGHTINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_FREIGHTINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "freightinvoice",
                                                                                                    VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_FULFILMENTCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_FULFILMENTCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "fulfilmentcancellation",
                                                                                                            VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_GOODSITEMITINERARY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_GOODSITEMITINERARY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                        "goodsitemitinerary",
                                                                                                        VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_GUARANTEECERTIFICATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_GUARANTEECERTIFICATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "guaranteecertificate",
                                                                                                          VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_INSTRUCTIONFORRETURNS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_INSTRUCTIONFORRETURNS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "instructionforreturns",
                                                                                                           VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_INVENTORYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_INVENTORYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "inventoryreport",
                                                                                                     VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_INVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_INVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "invoice",
                                                                                             VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ITEMINFORMATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ITEMINFORMATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "iteminformationrequest",
                                                                                                            VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ORDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ORDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "order",
                                                                                           VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ORDERCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ORDERCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "ordercancellation",
                                                                                                       VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ORDERCHANGE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ORDERCHANGE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "orderchange",
                                                                                                 VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ORDERRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ORDERRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "orderresponse",
                                                                                                   VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_ORDERRESPONSESIMPLE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_ORDERRESPONSESIMPLE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "orderresponsesimple",
                                                                                                         VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_PACKINGLIST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_PACKINGLIST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "packinglist",
                                                                                                 VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_PRIORINFORMATIONNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_PRIORINFORMATIONNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "priorinformationnotice",
                                                                                                            VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_PRODUCTACTIVITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_PRODUCTACTIVITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "productactivity",
                                                                                                     VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_QUALIFICATIONAPPLICATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_QUALIFICATIONAPPLICATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                     "qualificationapplicationrequest",
                                                                                                                     VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_QUALIFICATIONAPPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_QUALIFICATIONAPPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "qualificationapplicationresponse",
                                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_QUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_QUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "quotation",
                                                                                               VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_RECEIPTADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_RECEIPTADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "receiptadvice",
                                                                                                   VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_REMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_REMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "reminder",
                                                                                              VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_REMITTANCEADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_REMITTANCEADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "remittanceadvice",
                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_REQUESTFORQUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_REQUESTFORQUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "requestforquotation",
                                                                                                         VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_RETAILEVENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_RETAILEVENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "retailevent",
                                                                                                 VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_SELFBILLEDCREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_SELFBILLEDCREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "selfbilledcreditnote",
                                                                                                          VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_SELFBILLEDINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_SELFBILLEDINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "selfbilledinvoice",
                                                                                                       VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_STATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_STATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "statement",
                                                                                               VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_STOCKAVAILABILITYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_STOCKAVAILABILITYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "stockavailabilityreport",
                                                                                                             VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TENDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TENDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "tender",
                                                                                            VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TENDERCONTRACT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TENDERCONTRACT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "tendercontract",
                                                                                                    VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TENDERERQUALIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TENDERERQUALIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "tendererqualification",
                                                                                                           VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TENDERERQUALIFICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TENDERERQUALIFICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "tendererqualificationresponse",
                                                                                                                   VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TENDERRECEIPT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TENDERRECEIPT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "tenderreceipt",
                                                                                                   VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TENDERSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TENDERSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "tenderstatus",
                                                                                                  VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TENDERSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TENDERSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "tenderstatusrequest",
                                                                                                         VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TENDERWITHDRAWAL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TENDERWITHDRAWAL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "tenderwithdrawal",
                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRADEITEMLOCATIONPROFILE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRADEITEMLOCATIONPROFILE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "tradeitemlocationprofile",
                                                                                                              VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRANSPORTATIONSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRANSPORTATIONSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "transportationstatus",
                                                                                                          VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRANSPORTATIONSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRANSPORTATIONSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportationstatusrequest",
                                                                                                                 VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRANSPORTEXECUTIONPLAN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRANSPORTEXECUTIONPLAN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "transportexecutionplan",
                                                                                                            VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRANSPORTEXECUTIONPLANREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRANSPORTEXECUTIONPLANREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "transportexecutionplanrequest",
                                                                                                                   VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRANSPORTPROGRESSSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRANSPORTPROGRESSSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "transportprogressstatus",
                                                                                                             VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRANSPORTPROGRESSSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRANSPORTPROGRESSSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                    "transportprogressstatusrequest",
                                                                                                                    VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRANSPORTSERVICEDESCRIPTION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRANSPORTSERVICEDESCRIPTION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportservicedescription",
                                                                                                                 VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_TRANSPORTSERVICEDESCRIPTIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_TRANSPORTSERVICEDESCRIPTIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                        "transportservicedescriptionrequest",
                                                                                                                        VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_UNAWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_UNAWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "unawardednotification",
                                                                                                           VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_UNSUBSCRIBEFROMPROCEDUREREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_UNSUBSCRIBEFROMPROCEDUREREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                     "unsubscribefromprocedurerequest",
                                                                                                                     VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_UNSUBSCRIBEFROMPROCEDURERESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_UNSUBSCRIBEFROMPROCEDURERESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "unsubscribefromprocedureresponse",
                                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_UTILITYSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_UTILITYSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "utilitystatement",
                                                                                                      VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_WAYBILL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_WAYBILL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "waybill",
                                                                                             VERSION_22);
-  public static final DVRCoordinate VID_UBL_22_WEIGHTSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_22_WEIGHTSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "weightstatement",
                                                                                                     VERSION_22);
 
   // UBL 2.3
-  public static final DVRCoordinate VID_UBL_23_APPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_APPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "applicationresponse",
                                                                                                         VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ATTACHEDDOCUMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ATTACHEDDOCUMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "attacheddocument",
                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_AWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_AWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "awardednotification",
                                                                                                         VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_BILLOFLADING = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_BILLOFLADING = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "billoflading",
                                                                                                  VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_BUSINESSCARD = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_BUSINESSCARD = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "businesscard",
                                                                                                  VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CALLFORTENDERS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CALLFORTENDERS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "callfortenders",
                                                                                                    VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CATALOGUE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CATALOGUE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "catalogue",
                                                                                               VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CATALOGUEDELETION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CATALOGUEDELETION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "cataloguedeletion",
                                                                                                       VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CATALOGUEITEMSPECIFICATIONUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CATALOGUEITEMSPECIFICATIONUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "catalogueitemspecificationupdate",
                                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CATALOGUEPRICINGUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CATALOGUEPRICINGUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "cataloguepricingupdate",
                                                                                                            VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CATALOGUEREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CATALOGUEREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "cataloguerequest",
                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CERTIFICATEOFORIGIN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CERTIFICATEOFORIGIN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "certificateoforigin",
                                                                                                         VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_COMMONTRANSPORTATIONREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_COMMONTRANSPORTATIONREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                "commontransportationreport",
                                                                                                                VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CONTRACTAWARDNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CONTRACTAWARDNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "contractawardnotice",
                                                                                                         VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CONTRACTNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CONTRACTNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "contractnotice",
                                                                                                    VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_CREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_CREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                "creditnote",
                                                                                                VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_DEBITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_DEBITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "debitnote",
                                                                                               VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_DESPATCHADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_DESPATCHADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "despatchadvice",
                                                                                                    VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_DIGITALAGREEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_DIGITALAGREEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "digitalagreement",
                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_DIGITALCAPABILITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_DIGITALCAPABILITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "digitalcapability",
                                                                                                       VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_DOCUMENTSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_DOCUMENTSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "documentstatus",
                                                                                                    VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_DOCUMENTSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_DOCUMENTSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "documentstatusrequest",
                                                                                                           VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ENQUIRY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ENQUIRY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "enquiry",
                                                                                             VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ENQUIRYRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ENQUIRYRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "enquiryresponse",
                                                                                                     VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_EXCEPTIONCRITERIA = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_EXCEPTIONCRITERIA = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "exceptioncriteria",
                                                                                                       VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_EXCEPTIONNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_EXCEPTIONNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "exceptionnotification",
                                                                                                           VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_EXPORTCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_EXPORTCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "exportcustomsdeclaration",
                                                                                                              VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_EXPRESSIONOFINTERESTREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_EXPRESSIONOFINTERESTREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "expressionofinterestrequest",
                                                                                                                 VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_EXPRESSIONOFINTERESTRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_EXPRESSIONOFINTERESTRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                  "expressionofinterestresponse",
                                                                                                                  VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_FORECAST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_FORECAST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "forecast",
                                                                                              VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_FORECASTREVISION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_FORECASTREVISION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "forecastrevision",
                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_FORWARDINGINSTRUCTIONS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_FORWARDINGINSTRUCTIONS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "forwardinginstructions",
                                                                                                            VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_FREIGHTINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_FREIGHTINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "freightinvoice",
                                                                                                    VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_FULFILMENTCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_FULFILMENTCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "fulfilmentcancellation",
                                                                                                            VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_GOODSCERTIFICATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_GOODSCERTIFICATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "goodscertificate",
                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_GOODSITEMITINERARY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_GOODSITEMITINERARY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                        "goodsitemitinerary",
                                                                                                        VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_GOODSITEMPASSPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_GOODSITEMPASSPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "goodsitempassport",
                                                                                                       VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_GUARANTEECERTIFICATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_GUARANTEECERTIFICATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "guaranteecertificate",
                                                                                                          VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_IMPORTCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_IMPORTCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "importcustomsdeclaration",
                                                                                                              VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_INSTRUCTIONFORRETURNS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_INSTRUCTIONFORRETURNS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "instructionforreturns",
                                                                                                           VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_INVENTORYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_INVENTORYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "inventoryreport",
                                                                                                     VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_INVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_INVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "invoice",
                                                                                             VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ITEMINFORMATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ITEMINFORMATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "iteminformationrequest",
                                                                                                            VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_MANIFEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_MANIFEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "manifest",
                                                                                              VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ORDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ORDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "order",
                                                                                           VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ORDERCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ORDERCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "ordercancellation",
                                                                                                       VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ORDERCHANGE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ORDERCHANGE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "orderchange",
                                                                                                 VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ORDERRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ORDERRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "orderresponse",
                                                                                                   VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_ORDERRESPONSESIMPLE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_ORDERRESPONSESIMPLE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "orderresponsesimple",
                                                                                                         VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_PACKINGLIST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_PACKINGLIST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "packinglist",
                                                                                                 VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_PRIORINFORMATIONNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_PRIORINFORMATIONNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "priorinformationnotice",
                                                                                                            VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_PRODUCTACTIVITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_PRODUCTACTIVITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "productactivity",
                                                                                                     VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_PROOFOFREEXPORTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_PROOFOFREEXPORTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "proofofreexportation",
                                                                                                          VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_PROOFOFREEXPORTATIONREMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_PROOFOFREEXPORTATIONREMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                  "proofofreexportationreminder",
                                                                                                                  VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_PROOFOFREEXPORTATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_PROOFOFREEXPORTATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "proofofreexportationrequest",
                                                                                                                 VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_QUALIFICATIONAPPLICATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_QUALIFICATIONAPPLICATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                     "qualificationapplicationrequest",
                                                                                                                     VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_QUALIFICATIONAPPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_QUALIFICATIONAPPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "qualificationapplicationresponse",
                                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_QUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_QUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "quotation",
                                                                                               VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_RECEIPTADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_RECEIPTADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "receiptadvice",
                                                                                                   VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_REMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_REMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "reminder",
                                                                                              VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_REMITTANCEADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_REMITTANCEADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "remittanceadvice",
                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_REQUESTFORQUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_REQUESTFORQUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "requestforquotation",
                                                                                                         VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_RETAILEVENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_RETAILEVENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "retailevent",
                                                                                                 VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_SELFBILLEDCREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_SELFBILLEDCREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "selfbilledcreditnote",
                                                                                                          VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_SELFBILLEDINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_SELFBILLEDINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "selfbilledinvoice",
                                                                                                       VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_STATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_STATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "statement",
                                                                                               VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_STOCKAVAILABILITYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_STOCKAVAILABILITYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "stockavailabilityreport",
                                                                                                             VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TENDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TENDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "tender",
                                                                                            VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TENDERCONTRACT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TENDERCONTRACT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "tendercontract",
                                                                                                    VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TENDERERQUALIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TENDERERQUALIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "tendererqualification",
                                                                                                           VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TENDERERQUALIFICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TENDERERQUALIFICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "tendererqualificationresponse",
                                                                                                                   VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TENDERRECEIPT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TENDERRECEIPT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "tenderreceipt",
                                                                                                   VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TENDERSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TENDERSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "tenderstatus",
                                                                                                  VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TENDERSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TENDERSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "tenderstatusrequest",
                                                                                                         VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TENDERWITHDRAWAL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TENDERWITHDRAWAL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "tenderwithdrawal",
                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRADEITEMLOCATIONPROFILE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRADEITEMLOCATIONPROFILE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "tradeitemlocationprofile",
                                                                                                              VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSITCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSITCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                               "transitcustomsdeclaration",
                                                                                                               VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSPORTATIONSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSPORTATIONSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "transportationstatus",
                                                                                                          VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSPORTATIONSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSPORTATIONSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportationstatusrequest",
                                                                                                                 VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSPORTEXECUTIONPLAN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSPORTEXECUTIONPLAN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "transportexecutionplan",
                                                                                                            VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSPORTEXECUTIONPLANREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSPORTEXECUTIONPLANREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "transportexecutionplanrequest",
                                                                                                                   VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSPORTPROGRESSSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSPORTPROGRESSSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "transportprogressstatus",
                                                                                                             VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSPORTPROGRESSSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSPORTPROGRESSSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                    "transportprogressstatusrequest",
                                                                                                                    VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSPORTSERVICEDESCRIPTION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSPORTSERVICEDESCRIPTION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportservicedescription",
                                                                                                                 VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_TRANSPORTSERVICEDESCRIPTIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_TRANSPORTSERVICEDESCRIPTIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                        "transportservicedescriptionrequest",
                                                                                                                        VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_UNAWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_UNAWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "unawardednotification",
                                                                                                           VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_UNSUBSCRIBEFROMPROCEDUREREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_UNSUBSCRIBEFROMPROCEDUREREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                     "unsubscribefromprocedurerequest",
                                                                                                                     VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_UNSUBSCRIBEFROMPROCEDURERESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_UNSUBSCRIBEFROMPROCEDURERESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "unsubscribefromprocedureresponse",
                                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_UTILITYSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_UTILITYSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "utilitystatement",
                                                                                                      VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_WAYBILL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_WAYBILL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "waybill",
                                                                                             VERSION_23);
-  public static final DVRCoordinate VID_UBL_23_WEIGHTSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_23_WEIGHTSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "weightstatement",
                                                                                                     VERSION_23);
 
   // UBL 2.4
-  public static final DVRCoordinate VID_UBL_24_APPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_APPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "applicationresponse",
                                                                                                         VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ATTACHEDDOCUMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ATTACHEDDOCUMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "attacheddocument",
                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_AWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_AWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "awardednotification",
                                                                                                         VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_BILLOFLADING = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_BILLOFLADING = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "billoflading",
                                                                                                  VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_BUSINESSCARD = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_BUSINESSCARD = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "businesscard",
                                                                                                  VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_BUSINESSINFORMATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_BUSINESSINFORMATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "businessinformation",
                                                                                                         VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CALLFORTENDERS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CALLFORTENDERS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "callfortenders",
                                                                                                    VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CATALOGUE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CATALOGUE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "catalogue",
                                                                                               VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CATALOGUEDELETION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CATALOGUEDELETION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "cataloguedeletion",
                                                                                                       VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CATALOGUEITEMSPECIFICATIONUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CATALOGUEITEMSPECIFICATIONUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "catalogueitemspecificationupdate",
                                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CATALOGUEPRICINGUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CATALOGUEPRICINGUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "cataloguepricingupdate",
                                                                                                            VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CATALOGUEREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CATALOGUEREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "cataloguerequest",
                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CERTIFICATEOFORIGIN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CERTIFICATEOFORIGIN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "certificateoforigin",
                                                                                                         VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_COMMONTRANSPORTATIONREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_COMMONTRANSPORTATIONREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                "commontransportationreport",
                                                                                                                VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CONTRACTAWARDNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CONTRACTAWARDNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "contractawardnotice",
                                                                                                         VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CONTRACTNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CONTRACTNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "contractnotice",
                                                                                                    VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_CREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_CREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                "creditnote",
                                                                                                VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_DEBITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_DEBITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "debitnote",
                                                                                               VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_DESPATCHADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_DESPATCHADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "despatchadvice",
                                                                                                    VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_DIGITALAGREEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_DIGITALAGREEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "digitalagreement",
                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_DIGITALCAPABILITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_DIGITALCAPABILITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "digitalcapability",
                                                                                                       VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_DOCUMENTSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_DOCUMENTSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "documentstatus",
                                                                                                    VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_DOCUMENTSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_DOCUMENTSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "documentstatusrequest",
                                                                                                           VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ENQUIRY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ENQUIRY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "enquiry",
                                                                                             VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ENQUIRYRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ENQUIRYRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "enquiryresponse",
                                                                                                     VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_EXCEPTIONCRITERIA = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_EXCEPTIONCRITERIA = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "exceptioncriteria",
                                                                                                       VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_EXCEPTIONNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_EXCEPTIONNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "exceptionnotification",
                                                                                                           VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_EXPORTCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_EXPORTCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "exportcustomsdeclaration",
                                                                                                              VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_EXPRESSIONOFINTERESTREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_EXPRESSIONOFINTERESTREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "expressionofinterestrequest",
                                                                                                                 VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_EXPRESSIONOFINTERESTRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_EXPRESSIONOFINTERESTRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                  "expressionofinterestresponse",
                                                                                                                  VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_FORECAST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_FORECAST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "forecast",
                                                                                              VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_FORECASTREVISION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_FORECASTREVISION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "forecastrevision",
                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_FORWARDINGINSTRUCTIONS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_FORWARDINGINSTRUCTIONS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "forwardinginstructions",
                                                                                                            VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_FREIGHTINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_FREIGHTINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "freightinvoice",
                                                                                                    VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_FULFILMENTCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_FULFILMENTCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "fulfilmentcancellation",
                                                                                                            VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_GOODSCERTIFICATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_GOODSCERTIFICATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "goodscertificate",
                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_GOODSITEMITINERARY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_GOODSITEMITINERARY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                        "goodsitemitinerary",
                                                                                                        VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_GOODSITEMPASSPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_GOODSITEMPASSPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "goodsitempassport",
                                                                                                       VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_GUARANTEECERTIFICATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_GUARANTEECERTIFICATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "guaranteecertificate",
                                                                                                          VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_IMPORTCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_IMPORTCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "importcustomsdeclaration",
                                                                                                              VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_INSTRUCTIONFORRETURNS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_INSTRUCTIONFORRETURNS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "instructionforreturns",
                                                                                                           VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_INVENTORYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_INVENTORYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "inventoryreport",
                                                                                                     VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_INVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_INVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "invoice",
                                                                                             VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ITEMINFORMATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ITEMINFORMATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "iteminformationrequest",
                                                                                                            VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_MANIFEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_MANIFEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "manifest",
                                                                                              VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ORDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ORDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "order",
                                                                                           VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ORDERCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ORDERCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "ordercancellation",
                                                                                                       VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ORDERCHANGE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ORDERCHANGE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "orderchange",
                                                                                                 VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ORDERRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ORDERRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "orderresponse",
                                                                                                   VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_ORDERRESPONSESIMPLE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_ORDERRESPONSESIMPLE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "orderresponsesimple",
                                                                                                         VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_PACKINGLIST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_PACKINGLIST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "packinglist",
                                                                                                 VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_PRIORINFORMATIONNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_PRIORINFORMATIONNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "priorinformationnotice",
                                                                                                            VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_PRODUCTACTIVITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_PRODUCTACTIVITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "productactivity",
                                                                                                     VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_PROOFOFREEXPORTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_PROOFOFREEXPORTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "proofofreexportation",
                                                                                                          VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_PROOFOFREEXPORTATIONREMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_PROOFOFREEXPORTATIONREMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                  "proofofreexportationreminder",
                                                                                                                  VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_PROOFOFREEXPORTATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_PROOFOFREEXPORTATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "proofofreexportationrequest",
                                                                                                                 VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_PURCHASERECEIPT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_PURCHASERECEIPT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "purchasereceipt",
                                                                                                     VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_QUALIFICATIONAPPLICATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_QUALIFICATIONAPPLICATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                     "qualificationapplicationrequest",
                                                                                                                     VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_QUALIFICATIONAPPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_QUALIFICATIONAPPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "qualificationapplicationresponse",
                                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_QUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_QUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "quotation",
                                                                                               VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_RECEIPTADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_RECEIPTADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "receiptadvice",
                                                                                                   VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_REMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_REMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "reminder",
                                                                                              VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_REMITTANCEADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_REMITTANCEADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "remittanceadvice",
                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_REQUESTFORQUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_REQUESTFORQUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "requestforquotation",
                                                                                                         VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_RETAILEVENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_RETAILEVENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "retailevent",
                                                                                                 VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_SELFBILLEDCREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_SELFBILLEDCREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "selfbilledcreditnote",
                                                                                                          VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_SELFBILLEDINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_SELFBILLEDINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "selfbilledinvoice",
                                                                                                       VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_STATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_STATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "statement",
                                                                                               VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_STOCKAVAILABILITYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_STOCKAVAILABILITYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "stockavailabilityreport",
                                                                                                             VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TENDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TENDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "tender",
                                                                                            VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TENDERCONTRACT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TENDERCONTRACT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "tendercontract",
                                                                                                    VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TENDERERQUALIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TENDERERQUALIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "tendererqualification",
                                                                                                           VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TENDERERQUALIFICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TENDERERQUALIFICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "tendererqualificationresponse",
                                                                                                                   VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TENDERRECEIPT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TENDERRECEIPT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "tenderreceipt",
                                                                                                   VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TENDERSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TENDERSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "tenderstatus",
                                                                                                  VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TENDERSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TENDERSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "tenderstatusrequest",
                                                                                                         VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TENDERWITHDRAWAL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TENDERWITHDRAWAL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "tenderwithdrawal",
                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRADEITEMLOCATIONPROFILE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRADEITEMLOCATIONPROFILE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "tradeitemlocationprofile",
                                                                                                              VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSITCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSITCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                               "transitcustomsdeclaration",
                                                                                                               VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSPORTATIONSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSPORTATIONSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "transportationstatus",
                                                                                                          VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSPORTATIONSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSPORTATIONSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportationstatusrequest",
                                                                                                                 VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSPORTEXECUTIONPLAN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSPORTEXECUTIONPLAN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "transportexecutionplan",
                                                                                                            VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSPORTEXECUTIONPLANREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSPORTEXECUTIONPLANREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "transportexecutionplanrequest",
                                                                                                                   VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSPORTPROGRESSSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSPORTPROGRESSSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "transportprogressstatus",
                                                                                                             VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSPORTPROGRESSSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSPORTPROGRESSSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                    "transportprogressstatusrequest",
                                                                                                                    VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSPORTSERVICEDESCRIPTION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSPORTSERVICEDESCRIPTION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportservicedescription",
                                                                                                                 VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_TRANSPORTSERVICEDESCRIPTIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_TRANSPORTSERVICEDESCRIPTIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                        "transportservicedescriptionrequest",
                                                                                                                        VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_UNAWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_UNAWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "unawardednotification",
                                                                                                           VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_UNSUBSCRIBEFROMPROCEDUREREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_UNSUBSCRIBEFROMPROCEDUREREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                     "unsubscribefromprocedurerequest",
                                                                                                                     VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_UNSUBSCRIBEFROMPROCEDURERESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_UNSUBSCRIBEFROMPROCEDURERESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "unsubscribefromprocedureresponse",
                                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_UTILITYSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_UTILITYSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "utilitystatement",
                                                                                                      VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_WAYBILL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_WAYBILL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "waybill",
                                                                                             VERSION_24);
-  public static final DVRCoordinate VID_UBL_24_WEIGHTSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_24_WEIGHTSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "weightstatement",
                                                                                                     VERSION_24);
 
   // UBL 2.5
-  public static final DVRCoordinate VID_UBL_25_APPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_APPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "applicationresponse",
                                                                                                         VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ATTACHEDDOCUMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ATTACHEDDOCUMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "attacheddocument",
                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_AWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_AWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "awardednotification",
                                                                                                         VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_BILLOFLADING = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_BILLOFLADING = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "billoflading",
                                                                                                  VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_BUSINESSCARD = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_BUSINESSCARD = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "businesscard",
                                                                                                  VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_BUSINESSINFORMATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_BUSINESSINFORMATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "businessinformation",
                                                                                                         VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CALLFORTENDERS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CALLFORTENDERS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "callfortenders",
                                                                                                    VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CATALOGUE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CATALOGUE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "catalogue",
                                                                                               VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CATALOGUEDELETION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CATALOGUEDELETION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "cataloguedeletion",
                                                                                                       VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CATALOGUEITEMSPECIFICATIONUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CATALOGUEITEMSPECIFICATIONUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "catalogueitemspecificationupdate",
                                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CATALOGUEPRICINGUPDATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CATALOGUEPRICINGUPDATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "cataloguepricingupdate",
                                                                                                            VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CATALOGUEREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CATALOGUEREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "cataloguerequest",
                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CERTIFICATEOFORIGIN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CERTIFICATEOFORIGIN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "certificateoforigin",
                                                                                                         VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_COMMONTRANSPORTATIONREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_COMMONTRANSPORTATIONREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                "commontransportationreport",
                                                                                                                VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CONTRACTAWARDNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CONTRACTAWARDNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "contractawardnotice",
                                                                                                         VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CONTRACTNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CONTRACTNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "contractnotice",
                                                                                                    VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_CREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_CREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                "creditnote",
                                                                                                VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_DEBITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_DEBITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "debitnote",
                                                                                               VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_DELIVERYNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_DELIVERYNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "deliverynote",
                                                                                                  VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_DESPATCHADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_DESPATCHADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "despatchadvice",
                                                                                                    VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_DIGITALAGREEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_DIGITALAGREEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "digitalagreement",
                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_DIGITALCAPABILITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_DIGITALCAPABILITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "digitalcapability",
                                                                                                       VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_DOCUMENTSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_DOCUMENTSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "documentstatus",
                                                                                                    VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_DOCUMENTSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_DOCUMENTSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "documentstatusrequest",
                                                                                                           VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ENQUIRY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ENQUIRY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "enquiry",
                                                                                             VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ENQUIRYRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ENQUIRYRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "enquiryresponse",
                                                                                                     VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_EXCEPTIONCRITERIA = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_EXCEPTIONCRITERIA = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "exceptioncriteria",
                                                                                                       VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_EXCEPTIONNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_EXCEPTIONNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "exceptionnotification",
                                                                                                           VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_EXPORTCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_EXPORTCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "exportcustomsdeclaration",
                                                                                                              VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_EXPRESSIONOFINTERESTREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_EXPRESSIONOFINTERESTREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "expressionofinterestrequest",
                                                                                                                 VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_EXPRESSIONOFINTERESTRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_EXPRESSIONOFINTERESTRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                  "expressionofinterestresponse",
                                                                                                                  VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_FORECAST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_FORECAST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "forecast",
                                                                                              VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_FORECASTREVISION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_FORECASTREVISION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "forecastrevision",
                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_FORWARDINGINSTRUCTIONS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_FORWARDINGINSTRUCTIONS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "forwardinginstructions",
                                                                                                            VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_FREIGHTINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_FREIGHTINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "freightinvoice",
                                                                                                    VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_FULFILMENTCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_FULFILMENTCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "fulfilmentcancellation",
                                                                                                            VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_GOODSCERTIFICATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_GOODSCERTIFICATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "goodscertificate",
                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_GOODSITEMITINERARY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_GOODSITEMITINERARY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                        "goodsitemitinerary",
                                                                                                        VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_GOODSITEMPASSPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_GOODSITEMPASSPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "goodsitempassport",
                                                                                                       VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_GUARANTEECERTIFICATE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_GUARANTEECERTIFICATE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "guaranteecertificate",
                                                                                                          VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_IMPORTCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_IMPORTCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "importcustomsdeclaration",
                                                                                                              VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_INSTRUCTIONFORRETURNS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_INSTRUCTIONFORRETURNS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "instructionforreturns",
                                                                                                           VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_INVENTORYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_INVENTORYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "inventoryreport",
                                                                                                     VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_INVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_INVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "invoice",
                                                                                             VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_INVOICESTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_INVOICESTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "invoicestatusrequest",
                                                                                                          VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_INVOICESTATUSRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_INVOICESTATUSRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "invoicestatusresponse",
                                                                                                           VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ITEMINFORMATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ITEMINFORMATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "iteminformationrequest",
                                                                                                            VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_MANIFEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_MANIFEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "manifest",
                                                                                              VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ORDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ORDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "order",
                                                                                           VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ORDERCANCELLATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ORDERCANCELLATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "ordercancellation",
                                                                                                       VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ORDERCHANGE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ORDERCHANGE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "orderchange",
                                                                                                 VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ORDERRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ORDERRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "orderresponse",
                                                                                                   VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_ORDERRESPONSESIMPLE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_ORDERRESPONSESIMPLE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "orderresponsesimple",
                                                                                                         VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PACKINGLIST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PACKINGLIST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "packinglist",
                                                                                                 VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PRIORINFORMATIONNOTICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PRIORINFORMATIONNOTICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "priorinformationnotice",
                                                                                                            VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PROCUREMENTSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PROCUREMENTSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "procurementstatus",
                                                                                                       VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PROCUREMENTSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PROCUREMENTSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "procurementstatusrequest",
                                                                                                              VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PRODUCTACTIVITY = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PRODUCTACTIVITY = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "productactivity",
                                                                                                     VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PROOFOFREEXPORTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PROOFOFREEXPORTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "proofofreexportation",
                                                                                                          VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PROOFOFREEXPORTATIONREMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PROOFOFREEXPORTATIONREMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                  "proofofreexportationreminder",
                                                                                                                  VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PROOFOFREEXPORTATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PROOFOFREEXPORTATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "proofofreexportationrequest",
                                                                                                                 VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_PURCHASERECEIPT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_PURCHASERECEIPT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "purchasereceipt",
                                                                                                     VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_QUALIFICATIONAPPLICATIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_QUALIFICATIONAPPLICATIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                     "qualificationapplicationrequest",
                                                                                                                     VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_QUALIFICATIONAPPLICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_QUALIFICATIONAPPLICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "qualificationapplicationresponse",
                                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_QUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_QUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "quotation",
                                                                                               VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_RECEIPTADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_RECEIPTADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "receiptadvice",
                                                                                                   VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_REMINDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_REMINDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                              "reminder",
                                                                                              VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_REMITTANCEADVICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_REMITTANCEADVICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "remittanceadvice",
                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_REQUESTFORQUOTATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_REQUESTFORQUOTATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "requestforquotation",
                                                                                                         VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_RETAILEVENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_RETAILEVENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                 "retailevent",
                                                                                                 VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_SELFBILLEDCREDITNOTE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_SELFBILLEDCREDITNOTE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "selfbilledcreditnote",
                                                                                                          VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_SELFBILLEDINVOICE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_SELFBILLEDINVOICE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "selfbilledinvoice",
                                                                                                       VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_STATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_STATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                               "statement",
                                                                                               VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_STOCKAVAILABILITYREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_STOCKAVAILABILITYREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "stockavailabilityreport",
                                                                                                             VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TENDER = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TENDER = DVRHelper.createCoordinate (GROUP_ID,
                                                                                            "tender",
                                                                                            VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TENDERCONTRACT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TENDERCONTRACT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                    "tendercontract",
                                                                                                    VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TENDERERQUALIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TENDERERQUALIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "tendererqualification",
                                                                                                           VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TENDERERQUALIFICATIONRESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TENDERERQUALIFICATIONRESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "tendererqualificationresponse",
                                                                                                                   VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TENDERRECEIPT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TENDERRECEIPT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "tenderreceipt",
                                                                                                   VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TENDERSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TENDERSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                  "tenderstatus",
                                                                                                  VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TENDERSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TENDERSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                         "tenderstatusrequest",
                                                                                                         VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TENDERWITHDRAWAL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TENDERWITHDRAWAL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "tenderwithdrawal",
                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRADEITEMLOCATIONPROFILE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRADEITEMLOCATIONPROFILE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                              "tradeitemlocationprofile",
                                                                                                              VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSITCUSTOMSDECLARATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSITCUSTOMSDECLARATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                               "transitcustomsdeclaration",
                                                                                                               VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSPORTATIONSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSPORTATIONSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                          "transportationstatus",
                                                                                                          VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSPORTATIONSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSPORTATIONSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportationstatusrequest",
                                                                                                                 VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSPORTEXECUTIONPLAN = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSPORTEXECUTIONPLAN = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                            "transportexecutionplan",
                                                                                                            VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSPORTEXECUTIONPLANREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSPORTEXECUTIONPLANREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                   "transportexecutionplanrequest",
                                                                                                                   VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSPORTPROGRESSSTATUS = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSPORTPROGRESSSTATUS = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                             "transportprogressstatus",
                                                                                                             VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSPORTPROGRESSSTATUSREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSPORTPROGRESSSTATUSREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                    "transportprogressstatusrequest",
                                                                                                                    VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSPORTSERVICEDESCRIPTION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSPORTSERVICEDESCRIPTION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                 "transportservicedescription",
                                                                                                                 VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_TRANSPORTSERVICEDESCRIPTIONREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_TRANSPORTSERVICEDESCRIPTIONREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                        "transportservicedescriptionrequest",
                                                                                                                        VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_UNAWARDEDNOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_UNAWARDEDNOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                           "unawardednotification",
                                                                                                           VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_UNSUBSCRIBEFROMPROCEDUREREQUEST = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_UNSUBSCRIBEFROMPROCEDUREREQUEST = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                     "unsubscribefromprocedurerequest",
                                                                                                                     VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_UNSUBSCRIBEFROMPROCEDURERESPONSE = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_UNSUBSCRIBEFROMPROCEDURERESPONSE = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                                      "unsubscribefromprocedureresponse",
                                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_UTILITYSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_UTILITYSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                      "utilitystatement",
                                                                                                      VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_WASTEMOVEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_WASTEMOVEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                   "wastemovement",
                                                                                                   VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_WASTENOTIFICATION = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_WASTENOTIFICATION = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                       "wastenotification",
                                                                                                       VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_WAYBILL = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_WAYBILL = DVRHelper.createCoordinate (GROUP_ID,
                                                                                             "waybill",
                                                                                             VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_WEIGHTSTATEMENT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_WEIGHTSTATEMENT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                     "weightstatement",
                                                                                                     VERSION_25);
-  public static final DVRCoordinate VID_UBL_25_WORKREPORT = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_UBL_25_WORKREPORT = DVRHelper.createCoordinate (GROUP_ID,
                                                                                                "workreport",
                                                                                                VERSION_25);
 

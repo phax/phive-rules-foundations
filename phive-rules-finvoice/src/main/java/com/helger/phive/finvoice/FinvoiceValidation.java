@@ -23,7 +23,7 @@ import com.helger.base.enforce.ValueEnforcer;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.io.resource.ClassPathResource;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.PhiveRulesHelper;
+import com.helger.phive.rules.foundation.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 
@@ -37,12 +37,12 @@ public final class FinvoiceValidation
 {
   public static final String GROUP_ID = "fi.finvoice";
 
-  public static final DVRCoordinate VID_FINVOICE_13 = PhiveRulesHelper.createCoordinate (GROUP_ID, "finvoice", "1.3");
-  public static final DVRCoordinate VID_FINVOICE_20 = PhiveRulesHelper.createCoordinate (GROUP_ID, "finvoice", "2.0");
-  public static final DVRCoordinate VID_FINVOICE_201 = PhiveRulesHelper.createCoordinate (GROUP_ID,
+  public static final DVRCoordinate VID_FINVOICE_13 = DVRHelper.createCoordinate (GROUP_ID, "finvoice", "1.3");
+  public static final DVRCoordinate VID_FINVOICE_20 = DVRHelper.createCoordinate (GROUP_ID, "finvoice", "2.0");
+  public static final DVRCoordinate VID_FINVOICE_201 = DVRHelper.createCoordinate (GROUP_ID,
                                                                                           "finvoice",
                                                                                           "2.0.1");
-  public static final DVRCoordinate VID_FINVOICE_30 = PhiveRulesHelper.createCoordinate (GROUP_ID, "finvoice", "3.0");
+  public static final DVRCoordinate VID_FINVOICE_30 = DVRHelper.createCoordinate (GROUP_ID, "finvoice", "3.0");
 
   private FinvoiceValidation ()
   {}
