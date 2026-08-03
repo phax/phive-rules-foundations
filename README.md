@@ -87,7 +87,7 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 
 # News and noteworthy
 
-v5.0.0 - work in progress
+v5.0.0 - 2026-08-03
 * Initial release after extraction from [phive-rules](https://github.com/phax/phive-rules) v4.5.0
 * Contains the foundational XSD-only document format modules (`phive-rules-cii`, `phive-rules-ubl`, `phive-rules-ebinterface`, `phive-rules-facturae`, `phive-rules-fatturapa`, `phive-rules-finvoice`, `phive-rules-ksef`, `phive-rules-osa`, `phive-rules-teapps`) and the new `phive-rules-foundation-api` (package `com.helger.phive.rules.foundation`) holding the shared registration SPI and helpers
 
