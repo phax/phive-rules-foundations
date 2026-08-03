@@ -25,7 +25,7 @@ import com.helger.cii.d22b.CCIID22B;
 import com.helger.cii.d25a.CCIID25A;
 import com.helger.diver.api.coord.DVRCoordinate;
 import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
-import com.helger.phive.rules.foundation.DVRHelper;
+import com.helger.phive.rules.shared.DVRHelper;
 import com.helger.phive.xml.executorset.VesXmlBuilder;
 import com.helger.phive.xml.source.IValidationSourceXML;
 

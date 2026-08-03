@@ -68,6 +68,7 @@
     <ph-fatturapa.version>3.1.0</ph-fatturapa.version>
     <ph-schematron.version>10.0.0</ph-schematron.version>
     <ph-ubl.version>10.2.0</ph-ubl.version>
+    <phive-rules-shared.version>1.0.0-SNAPSHOT</phive-rules-shared.version>
   </properties>
 
   <dependencyManagement>
@@ -103,8 +104,8 @@
 
       <dependency>
         <groupId>com.helger.phive.rules</groupId>
-        <artifactId>phive-rules-foundation-api</artifactId>
-        <version>${project.version}</version>
+        <artifactId>phive-rules-shared</artifactId>
+        <version>${phive-rules-shared.version}</version>
       </dependency>
       <dependency>
         <groupId>com.helger.phive.rules</groupId>
@@ -155,7 +156,6 @@
   </dependencyManagement>
 
   <modules>
-    <module>phive-rules-foundation-api</module>
     <!-- Foundational document formats (XSD only, no Schematron) -->
     <module>phive-rules-cii</module>
     <module>phive-rules-ebinterface</module>

@@ -67,7 +67,7 @@
     </dependency>
     <dependency>
       <groupId>com.helger.phive.rules</groupId>
-      <artifactId>phive-rules-foundation-api</artifactId>
+      <artifactId>phive-rules-shared</artifactId>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
