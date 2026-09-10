@@ -43,12 +43,8 @@ public final class FacturaeValidation
   @Deprecated (forRemoval = false)
   public static final DVRCoordinate VID_FACTURAE_310 = DVRHelper.createCoordinate (GROUP_ID, "facturae", "3.1");
   public static final DVRCoordinate VID_FACTURAE_320 = DVRHelper.createCoordinate (GROUP_ID, "facturae", "3.2");
-  public static final DVRCoordinate VID_FACTURAE_321 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                          "facturae",
-                                                                                          "3.2.1");
-  public static final DVRCoordinate VID_FACTURAE_322 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                          "facturae",
-                                                                                          "3.2.2");
+  public static final DVRCoordinate VID_FACTURAE_321 = DVRHelper.createCoordinate (GROUP_ID, "facturae", "3.2.1");
+  public static final DVRCoordinate VID_FACTURAE_322 = DVRHelper.createCoordinate (GROUP_ID, "facturae", "3.2.2");
 
   private FacturaeValidation ()
   {}

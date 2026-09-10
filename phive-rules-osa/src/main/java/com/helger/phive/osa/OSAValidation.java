@@ -39,19 +39,19 @@ public final class OSAValidation
 
   // v2.0
   public static final DVRCoordinate VID_OSA_INVOICE_DATA_20 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                                 "invoice-data",
-                                                                                                 "2.0");
+                                                                                          "invoice-data",
+                                                                                          "2.0");
   public static final DVRCoordinate VID_OSA_INVOICE_ANNULMENT_20 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                                      "invoice-annulment",
-                                                                                                      "2.0");
+                                                                                               "invoice-annulment",
+                                                                                               "2.0");
 
   // v3.0
   public static final DVRCoordinate VID_OSA_INVOICE_DATA_30 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                                 "invoice-data",
-                                                                                                 "3.0");
+                                                                                          "invoice-data",
+                                                                                          "3.0");
   public static final DVRCoordinate VID_OSA_INVOICE_ANNULMENT_30 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                                      "invoice-annulment",
-                                                                                                      "3.0");
+                                                                                               "invoice-annulment",
+                                                                                               "3.0");
 
   private OSAValidation ()
   {}

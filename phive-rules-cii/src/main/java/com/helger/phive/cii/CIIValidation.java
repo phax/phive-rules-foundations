@@ -43,17 +43,15 @@ public final class CIIValidation
   public static final String VERSION_D25A = "D25A";
 
   public static final DVRCoordinate VID_CII_D16B_CROSSINDUSTRYINVOICE = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                                           "crossindustryinvoice",
-                                                                                                           VERSION_D16B);
+                                                                                                    "crossindustryinvoice",
+                                                                                                    VERSION_D16B);
   public static final DVRCoordinate VID_CII_D22B_CROSSINDUSTRYINVOICE = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                                           "crossindustryinvoice",
-                                                                                                           VERSION_D22B);
-  public static final DVRCoordinate VID_CII_D22B_CDAR = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                           "cdar",
-                                                                                           VERSION_D22B);
+                                                                                                    "crossindustryinvoice",
+                                                                                                    VERSION_D22B);
+  public static final DVRCoordinate VID_CII_D22B_CDAR = DVRHelper.createCoordinate (GROUP_ID, "cdar", VERSION_D22B);
   public static final DVRCoordinate VID_CII_D25A_CROSSINDUSTRYINVOICE = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                                           "crossindustryinvoice",
-                                                                                                           VERSION_D25A);
+                                                                                                    "crossindustryinvoice",
+                                                                                                    VERSION_D25A);
 
   private CIIValidation ()
   {}

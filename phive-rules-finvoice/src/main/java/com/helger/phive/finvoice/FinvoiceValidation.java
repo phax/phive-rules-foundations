@@ -39,9 +39,7 @@ public final class FinvoiceValidation
 
   public static final DVRCoordinate VID_FINVOICE_13 = DVRHelper.createCoordinate (GROUP_ID, "finvoice", "1.3");
   public static final DVRCoordinate VID_FINVOICE_20 = DVRHelper.createCoordinate (GROUP_ID, "finvoice", "2.0");
-  public static final DVRCoordinate VID_FINVOICE_201 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                          "finvoice",
-                                                                                          "2.0.1");
+  public static final DVRCoordinate VID_FINVOICE_201 = DVRHelper.createCoordinate (GROUP_ID, "finvoice", "2.0.1");
   public static final DVRCoordinate VID_FINVOICE_30 = DVRHelper.createCoordinate (GROUP_ID, "finvoice", "3.0");
 
   private FinvoiceValidation ()
@@ -67,28 +65,28 @@ public final class FinvoiceValidation
 
     // No Schematrons here
     VesXmlBuilder.builder ()
-                     .vesID (VID_FINVOICE_13)
-                     .displayNamePrefix ("Finvoice ")
-                     .notDeprecated ()
-                     .addXSD (new ClassPathResource (sPrefix + "Finvoice1.3.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FINVOICE_13)
+                 .displayNamePrefix ("Finvoice ")
+                 .notDeprecated ()
+                 .addXSD (new ClassPathResource (sPrefix + "Finvoice1.3.xsd", _getCL ()))
+                 .registerInto (aRegistry);
     VesXmlBuilder.builder ()
-                     .vesID (VID_FINVOICE_20)
-                     .displayNamePrefix ("Finvoice ")
-                     .notDeprecated ()
-                     .addXSD (new ClassPathResource (sPrefix + "Finvoice2.0.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FINVOICE_20)
+                 .displayNamePrefix ("Finvoice ")
+                 .notDeprecated ()
+                 .addXSD (new ClassPathResource (sPrefix + "Finvoice2.0.xsd", _getCL ()))
+                 .registerInto (aRegistry);
     VesXmlBuilder.builder ()
-                     .vesID (VID_FINVOICE_201)
-                     .displayNamePrefix ("Finvoice ")
-                     .notDeprecated ()
-                     .addXSD (new ClassPathResource (sPrefix + "Finvoice2.01.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FINVOICE_201)
+                 .displayNamePrefix ("Finvoice ")
+                 .notDeprecated ()
+                 .addXSD (new ClassPathResource (sPrefix + "Finvoice2.01.xsd", _getCL ()))
+                 .registerInto (aRegistry);
     VesXmlBuilder.builder ()
-                     .vesID (VID_FINVOICE_30)
-                     .displayNamePrefix ("Finvoice ")
-                     .notDeprecated ()
-                     .addXSD (new ClassPathResource (sPrefix + "Finvoice3.0.xsd", _getCL ()))
-                     .registerInto (aRegistry);
+                 .vesID (VID_FINVOICE_30)
+                 .displayNamePrefix ("Finvoice ")
+                 .notDeprecated ()
+                 .addXSD (new ClassPathResource (sPrefix + "Finvoice3.0.xsd", _getCL ()))
+                 .registerInto (aRegistry);
   }
 }
