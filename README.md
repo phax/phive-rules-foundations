@@ -95,6 +95,10 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 
 # News and noteworthy
 
+v5.0.3 - 2026-09-22
+* Provided the KSeF XSD includes as part of the deployment, so that no external data access is needed
+* Using CII D22B uncoupled XSDs
+
 v5.0.2 - 2026-09-01
 * Updated to UBL 2.5 final
 

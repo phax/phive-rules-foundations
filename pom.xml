@@ -63,7 +63,7 @@
   </developers>
 
   <properties>
-    <ph-cii.version>4.1.2</ph-cii.version>
+    <ph-cii.version>4.1.3</ph-cii.version>
     <ph-ebinterface.version>8.1.0</ph-ebinterface.version>
     <ph-fatturapa.version>3.1.0</ph-fatturapa.version>
     <ph-ubl.version>10.2.1</ph-ubl.version>
