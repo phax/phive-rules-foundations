@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (C) 2020-2026 Philip Helger (www.helger.com)
+    Copyright (C) 2026 Philip Helger (www.helger.com)
     philip[at]helger[dot]com
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,12 +24,12 @@
     <artifactId>phive-rules-foundations-parent-pom</artifactId>
     <version>5.0.4-SNAPSHOT</version>
   </parent>
-  <artifactId>phive-rules-facturae</artifactId>
+  <artifactId>phive-rules-crs</artifactId>
   <packaging>jar</packaging>
-  <name>phive-rules-facturae</name>
-  <description>Spanish Facturae validation rules for phive</description>
-  <url>https://github.com/phax/phive-rules-foundations/phive-rules-facturae</url>
-  <inceptionYear>2020</inceptionYear>
+  <name>phive-rules-crs</name>
+  <description>OECD Common Reporting Standard (CRS) validation rules for phive</description>
+  <url>https://github.com/phax/phive-rules-foundations/phive-rules-crs</url>
+  <inceptionYear>2026</inceptionYear>
   
   <licenses>
     <license>
@@ -55,10 +55,6 @@
   
   <dependencies>
     <dependency>
-      <groupId>com.helger.xsd</groupId>
-      <artifactId>ph-xsds-xmldsig</artifactId>
-    </dependency>
-    <dependency>
       <groupId>com.helger.phive.rules</groupId>
       <artifactId>phive-rules-shared</artifactId>
     </dependency>
@@ -71,6 +67,11 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

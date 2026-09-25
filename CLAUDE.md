@@ -10,7 +10,7 @@ It was extracted from [phive-rules](https://github.com/phax/phive-rules) in 2026
 
 Part of the Peppol solution stack: https://github.com/phax/peppol
 
-The repository contains 9 XSD-only format modules. The shared base (`IValidationRulesRegistrarSPI`, `ValidationRulesRegistrar` and the helper classes) is no longer here — it was extracted into the standalone `phive-rules-shared` project and is consumed as an external dependency.
+The repository contains 10 XSD-only format modules. The shared base (`IValidationRulesRegistrarSPI`, `ValidationRulesRegistrar` and the helper classes) is no longer here — it was extracted into the standalone `phive-rules-shared` project and is consumed as an external dependency.
 
 ## Build Commands
 
@@ -50,7 +50,7 @@ phive-rules-{format}/
 └── src/test/resources/external/test-files/   # Sample XML documents
 ```
 
-The XSD schemas themselves come from the underlying binding libraries (`ph-ubl`, `ph-cii`, `ph-ebinterface`, `ph-fatturapa`, …) via their marshallers — these modules register those schemas, they do not ship their own copies.
+Most XSD schemas come from the underlying binding libraries (`ph-ubl`, `ph-cii`, `ph-ebinterface`, `ph-fatturapa`, …) via their marshallers — those modules register the schemas without shipping their own copies. The modules with no binding library behind them (`phive-rules-crs`, `phive-rules-finvoice`, `phive-rules-ksef`, `phive-rules-osa`, `phive-rules-teapps`) ship the XSDs themselves under `src/main/resources/external/schemas/<version>/`.
 
 ### Shared base: `phive-rules-shared` (external dependency)
 

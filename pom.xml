@@ -112,6 +112,11 @@
       </dependency>
       <dependency>
         <groupId>com.helger.phive.rules</groupId>
+        <artifactId>phive-rules-crs</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.helger.phive.rules</groupId>
         <artifactId>phive-rules-ebinterface</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -156,6 +161,7 @@
   <modules>
     <!-- Foundational document formats (XSD only, no Schematron) -->
     <module>phive-rules-cii</module>
+    <module>phive-rules-crs</module>
     <module>phive-rules-ebinterface</module>
     <module>phive-rules-facturae</module>
     <module>phive-rules-fatturapa</module>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crs:CRS_OECD xmlns:crs="urn:oecd:ties:crs:v3"
+              xmlns:cfc="urn:oecd:ties:commontypesfatcacrs:v2"
+              xmlns:stf="urn:oecd:ties:crsstf:v5"
+              version="3.0">
+  <crs:MessageSpec>
+    <crs:SendingCompanyIN>200000000A</crs:SendingCompanyIN>
+    <crs:TransmittingCountry>SG</crs:TransmittingCountry>
+    <crs:ReceivingCountry>SG</crs:ReceivingCountry>
+    <crs:MessageType>CRS</crs:MessageType>
+    <crs:MessageRefId>SG2025-MSG-0000000001</crs:MessageRefId>
+    <crs:MessageTypeIndic>CRS701</crs:MessageTypeIndic>
+    <crs:ReportingPeriod>2025-12-31</crs:ReportingPeriod>
+    <crs:Timestamp>2026-05-31T09:00:00</crs:Timestamp>
+  </crs:MessageSpec>
+  <crs:CrsBody>
+    <crs:ReportingFI>
+      <crs:ResCountryCode>SG</crs:ResCountryCode>
+      <crs:IN issuedBy="SG">200000000A</crs:IN>
+      <crs:Name>Example Financial Institution Pte Ltd</crs:Name>
+      <crs:Address>
+        <cfc:CountryCode>SG</cfc:CountryCode>
+        <cfc:AddressFix>
+          <cfc:Street>Example Street</cfc:Street>
+          <cfc:BuildingIdentifier>1</cfc:BuildingIdentifier>
+          <cfc:PostCode>123456</cfc:PostCode>
+          <cfc:City>Singapore</cfc:City>
+        </cfc:AddressFix>
+      </crs:Address>
+      <crs:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>SG2025-FI-0000000001</stf:DocRefId>
+      </crs:DocSpec>
+    </crs:ReportingFI>
+    <crs:ReportingGroup>
+      <crs:AccountReport>
+        <crs:DocSpec>
+          <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+          <stf:DocRefId>SG2025-AR-0000000001</stf:DocRefId>
+        </crs:DocSpec>
+        <crs:AccountNumber AcctNumberType="OECD601">0000000001</crs:AccountNumber>
+        <crs:AccountHolder>
+          <crs:SelfCert>CRS901</crs:SelfCert>
+          <crs:Individual>
+            <crs:ResCountryCode>DE</crs:ResCountryCode>
+            <crs:TIN issuedBy="DE">00000000000</crs:TIN>
+            <crs:Name>
+              <crs:FirstName>Erika</crs:FirstName>
+              <crs:LastName>Mustermann</crs:LastName>
+            </crs:Name>
+            <crs:Address>
+              <cfc:CountryCode>DE</cfc:CountryCode>
+              <cfc:AddressFix>
+                <cfc:Street>Musterstrasse</cfc:Street>
+                <cfc:BuildingIdentifier>1</cfc:BuildingIdentifier>
+                <cfc:PostCode>10115</cfc:PostCode>
+                <cfc:City>Berlin</cfc:City>
+              </cfc:AddressFix>
+            </crs:Address>
+            <crs:BirthInfo>
+              <crs:BirthDate>1980-01-01</crs:BirthDate>
+              <crs:City>Berlin</crs:City>
+              <crs:CountryInfo>
+                <crs:CountryCode>DE</crs:CountryCode>
+              </crs:CountryInfo>
+            </crs:BirthInfo>
+          </crs:Individual>
+        </crs:AccountHolder>
+        <crs:AccountBalance currCode="SGD">1000.00</crs:AccountBalance>
+        <crs:Payment>
+          <crs:Type>CRS502</crs:Type>
+          <crs:PaymentAmnt currCode="SGD">10.00</crs:PaymentAmnt>
+        </crs:Payment>
+        <crs:DDProcedure>CRS1201</crs:DDProcedure>
+        <crs:AccountType>CRS1101</crs:AccountType>
+      </crs:AccountReport>
+    </crs:ReportingGroup>
+  </crs:CrsBody>
+</crs:CRS_OECD>

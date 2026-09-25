@@ -19,6 +19,7 @@ The shared API used by all rule modules - the validation rules registration SPI 
 
 This project is divided into the following sub-projects:
 * phive-rules-cii - Validation rules for pure UN/CEFACT CII (without any Schematron)
+* phive-rules-crs - Validation rules for the OECD Common Reporting Standard (CRS) XML Schema V2.0 and V3.0 (since v5.0.4)
 * phive-rules-ebinterface - Validation rules for Austrian ebInterface
 * phive-rules-facturae - Validation rules for the Spanish Facturae
 * phive-rules-fatturapa - Validation rules for Italian fattura PA
@@ -41,6 +42,12 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 <dependency>
   <groupId>com.helger.phive.rules</groupId>
   <artifactId>phive-rules-cii</artifactId>
+  <version>x.y.z</version>
+</dependency>
+
+<dependency>
+  <groupId>com.helger.phive.rules</groupId>
+  <artifactId>phive-rules-crs</artifactId>
   <version>x.y.z</version>
 </dependency>
 
@@ -94,6 +101,14 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 ```
 
 # News and noteworthy
+
+v5.0.4 - 2026-09-25
+* Added the new module `phive-rules-crs` with the OECD Common Reporting Standard (CRS) XML Schema, VES coordinates `org.oecd.ties:crs:2.0` and `org.oecd.ties:crs:3.0`.
+  See [phive-rules issue #57](https://github.com/phax/phive-rules/issues/57).
+  The schemas are the ones published by IRAS on the [CRS Filing](https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-(crs)/crs-filing) page, where V2.0 is the prevailing schema and V3.0 applies with effect from 1 January 2027.
+  They carry the OECD target namespaces `urn:oecd:ties:crs:v2` and `urn:oecd:ties:crs:v3` and contain nothing Singapore specific, which is why the Group ID is `org.oecd.ties` and not a national one.
+  The two packages ship different content under the same file name `CommonTypesFatcaCrs_v2.0.xsd` - the V3.0 one adds the account type `OECD606` "Specified Electronic Money Product" - so each version has its own copy of all five XSDs.
+  Neither the OECD nor IRAS publish example documents, so the two test files are hand written and contain no real data.
 
 v5.0.3 - 2026-09-22
 * Provided the KSeF XSD includes as part of the deployment, so that no external data access is needed
