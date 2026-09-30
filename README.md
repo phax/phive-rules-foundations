@@ -102,6 +102,16 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 
 # News and noteworthy
 
+v5.0.5 - work in progress
+* Updated the TEAPPSXML 3.0 XML Schema in place to the current upstream version "TEAPPSXML v.3.0 - 26.3.2018, updated 30.9.2019 ROUNDINGS -pattern" - the VES coordinate `com.tieto:teappsxml:3.0` is unchanged.
+  See [issue #1](https://github.com/phax/phive-rules-foundations/issues/1).
+  The pattern of the `ROUNDINGS` amount type now allows up to 15 integer digits instead of only 1
+* Added the fatturaPA 1.2.3 XML Schema (valid from 2025-04-01), VES coordinate `it.fatturapa:invoice:1.2.3`, and deprecated `it.fatturapa:invoice:1.2.2`.
+  See [issue #2](https://github.com/phax/phive-rules-foundations/issues/2).
+  Compared to 1.2.2 it adds the document type `TD29` and the tax regime `RF20`.
+  This requires `ph-fatturapa` 3.1.1 (currently 3.1.1-SNAPSHOT), which is therefore a release prerequisite.
+  The "Fattura Semplificata" is still not supported
+
 v5.0.4 - 2026-09-25
 * Added the new module `phive-rules-crs` with the OECD Common Reporting Standard (CRS) XML Schema, VES coordinates `org.oecd.ties:crs:2.0` and `org.oecd.ties:crs:3.0`.
   See [phive-rules issue #57](https://github.com/phax/phive-rules/issues/57).

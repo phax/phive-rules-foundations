@@ -1,0 +1,234 @@
+{
+  "$comment": "Upstream sources of the phive-rules-foundations validation artefacts: where each rule set family is published and how a new version can be detected. Update 'current' in the same commit that adds a new version.",
+  "inventory-date": "2026-09-30",
+  "$comment-fields": {
+    "id": "stable key of the entry",
+    "module": "Maven module",
+    "coordinates": "DVR group ID and artefact IDs covered by this entry",
+    "publisher": "upstream organisation",
+    "via-library": "Maven artefact that bundles the XSDs (foundations only) - an update is a two-step chain: publisher -> helper library release -> this repo; check both",
+    "check": "how to detect updates: web-page (fetch url, compare version/date shown) | github-release | github-commits (commits on a path, no releases/tags) | gitlab-tree (GitLab tree API listing of release files) | file-hash (download a fixed URL, compare hash/content) | manual (email, issue attachment, ...) | none (frozen upstream)",
+    "url": "where the current version is published",
+    "url-status": "verified (fetched on last-checked) | in-repo (found in repo, not verified) | broken (not reachable/404/403) | unknown",
+    "current": "newest non-deprecated version in this repo (DVR version)",
+    "current-upstream": "upstream name of that version, if it differs from current",
+    "upstream-latest": "latest version seen upstream on last-checked",
+    "status": "up-to-date | update-pending | check-needed | frozen | unknown",
+    "last-checked": "date of the last upstream check",
+    "detect": "what exactly to compare (only if non-obvious)",
+    "notes": "anything the checker or maintainer needs to know; open questions start with QUESTION:"
+  },
+  "sources": [
+    {
+      "id": "ubl-25",
+      "module": "phive-rules-ubl",
+      "coordinates": [
+        "org.oasis-open:* UBL 2.5 (101 document types)"
+      ],
+      "publisher": "OASIS UBL TC",
+      "via-library": "com.helger.ubl:ph-ubl25:10.2.1",
+      "check": "web-page",
+      "url": "https://docs.oasis-open.org/ubl/",
+      "url-status": "verified",
+      "current": "2.5",
+      "upstream-latest": "os-UBL-2.5 (2026-08-12); no 2.6 directory yet",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "detect": "new os-UBL-*/csd*-UBL-* directories in the listing; plus new ph-ublNN modules in com.helger.ubl:ph-ubl-parent-pom",
+      "notes": "A new UBL line (2.6) needs a ph-ubl release and a new initUBLNN method - it is a new family, not a version bump."
+    },
+    {
+      "id": "ubl-frozen",
+      "module": "phive-rules-ubl",
+      "coordinates": [
+        "org.oasis-open:* UBL 2.0",
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ],
+      "publisher": "OASIS UBL TC",
+      "via-library": "com.helger.ubl:ph-ubl20..ph-ubl24:10.2.1",
+      "check": "none",
+      "status": "frozen",
+      "notes": "Published OASIS Standards. Only an errata release could change them."
+    },
+    {
+      "id": "cii-invoice",
+      "module": "phive-rules-cii",
+      "coordinates": [
+        "un.unece.uncefact:crossindustryinvoice D16B",
+        "D22B",
+        "D25A"
+      ],
+      "publisher": "UN/CEFACT (UNECE)",
+      "via-library": "com.helger.cii:ph-cii-d16b / ph-cii-d22b / ph-cii-d25a:4.1.3",
+      "check": "manual",
+      "url": "https://unece.org/trade/uncefact/xml-schemas",
+      "url-status": "in-repo",
+      "current": "D25A",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "Manual on purpose: UN/CEFACT publishes two D-directories per year (A/B), but only selected versions are needed. The UNECE page blocks automated fetches (HTTP 403). A new version also needs a new ph-cii-dXXx module first. ph-cii-d16a-1 exists but is not registered here."
+    },
+    {
+      "id": "cii-cdar",
+      "module": "phive-rules-cii",
+      "coordinates": [
+        "un.unece.uncefact:cdar D22B"
+      ],
+      "publisher": "UN/CEFACT (UNECE)",
+      "via-library": "com.helger.cii:ph-cii-d22b:4.1.3",
+      "check": "manual",
+      "url": "https://unece.org/trade/uncefact/xml-schemas",
+      "url-status": "in-repo",
+      "current": "D22B",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "Manual on purpose: UN/CEFACT publishes two D-directories per year (A/B), but only selected versions are needed. The UNECE page blocks automated fetches (HTTP 403). A new version also needs a new ph-cii-dXXx module first. QUESTION: should CDAR D25A be registered (if ph-cii-d25a contains it)?"
+    },
+    {
+      "id": "ebinterface",
+      "module": "phive-rules-ebinterface",
+      "coordinates": [
+        "at.ebinterface:invoice"
+      ],
+      "publisher": "AUSTRIAPRO / WKO",
+      "via-library": "com.helger:ph-ebinterface:8.1.0",
+      "check": "web-page",
+      "url": "https://www.wko.at/service/netzwerke/was-ist-ebinterface.html",
+      "url-status": "verified",
+      "current": "6.1",
+      "upstream-latest": "6.1 (2022-08-25) - 7.0 is announced but not yet released",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "https://www.ebinterface.at redirects to the WKO page. The page announces 7.0 (with EN 16931 syntax binding); once released it needs a ph-ebinterface release first."
+    },
+    {
+      "id": "facturae",
+      "module": "phive-rules-facturae",
+      "coordinates": [
+        "es.gob:facturae"
+      ],
+      "publisher": "Ministerio de Hacienda (facturae.gob.es)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx",
+      "url-status": "verified",
+      "current": "3.2.2",
+      "upstream-latest": "3.2.2",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "XSDs bundled in this repo. QUESTION: docs/ has Guia_*_Facturae_3_4.pdf - a guide/tool version or a schema version?"
+    },
+    {
+      "id": "fatturapa",
+      "module": "phive-rules-fatturapa",
+      "coordinates": [
+        "it.fatturapa:invoice"
+      ],
+      "publisher": "Agenzia delle Entrate / SdI",
+      "via-library": "com.helger:ph-fatturapa:3.1.1-SNAPSHOT",
+      "check": "web-page",
+      "url": "https://www.fatturapa.gov.it/it/norme-e-regole/documentazione-fattura-elettronica/formato-fatturapa/",
+      "url-status": "verified",
+      "current": "1.2.3",
+      "upstream-latest": "Schema FatturaPA 1.2.3 (valid from 2025-04-01), Fattura Semplificata 1.0.2, Specifiche tecniche 1.4",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "Needs ph-fatturapa 3.1.1 to be released before phive-rules-foundations. Schema_VFPA12_V1.2.3.xsd and Schema_VFPR12_v1.2.3.xsd are byte-identical. Fattura Semplificata (1.0.2) is not covered.",
+      "issue": "https://github.com/phax/phive-rules-foundations/issues/2"
+    },
+    {
+      "id": "finvoice",
+      "module": "phive-rules-finvoice",
+      "coordinates": [
+        "fi.finvoice:finvoice"
+      ],
+      "publisher": "Finanssiala (Finance Finland)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://www.finanssiala.fi/en/topics/finvoice-standard/",
+      "url-status": "verified",
+      "current": "3.0",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "The repo Finvoice3.0.xsd (\"Modified 1.11.2019\") differs from the current official schema only in comments (header and a commented-out VatPointDateCode block) - functionally identical. Found via https://www.ediverse.io/en/countries/finland/finvoice-national-standard/ (its link https://www.finanssiala.fi/aineisto/finvoice/ is 404). Finnish page: https://www.finanssiala.fi/aiheet/verkkolaskutus-finvoice/ (finvoice.info redirects there). Implementation guideline updates (e.g. 2025-03-05, 2025-09-16) do not change the schema.",
+      "upstream-latest": "3.0 - schema Finvoice3.0.xsd dated 1.12.2020 and 27.9.2023 (identical files, header \"Modified 17.12.2020 (back to version 11/2019\"); last guideline change 16 Sep 2025",
+      "detect": "the \"Updates and changes\" list and the dated XSD links on the page (a new Finvoice version would appear as a new schema link); hash of https://file.finanssiala.fi/finvoice/Finvoice3.0.xsd and https://file.finanssiala.fi/finvoice/css/270923/Finvoice3.0.xsd"
+    },
+    {
+      "id": "ksef",
+      "module": "phive-rules-ksef",
+      "coordinates": [
+        "pl.ksef:ksef"
+      ],
+      "publisher": "Ministerstwo Finansów (KSeF)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/struktura-logiczna-fa-3/",
+      "url-status": "verified",
+      "current": "3.0.0",
+      "current-upstream": "FA(3), namespace http://crd.gov.pl/wzor/2025/06/25/13775/",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "Sources collected in issues #20 and #39. A new FA(n) gets a new crd.gov.pl/wzor/<date>/<id>/ namespace. DVR versions (1.0.0/2.0.0/3.0.0) are repo-internal.",
+      "upstream-latest": "FA(3), published 2025-06-25 (http://crd.gov.pl/wzor/2025/06/25/13775/), mandatory from 2026-02-01",
+      "detect": "the page is specific to FA(3) - a successor FA(4) will probably get its own page, so also watch https://www.podatki.gov.pl/ksef/baza-wiedzy-ksef/pliki-do-pobrania-ksef/ and https://ksef.podatki.gov.pl/"
+    },
+    {
+      "id": "osa",
+      "module": "phive-rules-osa",
+      "coordinates": [
+        "hu.gov.nav.osa:invoice-data",
+        "hu.gov.nav.osa:invoice-annulment"
+      ],
+      "publisher": "NAV (Online Számla)",
+      "via-library": "",
+      "check": "file-hash",
+      "url": "https://onlineszamla.nav.gov.hu/api/files/container/download/OSA%20Schemas_v3.zip",
+      "url-status": "in-repo",
+      "current": "3.0",
+      "upstream-latest": "3.0",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "detect": "hash of the v3 ZIP - NAV re-publishes it with fixes and no version bump",
+      "notes": "https://onlineszamla.nav.gov.hu/dokumentaciok is a JS app (not fetchable). Secondary signal: commits on https://github.com/nav-gov-hu/Online-Invoice (last 2026-02-13)."
+    },
+    {
+      "id": "teapps",
+      "module": "phive-rules-teapps",
+      "coordinates": [
+        "com.tieto:teappsxml"
+      ],
+      "publisher": "TEAPPS / Tietoevry",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://www.tieto.com/en/campaign/2026/teappsxml/",
+      "url-status": "verified",
+      "current": "3.0 (schema \"updated 30.9.2019 ROUNDINGS -pattern\")",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "The repo has the original 2018-03-26 schema (teappsxmlv30_schema_invoices_0.xsd). Upstream changed the ROUNDINGS pattern from \\d{0,1} to \\d{0,15} integer digits (2019-09-30). 2.7.2 is legacy upstream.",
+      "upstream-latest": "3.0 - schema teappsxmlv30_schema_invoices.xsd \"updated 30.9.2019 ROUNDINGS -pattern\" (Last-Modified 2026-06-04); implementation guide updated 21.5.2026",
+      "detect": "hash of https://www.tieto.com/siteassets/04-indtech/teappsxml/teappsxmlv30_schema_invoices.xsd and the \"Updated\" dates on the page",
+      "issue": "https://github.com/phax/phive-rules-foundations/issues/1"
+    },
+    {
+      "id": "crs",
+      "module": "phive-rules-crs",
+      "coordinates": [
+        "org.oecd.ties:crs"
+      ],
+      "publisher": "OECD",
+      "via-library": "",
+      "check": "manual",
+      "url": "https://www.oecd.org/en/publications/common-reporting-standard-status-message-xml-schema_6c08db84-en/support-materials.html",
+      "url-status": "in-repo",
+      "current": "3.0",
+      "status": "up-to-date",
+      "last-checked": "2026-09-30",
+      "notes": "Manual: oecd.org blocks automated fetches (Cloudflare challenge, HTTP 403). The URL is the OECD support-materials page provided by the maintainer; the schemas were previously taken from the IRAS CRS filing page (https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-(crs)/crs-filing). V3.0 applies from 2027-01-01."
+    }
+  ]
+}
