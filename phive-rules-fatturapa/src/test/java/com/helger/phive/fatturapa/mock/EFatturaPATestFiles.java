@@ -47,6 +47,14 @@ public enum EFatturaPATestFiles
                         "IT01234567890_FPA03.xml",
                         "IT01234567890_FPR01.xml",
                         "IT01234567890_FPR02.xml",
+                        "IT01234567890_FPR03.xml" }),
+  V123 ("/external/test-files/123/good/",
+        new String [] { "IT01234567890_FPA01.xml",
+                        "IT01234567890_FPA02.xml",
+                        "IT01234567890_FPA03.xml",
+                        "IT01234567890_FPR01.xml",
+                        "IT01234567890_FPR01_TD29_RF20.xml",
+                        "IT01234567890_FPR02.xml",
                         "IT01234567890_FPR03.xml" });
 
   private final ICommonsList <IReadableResource> m_aTestFiles = new CommonsArrayList <> ();

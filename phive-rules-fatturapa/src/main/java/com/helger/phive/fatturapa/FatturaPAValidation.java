@@ -40,6 +40,7 @@ public final class FatturaPAValidation
   public static final DVRCoordinate VID_FATTURAPA_120 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "1.2.0");
   public static final DVRCoordinate VID_FATTURAPA_121 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "1.2.1");
   public static final DVRCoordinate VID_FATTURAPA_122 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "1.2.2");
+  public static final DVRCoordinate VID_FATTURAPA_123 = DVRHelper.createCoordinate (GROUP_ID, "invoice", "1.2.3");
 
   private FatturaPAValidation ()
   {}
@@ -70,8 +71,14 @@ public final class FatturaPAValidation
     VesXmlBuilder.builder ()
                  .vesID (VID_FATTURAPA_122)
                  .displayNamePrefix ("fatturaPA ")
-                 .notDeprecated ()
+                 .deprecated ()
                  .addXSD (CFatturaPA.getAllXSDFatturaPA122 ())
+                 .registerInto (aRegistry);
+    VesXmlBuilder.builder ()
+                 .vesID (VID_FATTURAPA_123)
+                 .displayNamePrefix ("fatturaPA ")
+                 .notDeprecated ()
+                 .addXSD (CFatturaPA.getAllXSDFatturaPA123 ())
                  .registerInto (aRegistry);
   }
 }
