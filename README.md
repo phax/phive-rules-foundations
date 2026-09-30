@@ -102,7 +102,7 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 
 # News and noteworthy
 
-v5.0.5 - work in progress
+v5.0.5 - 2026-09-30
 * Updated the TEAPPSXML 3.0 XML Schema in place to the current upstream version "TEAPPSXML v.3.0 - 26.3.2018, updated 30.9.2019 ROUNDINGS -pattern" - the VES coordinate `com.tieto:teappsxml:3.0` is unchanged.
   See [issue #1](https://github.com/phax/phive-rules-foundations/issues/1).
   The pattern of the `ROUNDINGS` amount type now allows up to 15 integer digits instead of only 1
