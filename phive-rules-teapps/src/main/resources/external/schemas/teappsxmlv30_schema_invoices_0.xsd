@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
 Copyright Tieto Finland Oy, Value Networks
-TEAPPSXML v.3.0 - 26.3.2018
+TEAPPSXML v.3.0 - 26.3.2018, updated 30.9.2019 ROUNDINGS -pattern
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<xsd:simpleType name="processType">
@@ -2166,7 +2166,7 @@ TEAPPSXML v.3.0 - 26.3.2018
 	<xsd:element name="ROUNDINGS">
 		<xsd:simpleType>
 			<xsd:restriction base="xsd:string">
-				<xsd:pattern value="([+\-]?(\d{0,1}\.\d{0,2})|[ ])*"></xsd:pattern>
+				<xsd:pattern value="([+\-]?(\d{0,15}\.\d{0,2})|[ ])*"></xsd:pattern>
 			</xsd:restriction>
 		</xsd:simpleType>
 	</xsd:element>
