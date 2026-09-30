@@ -109,7 +109,7 @@ v5.0.5 - 2026-09-30
 * Added the fatturaPA 1.2.3 XML Schema (valid from 2025-04-01), VES coordinate `it.fatturapa:invoice:1.2.3`, and deprecated `it.fatturapa:invoice:1.2.2`.
   See [issue #2](https://github.com/phax/phive-rules-foundations/issues/2).
   Compared to 1.2.2 it adds the document type `TD29` and the tax regime `RF20`.
-  This requires `ph-fatturapa` 3.1.1 (currently 3.1.1-SNAPSHOT), which is therefore a release prerequisite.
+  This requires `ph-fatturapa` 3.1.1, which is therefore a release prerequisite.
   The "Fattura Semplificata" is still not supported
 
 v5.0.4 - 2026-09-25
