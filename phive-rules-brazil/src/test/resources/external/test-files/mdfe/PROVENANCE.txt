@@ -1,0 +1,28 @@
+Provenance of the MDF-e test files (namespace http://www.portalfiscal.inf.br/mdfe, layout 3.00,
+validated against PL_MDFe_300b_NT012025_1.04)
+
+All files in this folder were WRITTEN FROM SCRATCH, following the XSDs only
+(mdfeTiposBasico_v3.00.xsd, procMDFe_v3.00.xsd, mdfeModalRodoviario_v3.00.xsd,
+xmldsig-core-schema_v1.01.xsd). No content was copied from any third-party sample
+(MIT or otherwise). They were generated with a small Python script.
+
+Common properties:
+- tpAmb=2 (homologacao), dates 2026-10-01
+- Fake parties only: emitter CNPJ 99999999000191, other parties CNPJ 11111111000191,
+  IE 999999999999, driver "MOTORISTA TESTE" with test CPF 00000000191, plate AAA0A00,
+  RNTRC 99999999, insurer "SEGURADORA TESTE SA"
+- Municipality codes are the public IBGE codes of Sao Paulo (3550308) and Campinas (3509502)
+- Access key synthetic (cUF 35, AAMM 2610, mod 58, ...) with correct modulo-11 check digit;
+  Id = "MDFe" + key; cMDF/cDV match the key. The referenced chCTe is the key of
+  ../cte/cte-rodoviario.xml
+- QR code URL uses a placeholder host (homologacao.example.gov.br)
+- Dummy enveloped ds:Signature with the fixed ICP-Brasil algorithm URIs, Reference URI="#<Id>",
+  dummy values (no real certificate)
+
+Files:
+- mdfe-rodoviario.xml       MDFe (mod 58, tpEmit 1, modal 1 = rodoviario; infModal/rodo with
+                            versaoModal 3.00 - content valid against mdfeModalRodoviario_v3.00.xsd:
+                            infANTT/RNTRC + infContratante, veicTracao with one condutor;
+                            one infMunDescarga with one infCTe, seg, prodPred/infLotacao, tot)
+- mdfe-proc-rodoviario.xml  mdfeProc = the MDFe above + synthetic protMDFe/infProt
+                            (cStat 100, "Autorizado o uso do MDF-e")

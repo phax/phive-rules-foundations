@@ -1,0 +1,23 @@
+Provenance of the BP-e test files in this folder
+
+Source: akretion/nfelib (https://github.com/akretion/nfelib, MIT License, commit 7082879710d1400db31e0baa435a0506355e940f)
+
+bpe.xml
+  Derived from: nfelib/bpe/samples/v1_0/bpe.xml
+bpe-tm.xml
+  Derived from: nfelib/bpe/samples/v1_0/bpe-tm.xml
+bpe-ta.xml
+  Derived from: nfelib/bpe/samples/v1_0/bpe-ta.xml
+  Changes (all three):
+  - CNPJ 12345678000195 -> 99999999000191 (also CNPJReceb; CNPJBasePSP -> 99999999), CPF -> 12345678909,
+    IE -> 999999999999, emitter name -> "EMPRESA TESTE LTDA" (sample data was already fictitious)
+  - recomputed access key (mod 11 cDV) and Id
+  - added <infBPeSupl> with a qrCodBPe matching the pattern (BPe and BPeTA only; TBPeTM has no infBPeSupl)
+  - tabs replaced by 2-space indentation (bpe-tm, bpe-ta)
+- appended a dummy, structurally valid ICP-Brasil xmldsig <Signature> (fixed c14n/rsa-sha1/sha1 algorithm URIs, Reference URI="#<Id>", dummy base64 DigestValue/SignatureValue/X509Certificate; no real certificate)
+
+bpe-proc.xml
+  Built from bpe.xml wrapped into <bpeProc versao="1.00"> plus a synthetic <protBPe versao="1.00">
+bpe-tm-proc.xml
+  Built from bpe-tm.xml wrapped into <bpeTMProc versao="1.00"> plus a synthetic <protBPe versao="1.00">
+- protocol (infProt) is synthetic: tpAmb 2, verAplic SVRS-TESTE-1.0, dummy nProt/digVal, cStat 100, xMotivo "Autorizado o uso do BP-e"

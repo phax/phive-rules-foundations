@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CTeOS xmlns="http://www.portalfiscal.inf.br/cte" versao="4.00">
+	<infCte versao="4.00" Id="CTe35261099999999000191670010000000011234567890">
+		<ide>
+			<cUF>35</cUF>
+			<cCT>23456789</cCT>
+			<CFOP>5357</CFOP>
+			<natOp>PRESTACAO DE SERVICO DE TRANSPORTE DE PESSOAS</natOp>
+			<mod>67</mod>
+			<serie>1</serie>
+			<nCT>1</nCT>
+			<dhEmi>2026-10-01T10:00:00-03:00</dhEmi>
+			<tpImp>1</tpImp>
+			<tpEmis>1</tpEmis>
+			<cDV>0</cDV>
+			<tpAmb>2</tpAmb>
+			<tpCTe>0</tpCTe>
+			<procEmi>0</procEmi>
+			<verProc>TESTE-1.0</verProc>
+			<cMunEnv>3550308</cMunEnv>
+			<xMunEnv>SAO PAULO</xMunEnv>
+			<UFEnv>SP</UFEnv>
+			<modal>01</modal>
+			<tpServ>6</tpServ>
+			<indIEToma>1</indIEToma>
+			<cMunIni>3550308</cMunIni>
+			<xMunIni>SAO PAULO</xMunIni>
+			<UFIni>SP</UFIni>
+			<cMunFim>3509502</cMunFim>
+			<xMunFim>CAMPINAS</xMunFim>
+			<UFFim>SP</UFFim>
+		</ide>
+		<compl>
+			<xObs>DOCUMENTO DE TESTE SEM VALOR FISCAL</xObs>
+		</compl>
+		<emit>
+			<CNPJ>99999999000191</CNPJ>
+			<IE>999999999999</IE>
+			<xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+			<enderEmit>
+				<xLgr>RUA DE TESTE</xLgr>
+				<nro>100</nro>
+				<xBairro>BAIRRO TESTE</xBairro>
+				<cMun>3550308</cMun>
+				<xMun>SAO PAULO</xMun>
+				<CEP>01000000</CEP>
+				<UF>SP</UF>
+				<fone>1100000000</fone>
+			</enderEmit>
+			<CRT>3</CRT>
+		</emit>
+		<toma>
+			<CNPJ>11111111000191</CNPJ>
+			<IE>111111111111</IE>
+			<xNome>TOMADOR TESTE LTDA</xNome>
+			<enderToma>
+				<xLgr>AVENIDA EXEMPLO</xLgr>
+				<nro>1</nro>
+				<xBairro>CENTRO</xBairro>
+				<cMun>3550308</cMun>
+				<xMun>SAO PAULO</xMun>
+				<CEP>01000000</CEP>
+				<UF>SP</UF>
+				<cPais>1058</cPais>
+				<xPais>BRASIL</xPais>
+			</enderToma>
+		</toma>
+		<vPrest>
+			<vTPrest>500.00</vTPrest>
+			<vRec>500.00</vRec>
+			<Comp>
+				<xNome>FRETAMENTO</xNome>
+				<vComp>500.00</vComp>
+			</Comp>
+		</vPrest>
+		<imp>
+			<ICMS>
+				<ICMS00>
+					<CST>00</CST>
+					<vBC>500.00</vBC>
+					<pICMS>12.00</pICMS>
+					<vICMS>60.00</vICMS>
+				</ICMS00>
+			</ICMS>
+		</imp>
+		<infCTeNorm>
+			<infServico>
+				<xDescServ>FRETAMENTO DE PASSAGEIROS</xDescServ>
+				<infQ>
+					<qCarga>40.0000</qCarga>
+				</infQ>
+			</infServico>
+			<infModal versaoModal="4.00">
+				<rodoOS>
+					<TAF>999999999999</TAF>
+					<veic>
+						<placa>AAA0A00</placa>
+						<UF>SP</UF>
+					</veic>
+					<infFretamento>
+						<tpFretamento>2</tpFretamento>
+						<dhViagem>2026-10-02T08:00:00-03:00</dhViagem>
+					</infFretamento>
+				</rodoOS>
+			</infModal>
+		</infCTeNorm>
+		<infRespTec>
+			<CNPJ>99999999000191</CNPJ>
+			<xContato>CONTATO TESTE</xContato>
+			<email>teste@example.com</email>
+			<fone>1100000000</fone>
+		</infRespTec>
+	</infCte>
+	<infCTeSupl>
+		<qrCodCTe>https://homologacao.example.gov.br/qrcode?chCTe=35261099999999000191670010000000011234567890&amp;tpAmb=2</qrCodCTe>
+	</infCTeSupl>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference URI="#CTe35261099999999000191670010000000011234567890">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+					<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>AAAAAAAAAAAAAAAAAAAAAAAAAAA=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>AAAA</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>AAAA</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+</CTeOS>

@@ -1,0 +1,15 @@
+Provenance of the NFS-e test files in this folder - all copied unchanged
+
+From akretion/nfelib (https://github.com/akretion/nfelib, MIT License, commit 7082879710d1400db31e0baa435a0506355e940f),
+folder nfelib/nfse/samples/v1_0/ (layout 1.00 documents, which are also valid against layout 1.01):
+  dps-simples.xml
+  ConsultarNFSeRPS-ped-sitnfserps.xml
+  ConsultarNFSeEnvio-ped-sitnfse.xml
+
+From Unimake/Uninfe (https://github.com/Unimake/Uninfe, MIT License), folder "exemplos xml/NFSe/NACIONAL/1.01/":
+  GerarNfseMinima-env-loterps.xml
+  GerarNfseTagsIBSCBS-env-loterps.xml
+
+From Unimake/DFe (https://github.com/Unimake/DFe, MIT License, commit 897f3529a83da13d485f9b5216bc9aa93b40bd5a),
+file source/Unimake.DFe.Test/NFSe/Resources/NACIONAL/1.01/RetornoNACIONAL.xml:
+  unimake-RetornoNACIONAL.xml (signed NFS-e 1.01 with IBSCBS from "Produção Restrita")

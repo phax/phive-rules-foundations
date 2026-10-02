@@ -18,6 +18,7 @@ All projects found in here rely on the PHIVE validation engine provided by https
 The shared API used by all rule modules - the validation rules registration SPI (`IValidationRulesRegistrarSPI`), the `ValidationRulesRegistrar`, and the core helper classes (`DVRHelper`, `PhiveRulesTestHelper`, `PhiveRulesInitializationException`) - now lives in the separate [phive-rules-shared](https://github.com/phax/phive-rules-shared) project (Maven artifact `com.helger.phive.rules:phive-rules-shared`).
 
 This project is divided into the following sub-projects:
+* phive-rules-brazil - Validation rules for the Brazilian DF-e documents (NF-e/NFC-e, CT-e, CT-e OS, GTV-e, CT-e Simplificado, MDF-e, NFCom, NF3e, BP-e, NFAg, NFGas) and the NFS-e Padrão Nacional (since v5.0.6)
 * phive-rules-cii - Validation rules for pure UN/CEFACT CII (without any Schematron)
 * phive-rules-crs - Validation rules for the OECD Common Reporting Standard (CRS) XML Schema V2.0 and V3.0 (since v5.0.4)
 * phive-rules-ebinterface - Validation rules for Austrian ebInterface
@@ -39,6 +40,12 @@ The code of the validation artefacts used may use a different license.
 Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with the latest version:
 
 ```xml
+<dependency>
+  <groupId>com.helger.phive.rules</groupId>
+  <artifactId>phive-rules-brazil</artifactId>
+  <version>x.y.z</version>
+</dependency>
+
 <dependency>
   <groupId>com.helger.phive.rules</groupId>
   <artifactId>phive-rules-cii</artifactId>
@@ -101,6 +108,18 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 ```
 
 # News and noteworthy
+
+v5.0.6 - work in progress
+* Added the new module `phive-rules-brazil` with the XML Schemas of the Brazilian electronic fiscal documents, Group ID `br.gov.nfe`.
+  Only the current schema package of each document type is contained:
+  * NF-e/NFC-e (model 55/65) "Pacote de Liberação 010f v1.04" - `nfe` and `nfe-proc` with version `4.0.0-pl010f_v1_04`
+  * CT-e (model 57), CT-e OS (model 67), GTV-e (model 64) and CT-e Simplificado, NT 2026.002 RTC v1.01 corr 2 - `cte`, `cte-os`, `gtve`, `cte-simp` and the respective `-proc` variants with version `4.0.0-nt2026_002_v1_01_corr2`
+  * MDF-e (model 58), NT 2025.001 v1.04 - `mdfe` and `mdfe-proc` with version `3.0.0-nt2025_001_v1_04`
+  * NFCom (model 62), NF3e (model 66), BP-e (model 63) incl. BP-e TM and BP-e TA, NFAg (model 75) and NFGas (model 76), NT 2026.002 RTC v1.01 - `nfcom`, `nf3e`, `bpe`, `bpe-tm`, `bpe-ta`, `nfag`, `nfgas` and the respective `-proc` variants (none for BP-e TA) with version `1.0.0-nt2026_002_v1_01`
+  * NFS-e Padrão Nacional layout 1.01, schema package of 2026-07-27 - `nfse-dps` and `nfse` with version `1.1.0-v20260727`
+  The DVR version consists of the layout version and a classifier for the schema package, as the layout version is not changed when a new schema package is published.
+  For each document there is one VES for the document as sent by the issuer (e.g. `NFe`) and one for the authorized document including the protocol (e.g. `nfeProc`).
+  No Schematron rules exist - the business rules are only published as tables in the official manuals and are checked by the tax authority
 
 v5.0.5 - 2026-09-30
 * Updated the TEAPPSXML 3.0 XML Schema in place to the current upstream version "TEAPPSXML v.3.0 - 26.3.2018, updated 30.9.2019 ROUNDINGS -pattern" - the VES coordinate `com.tieto:teappsxml:3.0` is unchanged.

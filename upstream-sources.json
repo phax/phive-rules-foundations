@@ -1,6 +1,6 @@
 {
   "$comment": "Upstream sources of the phive-rules-foundations validation artefacts: where each rule set family is published and how a new version can be detected. Update 'current' in the same commit that adds a new version.",
-  "inventory-date": "2026-09-30",
+  "inventory-date": "2026-10-02",
   "$comment-fields": {
     "id": "stable key of the entry",
     "module": "Maven module",
@@ -229,6 +229,195 @@
       "status": "up-to-date",
       "last-checked": "2026-09-30",
       "notes": "Manual: oecd.org blocks automated fetches (Cloudflare challenge, HTTP 403). The URL is the OECD support-materials page provided by the maintainer; the schemas were previously taken from the IRAS CRS filing page (https://www.iras.gov.sg/taxes/international-tax/common-reporting-standard-(crs)/crs-filing). V3.0 applies from 2027-01-01."
+    },
+    {
+      "id": "brazil-nfe",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:nfe",
+        "br.gov.nfe:nfe-proc"
+      ],
+      "publisher": "ENCAT / Portal Nacional da NF-e",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=BMPFMBoln3w=",
+      "url-status": "verified",
+      "current": "4.0.0-pl010f_v1_04",
+      "current-upstream": "PL_010f_v1.04.zip - Pacote de Liberação nº 010f (NT 2025.002 v1.50, NT 2026.007 v1.00)",
+      "upstream-latest": "PL_010f_v1.04 (published 31/08/2026)",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "newest \"Schemas XML NF-e - Pacote de Liberação\" entry in the list; the page needs a cookie jar (curl -c/-b) because of the AspxAutoDetectCookieSupport redirect; download links are opaque exibirArquivo.aspx?conteudo=<token> URLs",
+      "notes": "Covers NF-e (55) and NFC-e (65). The 010 packages contain no procNFe_v4.00.xsd - the one from PL_009p is used (it only includes leiauteNFe_v4.00.xsd). Event schemas (separate packages on the same page) are not registered. A new package = new DVR version 4.0.0-pl<package>_v<x>_<yy> and deprecation of the old one."
+    },
+    {
+      "id": "brazil-cte",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:cte",
+        "br.gov.nfe:cte-proc",
+        "br.gov.nfe:cte-os",
+        "br.gov.nfe:cte-os-proc",
+        "br.gov.nfe:gtve",
+        "br.gov.nfe:gtve-proc",
+        "br.gov.nfe:cte-simp",
+        "br.gov.nfe:cte-simp-proc"
+      ],
+      "publisher": "ENCAT / SVRS (Sefaz Virtual RS)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://dfe-portal.svrs.rs.gov.br/Cte/Documentos",
+      "url-status": "verified",
+      "current": "4.0.0-nt2026_002_v1_01_corr2",
+      "current-upstream": "PL_CTe_400_NT2026.002 RTC_1.01_corr_2.zip",
+      "upstream-latest": "PL_CTe_400_NT2026.002 RTC_1.01_corr_2.zip (21/08/2026); NT 2026.004 v1.00 announced (homologation 16/11/2026 for CT-e Simplificado, 01/02/2027 others) without schema package yet",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('CTE', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/CTE/DownloadArquivoEstatico/?sistema=CTE&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
+      "notes": "Same package also at the national portal https://www.cte.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=0xlG1bdBass= (opaque links). Corrections get a new file name (e.g. _corr_2). The modal parts (infModal) are xs:any skip and therefore not validated."
+    },
+    {
+      "id": "brazil-mdfe",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:mdfe",
+        "br.gov.nfe:mdfe-proc"
+      ],
+      "publisher": "ENCAT / SVRS (Sefaz Virtual RS)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://dfe-portal.svrs.rs.gov.br/Mdfe/Documentos",
+      "url-status": "verified",
+      "current": "3.0.0-nt2025_001_v1_04",
+      "current-upstream": "PL_MDFe_300b_NT012025_1.04.zip (inner folder PL_MDFe_300b_NT012025_1.05)",
+      "upstream-latest": "PL_MDFe_300b_NT012025_1.04.zip (25/04/2026); NT 2026.001 (CIOT mandatory, production 23/11/2026) has no new schema package",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('MDFE', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/MDFE/DownloadArquivoEstatico/?sistema=MDFE&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
+      "notes": "maxOccurs 20000 in mdfeTiposBasico requires jdk.xml.maxOccurLimit to be raised (custom SchemaFactory in BrazilValidation). https://mdfe-portal.sefaz.rs.gov.br did not respond."
+    },
+    {
+      "id": "brazil-nfcom",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:nfcom",
+        "br.gov.nfe:nfcom-proc"
+      ],
+      "publisher": "ENCAT / SVRS (Sefaz Virtual RS)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://dfe-portal.svrs.rs.gov.br/NFCOM/Documentos",
+      "url-status": "verified",
+      "current": "1.0.0-nt2026_002_v1_01",
+      "current-upstream": "PL_NFCOM_1.00_NT2026.002 RTC_1.01.zip",
+      "upstream-latest": "PL_NFCOM_1.00_NT2026.002 RTC_1.01.zip (29/06/2026)",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('NFCOM', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/NFCOM/DownloadArquivoEstatico/?sistema=NFCOM&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
+      "notes": "NT 2026.004 RTC was published 01/10/2026 without a schema package yet - expect a new package soon."
+    },
+    {
+      "id": "brazil-nf3e",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:nf3e",
+        "br.gov.nfe:nf3e-proc"
+      ],
+      "publisher": "ENCAT / SVRS (Sefaz Virtual RS)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://dfe-portal.svrs.rs.gov.br/NF3E/Documentos",
+      "url-status": "verified",
+      "current": "1.0.0-nt2026_002_v1_01",
+      "current-upstream": "PL_NF3E_1.00a_NT2026.002 RTC_1.01.zip",
+      "upstream-latest": "PL_NF3E_1.00a_NT2026.002 RTC_1.01.zip (29/06/2026)",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('NF3E', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/NF3E/DownloadArquivoEstatico/?sistema=NF3E&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
+      "notes": "NT 2026.004 RTC was published 01/10/2026 without a schema package yet - expect a new package soon."
+    },
+    {
+      "id": "brazil-bpe",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:bpe",
+        "br.gov.nfe:bpe-proc",
+        "br.gov.nfe:bpe-tm",
+        "br.gov.nfe:bpe-tm-proc",
+        "br.gov.nfe:bpe-ta"
+      ],
+      "publisher": "ENCAT / SVRS (Sefaz Virtual RS)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://dfe-portal.svrs.rs.gov.br/BPE/Documentos",
+      "url-status": "verified",
+      "current": "1.0.0-nt2026_002_v1_01",
+      "current-upstream": "PL_BPe_100b_NT2026.002 RTC_1.01.zip",
+      "upstream-latest": "PL_BPe_100b_NT2026.002 RTC_1.01.zip (22/06/2026)",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('BPE', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/BPE/DownloadArquivoEstatico/?sistema=BPE&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
+      "notes": "No official proc schema for BP-e TA. The ZIP contains a stray unreferenced DFeTiposBasicos_v1.00_old.xsd. NT 2026.004 RTC was published 01/10/2026 without a schema package yet."
+    },
+    {
+      "id": "brazil-nfag",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:nfag",
+        "br.gov.nfe:nfag-proc"
+      ],
+      "publisher": "ENCAT / SVRS (Sefaz Virtual RS)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://dfe-portal.svrs.rs.gov.br/NFAG/Documentos",
+      "url-status": "verified",
+      "current": "1.0.0-nt2026_002_v1_01",
+      "current-upstream": "PL_NFAg_NT2026.002 RTC_1.01.zip",
+      "upstream-latest": "PL_NFAg_NT2026.002 RTC_1.01.zip (29/06/2026)",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('NFAG', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/NFAG/DownloadArquivoEstatico/?sistema=NFAG&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
+      "notes": "NFAg (model 75, water/sanitation) is in production since 12/2025. The ZIP contains a stray unreferenced DFeTiposBasicos_v1.00_old.xsd."
+    },
+    {
+      "id": "brazil-nfgas",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:nfgas",
+        "br.gov.nfe:nfgas-proc"
+      ],
+      "publisher": "ENCAT / SVRS (Sefaz Virtual RS)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://dfe-portal.svrs.rs.gov.br/NFGAS/Documentos",
+      "url-status": "verified",
+      "current": "1.0.0-nt2026_002_v1_01",
+      "current-upstream": "PL_NFGas_NT2026.002 RTC_1.01.zip",
+      "upstream-latest": "PL_NFGas_NT2026.002 RTC_1.01.zip (29/06/2026)",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('NFGAS', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/NFGAS/DownloadArquivoEstatico/?sistema=NFGAS&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
+      "notes": "NFGas (model 76): homologation since 23/01/2026. QUESTION: is production open yet? The portal news of 31/08/2026 lists NFGas among the formats with NT 2026.002 in production."
+    },
+    {
+      "id": "brazil-nfse",
+      "module": "phive-rules-brazil",
+      "coordinates": [
+        "br.gov.nfe:nfse-dps",
+        "br.gov.nfe:nfse"
+      ],
+      "publisher": "Receita Federal / CGNFS-e (NFS-e Padrão Nacional)",
+      "via-library": "",
+      "check": "web-page",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita",
+      "url-status": "verified",
+      "current": "1.1.0-v20260727",
+      "current-upstream": "NFSe-ESQUEMAS_XSD-PRODREST-v1.01-20260727 (esquemas-nfse-rtc-v1-01-20260727.zip)",
+      "upstream-latest": "Produção Restrita package of 2026-07-27; production page still links nfse-esquemas_xsd-v1-01-20260209.zip; NT 009 v1.01 (Anexo VI v1.04.01, 11/09/2026) has no XSDs yet",
+      "status": "up-to-date",
+      "last-checked": "2026-10-02",
+      "detect": "\"Esquemas XSD\" links on .../documentacao-tecnica/producao-restrita, .../documentacao-tecnica/documentacao-atual and .../documentacao-tecnica/rtc, plus the Plone \"Atualizado em\" stamp (span.documentModified); go-live dates on .../atualizacoes-e-implantacoes. URLs are Plone slugs that change with every release.",
+      "notes": "The production package of 2026-02-09 is not used: its TSSerieDPS pattern ^0{0,4}\\d{1,5}$ rejects all real documents in XSD. The RTC-page package of 2025-12-10 does not compile (lookahead in regex). Group ID br.gov.nfe was chosen by the maintainer although the namespace is http://www.sped.fazenda.gov.br/nfse. Events (pedRegEvento/evento) and CNC are not registered."
     }
   ]
 }

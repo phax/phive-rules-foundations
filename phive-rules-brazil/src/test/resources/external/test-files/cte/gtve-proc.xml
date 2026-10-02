@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GTVeProc xmlns="http://www.portalfiscal.inf.br/cte" versao="4.00">
+	<GTVe versao="4.00">
+		<infCte versao="4.00" Id="CTe35261099999999000191640010000000011345678908">
+			<ide>
+				<cUF>35</cUF>
+				<cCT>34567890</cCT>
+				<CFOP>5353</CFOP>
+				<natOp>TRANSPORTE DE VALORES</natOp>
+				<mod>64</mod>
+				<serie>1</serie>
+				<nCT>1</nCT>
+				<dhEmi>2026-10-01T10:00:00-03:00</dhEmi>
+				<tpImp>1</tpImp>
+				<tpEmis>1</tpEmis>
+				<cDV>8</cDV>
+				<tpAmb>2</tpAmb>
+				<tpCTe>4</tpCTe>
+				<verProc>TESTE-1.0</verProc>
+				<cMunEnv>3550308</cMunEnv>
+				<xMunEnv>SAO PAULO</xMunEnv>
+				<UFEnv>SP</UFEnv>
+				<modal>01</modal>
+				<tpServ>9</tpServ>
+				<indIEToma>1</indIEToma>
+				<dhSaidaOrig>2026-10-01T11:00:00-03:00</dhSaidaOrig>
+				<dhChegadaDest>2026-10-01T13:00:00-03:00</dhChegadaDest>
+				<toma>
+					<toma>0</toma>
+				</toma>
+			</ide>
+			<emit>
+				<CNPJ>99999999000191</CNPJ>
+				<IE>999999999999</IE>
+				<xNome>GTV-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+				<enderEmit>
+					<xLgr>RUA DE TESTE</xLgr>
+					<nro>100</nro>
+					<xBairro>BAIRRO TESTE</xBairro>
+					<cMun>3550308</cMun>
+					<xMun>SAO PAULO</xMun>
+					<CEP>01000000</CEP>
+					<UF>SP</UF>
+					<fone>1100000000</fone>
+				</enderEmit>
+			</emit>
+			<rem>
+				<CNPJ>11111111000191</CNPJ>
+				<IE>111111111111</IE>
+				<xNome>REMETENTE TESTE LTDA</xNome>
+				<enderReme>
+					<xLgr>AVENIDA EXEMPLO</xLgr>
+					<nro>1</nro>
+					<xBairro>CENTRO</xBairro>
+					<cMun>3550308</cMun>
+					<xMun>SAO PAULO</xMun>
+					<CEP>01000000</CEP>
+					<UF>SP</UF>
+					<cPais>1058</cPais>
+					<xPais>BRASIL</xPais>
+				</enderReme>
+			</rem>
+			<dest>
+				<CNPJ>11111111000191</CNPJ>
+				<IE>111111111111</IE>
+				<xNome>DESTINATARIO TESTE LTDA</xNome>
+				<enderDest>
+					<xLgr>AVENIDA EXEMPLO</xLgr>
+					<nro>1</nro>
+					<xBairro>CENTRO</xBairro>
+					<cMun>3509502</cMun>
+					<xMun>CAMPINAS</xMun>
+					<CEP>13000000</CEP>
+					<UF>SP</UF>
+					<cPais>1058</cPais>
+					<xPais>BRASIL</xPais>
+				</enderDest>
+			</dest>
+			<detGTV>
+				<infEspecie>
+					<tpEspecie>1</tpEspecie>
+					<vEspecie>10000.00</vEspecie>
+					<tpNumerario>1</tpNumerario>
+				</infEspecie>
+				<qCarga>1.0000</qCarga>
+				<infVeiculo>
+					<placa>AAA0A00</placa>
+					<UF>SP</UF>
+					<RNTRC>99999999</RNTRC>
+				</infVeiculo>
+			</detGTV>
+			<infRespTec>
+				<CNPJ>99999999000191</CNPJ>
+				<xContato>CONTATO TESTE</xContato>
+				<email>teste@example.com</email>
+				<fone>1100000000</fone>
+			</infRespTec>
+		</infCte>
+		<infCTeSupl>
+			<qrCodCTe>https://homologacao.example.gov.br/qrcode?chCTe=35261099999999000191640010000000011345678908&amp;tpAmb=2</qrCodCTe>
+		</infCTeSupl>
+		<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+			<SignedInfo>
+				<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+				<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+				<Reference URI="#CTe35261099999999000191640010000000011345678908">
+					<Transforms>
+						<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+						<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+					</Transforms>
+					<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+					<DigestValue>AAAAAAAAAAAAAAAAAAAAAAAAAAA=</DigestValue>
+				</Reference>
+			</SignedInfo>
+			<SignatureValue>AAAA</SignatureValue>
+			<KeyInfo>
+				<X509Data>
+					<X509Certificate>AAAA</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</Signature>
+	</GTVe>
+	<protCTe versao="4.00">
+		<infProt>
+			<tpAmb>2</tpAmb>
+			<verAplic>SVRS-TESTE</verAplic>
+			<chCTe>35261099999999000191640010000000011345678908</chCTe>
+			<dhRecbto>2026-10-01T10:00:05-03:00</dhRecbto>
+			<nProt>135260000000003</nProt>
+			<digVal>AAAAAAAAAAAAAAAAAAAAAAAAAAA=</digVal>
+			<cStat>100</cStat>
+			<xMotivo>Autorizado o uso da GTV-e</xMotivo>
+		</infProt>
+	</protCTe>
+</GTVeProc>

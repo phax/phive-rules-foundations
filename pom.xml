@@ -107,6 +107,11 @@
       
       <dependency>
         <groupId>com.helger.phive.rules</groupId>
+        <artifactId>phive-rules-brazil</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.helger.phive.rules</groupId>
         <artifactId>phive-rules-cii</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -160,6 +165,7 @@
 
   <modules>
     <!-- Foundational document formats (XSD only, no Schematron) -->
+    <module>phive-rules-brazil</module>
     <module>phive-rules-cii</module>
     <module>phive-rules-crs</module>
     <module>phive-rules-ebinterface</module>

@@ -10,7 +10,7 @@ It was extracted from [phive-rules](https://github.com/phax/phive-rules) in 2026
 
 Part of the Peppol solution stack: https://github.com/phax/peppol
 
-The repository contains 10 XSD-only format modules. The shared base (`IValidationRulesRegistrarSPI`, `ValidationRulesRegistrar` and the helper classes) is no longer here — it was extracted into the standalone `phive-rules-shared` project and is consumed as an external dependency.
+The repository contains 11 XSD-only format modules. The shared base (`IValidationRulesRegistrarSPI`, `ValidationRulesRegistrar` and the helper classes) is no longer here — it was extracted into the standalone `phive-rules-shared` project and is consumed as an external dependency.
 
 ## Build Commands
 
@@ -50,7 +50,7 @@ phive-rules-{format}/
 └── src/test/resources/external/test-files/   # Sample XML documents
 ```
 
-Most XSD schemas come from the underlying binding libraries (`ph-ubl`, `ph-cii`, `ph-ebinterface`, `ph-fatturapa`, …) via their marshallers — those modules register the schemas without shipping their own copies. The modules with no binding library behind them (`phive-rules-crs`, `phive-rules-finvoice`, `phive-rules-ksef`, `phive-rules-osa`, `phive-rules-teapps`) ship the XSDs themselves under `src/main/resources/external/schemas/<version>/`.
+Most XSD schemas come from the underlying binding libraries (`ph-ubl`, `ph-cii`, `ph-ebinterface`, `ph-fatturapa`, …) via their marshallers — those modules register the schemas without shipping their own copies. The modules with no binding library behind them (`phive-rules-brazil`, `phive-rules-crs`, `phive-rules-finvoice`, `phive-rules-ksef`, `phive-rules-osa`, `phive-rules-teapps`) ship the XSDs themselves under `src/main/resources/external/schemas/<version>/`.
 
 ### Shared base: `phive-rules-shared` (external dependency)
 
@@ -107,6 +107,7 @@ Follow the **DVR Coordinate naming conventions** in `../ph-diver/README.md` (sec
 
 ### Modules
 
+- `phive-rules-brazil` — Brazilian DF-e (NF-e, CT-e, MDF-e, NFCom, NF3e, BP-e, NFAg, NFGas) and NFS-e Padrão Nacional; XSDs under `external/schemas/<format>/<schema package>/`, DVR version = layout version + schema package classifier
 - `phive-rules-cii` — pure UN/CEFACT CII
 - `phive-rules-ubl` — pure OASIS UBL
 - `phive-rules-ebinterface` — Austrian ebInterface

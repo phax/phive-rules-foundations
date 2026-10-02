@@ -1,0 +1,21 @@
+Provenance of the NF-e test files in this folder
+
+Source: akretion/nfelib (https://github.com/akretion/nfelib, MIT License, commit 7082879710d1400db31e0baa435a0506355e940f)
+
+nfe-from-nfelib-35180834128745000152550010000476711079516696.xml
+  Derived from: nfelib/nfe/samples/v4_0/leiauteNFe/35180834128745000152550010000476711079516696-nfe.xml
+  Changes:
+  - extracted the <NFe> element (incl. its original Signature) out of the <nfeProc> wrapper; protNFe dropped
+  - indentation reduced by one level; XML declaration normalised to UTF-8
+  - all data (incl. signature) unchanged; this is a published MIT sample, the signature is the original one
+
+nfe-from-nfelib-reforma-tributaria.xml
+  Derived from: nfelib/nfe/samples/v4_0/leiauteNFe/nfe_reforma_tributaria.xml
+  Changes:
+  - extracted the <NFe> element (incl. its original Signature) out of the <nfeProc> wrapper; protNFe dropped
+  - added xmlns="http://www.portalfiscal.inf.br/nfe" on <NFe> (it was inherited from nfeProc before)
+  - indentation reduced by one level
+  - all data (incl. signature) unchanged
+
+All other files in this folder (nfeProc documents)
+  Copied unchanged from: nfelib/nfe/samples/v4_0/leiauteNFe/ (same commit)

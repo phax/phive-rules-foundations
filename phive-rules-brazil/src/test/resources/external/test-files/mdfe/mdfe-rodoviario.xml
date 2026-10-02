@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MDFe xmlns="http://www.portalfiscal.inf.br/mdfe">
+	<infMDFe versao="3.00" Id="MDFe35261099999999000191580010000000011567890123">
+		<ide>
+			<cUF>35</cUF>
+			<tpAmb>2</tpAmb>
+			<tpEmit>1</tpEmit>
+			<mod>58</mod>
+			<serie>1</serie>
+			<nMDF>1</nMDF>
+			<cMDF>56789012</cMDF>
+			<cDV>3</cDV>
+			<modal>1</modal>
+			<dhEmi>2026-10-01T10:30:00-03:00</dhEmi>
+			<tpEmis>1</tpEmis>
+			<procEmi>0</procEmi>
+			<verProc>TESTE-1.0</verProc>
+			<UFIni>SP</UFIni>
+			<UFFim>SP</UFFim>
+			<infMunCarrega>
+				<cMunCarrega>3550308</cMunCarrega>
+				<xMunCarrega>SAO PAULO</xMunCarrega>
+			</infMunCarrega>
+			<dhIniViagem>2026-10-01T11:00:00-03:00</dhIniViagem>
+		</ide>
+		<emit>
+			<CNPJ>99999999000191</CNPJ>
+			<IE>999999999999</IE>
+			<xNome>MDF-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+			<xFant>TRANSPORTADORA TESTE</xFant>
+			<enderEmit>
+				<xLgr>RUA DE TESTE</xLgr>
+				<nro>100</nro>
+				<xBairro>BAIRRO TESTE</xBairro>
+				<cMun>3550308</cMun>
+				<xMun>SAO PAULO</xMun>
+				<CEP>01000000</CEP>
+				<UF>SP</UF>
+				<fone>1100000000</fone>
+			</enderEmit>
+		</emit>
+		<infModal versaoModal="3.00">
+			<rodo>
+				<infANTT>
+					<RNTRC>99999999</RNTRC>
+					<infContratante>
+						<xNome>CONTRATANTE TESTE LTDA</xNome>
+						<CNPJ>11111111000191</CNPJ>
+					</infContratante>
+				</infANTT>
+				<veicTracao>
+					<cInt>001</cInt>
+					<placa>AAA0A00</placa>
+					<tara>8000</tara>
+					<capKG>20000</capKG>
+					<condutor>
+						<xNome>MOTORISTA TESTE</xNome>
+						<CPF>00000000191</CPF>
+					</condutor>
+					<tpRod>03</tpRod>
+					<tpCar>02</tpCar>
+					<UF>SP</UF>
+				</veicTracao>
+			</rodo>
+		</infModal>
+		<infDoc>
+			<infMunDescarga>
+				<cMunDescarga>3509502</cMunDescarga>
+				<xMunDescarga>CAMPINAS</xMunDescarga>
+				<infCTe>
+					<chCTe>35261099999999000191570010000000011123456788</chCTe>
+				</infCTe>
+			</infMunDescarga>
+		</infDoc>
+		<seg>
+			<infResp>
+				<respSeg>1</respSeg>
+				<CNPJ>99999999000191</CNPJ>
+			</infResp>
+			<infSeg>
+				<xSeg>SEGURADORA TESTE SA</xSeg>
+				<CNPJ>11111111000191</CNPJ>
+			</infSeg>
+			<nApol>0000000001</nApol>
+			<nAver>00000000000000000001</nAver>
+		</seg>
+		<prodPred>
+			<tpCarga>05</tpCarga>
+			<xProd>MERCADORIA DE TESTE</xProd>
+			<infLotacao>
+				<infLocalCarrega>
+					<CEP>01000000</CEP>
+				</infLocalCarrega>
+				<infLocalDescarrega>
+					<CEP>13000000</CEP>
+				</infLocalDescarrega>
+			</infLotacao>
+		</prodPred>
+		<tot>
+			<qCTe>1</qCTe>
+			<vCarga>1000.00</vCarga>
+			<cUnid>01</cUnid>
+			<qCarga>100.0000</qCarga>
+		</tot>
+		<infAdic>
+			<infCpl>DOCUMENTO DE TESTE SEM VALOR FISCAL</infCpl>
+		</infAdic>
+		<infRespTec>
+			<CNPJ>99999999000191</CNPJ>
+			<xContato>CONTATO TESTE</xContato>
+			<email>teste@example.com</email>
+			<fone>1100000000</fone>
+		</infRespTec>
+	</infMDFe>
+	<infMDFeSupl>
+		<qrCodMDFe>https://homologacao.example.gov.br/qrcode?chMDFe=35261099999999000191580010000000011567890123&amp;tpAmb=2</qrCodMDFe>
+	</infMDFeSupl>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference URI="#MDFe35261099999999000191580010000000011567890123">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+					<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>AAAAAAAAAAAAAAAAAAAAAAAAAAA=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>AAAA</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>AAAA</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+</MDFe>

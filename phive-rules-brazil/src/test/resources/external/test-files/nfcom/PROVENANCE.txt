@@ -1,0 +1,16 @@
+Provenance of the NFCom test files in this folder
+
+Source: akretion/nfelib (https://github.com/akretion/nfelib, MIT License, commit 7082879710d1400db31e0baa435a0506355e940f)
+
+nfcom.xml
+  Derived from: nfelib/nfcom/samples/v1_0/NFCom-nfcom.xml
+  Changes:
+  - anonymised: CNPJ 06117473000150 -> 99999999000191; emitter/recipient names, trade name, street,
+    district, municipality, cMun/cMunFG, CEP, IE, phone, e-mail and gRespTec contact replaced by obvious test values
+  - recomputed access key (mod 11 cDV) and Id from the ide/emit fields; qrCodNFCom rebuilt with the new key
+  - tabs replaced by 2-space indentation
+- appended a dummy, structurally valid ICP-Brasil xmldsig <Signature> (fixed c14n/rsa-sha1/sha1 algorithm URIs, Reference URI="#<Id>", dummy base64 DigestValue/SignatureValue/X509Certificate; no real certificate)
+
+nfcom-proc.xml
+  Built from nfcom.xml wrapped into <nfcomProc versao="1.00"> plus a synthetic <protNFCom versao="1.00">
+- protocol (infProt) is synthetic: tpAmb 2, verAplic SVRS-TESTE-1.0, dummy nProt/digVal, cStat 100, xMotivo "Autorizado o uso da NFCom"

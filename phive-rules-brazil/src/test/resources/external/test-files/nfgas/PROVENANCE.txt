@@ -1,0 +1,11 @@
+Provenance of the NFGas test files in this folder
+
+nfgas.xml
+  Written from scratch following the XSD (nfgas_v1.00.xsd / nfgasTiposBasico_v1.00.xsd, package NT2026.002 RTC 1.01).
+  No sample was copied. All data is fictitious: CNPJ 99999999000191, CPF 12345678909, test names/addresses,
+  example.com e-mails, tpAmb 2, mod 76; access key with valid mod 11 cDV; qrCodNFGas matching the pattern.
+- appended a dummy, structurally valid ICP-Brasil xmldsig <Signature> (fixed c14n/rsa-sha1/sha1 algorithm URIs, Reference URI="#<Id>", dummy base64 DigestValue/SignatureValue/X509Certificate; no real certificate)
+
+nfgas-proc.xml
+  Built from nfgas.xml wrapped into <nfgasProc versao="1.00"> plus a synthetic <protNFGas versao="1.00">
+- protocol (infProt) is synthetic: tpAmb 2, verAplic SVRS-TESTE-1.0, dummy nProt/digVal, cStat 100, xMotivo "Autorizado o uso da NFGas"

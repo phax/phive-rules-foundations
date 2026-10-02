@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cteSimpProc xmlns="http://www.portalfiscal.inf.br/cte" versao="4.00">
+	<CTeSimp>
+		<infCte versao="4.00" Id="CTe35261099999999000191570010000000021456789010">
+			<ide>
+				<cUF>35</cUF>
+				<cCT>45678901</cCT>
+				<CFOP>5353</CFOP>
+				<natOp>PRESTACAO DE SERVICO DE TRANSPORTE</natOp>
+				<mod>57</mod>
+				<serie>1</serie>
+				<nCT>2</nCT>
+				<dhEmi>2026-10-01T10:00:00-03:00</dhEmi>
+				<tpImp>1</tpImp>
+				<tpEmis>1</tpEmis>
+				<cDV>0</cDV>
+				<tpAmb>2</tpAmb>
+				<tpCTe>5</tpCTe>
+				<procEmi>0</procEmi>
+				<verProc>TESTE-1.0</verProc>
+				<cMunEnv>3550308</cMunEnv>
+				<xMunEnv>SAO PAULO</xMunEnv>
+				<UFEnv>SP</UFEnv>
+				<modal>01</modal>
+				<tpServ>0</tpServ>
+				<UFIni>SP</UFIni>
+				<UFFim>SP</UFFim>
+				<retira>1</retira>
+			</ide>
+			<compl>
+				<xObs>DOCUMENTO DE TESTE SEM VALOR FISCAL</xObs>
+			</compl>
+			<emit>
+				<CNPJ>99999999000191</CNPJ>
+				<IE>999999999999</IE>
+				<xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+				<xFant>TRANSPORTADORA TESTE</xFant>
+				<enderEmit>
+					<xLgr>RUA DE TESTE</xLgr>
+					<nro>100</nro>
+					<xBairro>BAIRRO TESTE</xBairro>
+					<cMun>3550308</cMun>
+					<xMun>SAO PAULO</xMun>
+					<CEP>01000000</CEP>
+					<UF>SP</UF>
+					<fone>1100000000</fone>
+				</enderEmit>
+				<CRT>3</CRT>
+			</emit>
+			<toma>
+				<toma>0</toma>
+				<indIEToma>1</indIEToma>
+				<CNPJ>11111111000191</CNPJ>
+				<IE>111111111111</IE>
+				<xNome>TOMADOR TESTE LTDA</xNome>
+				<enderToma>
+					<xLgr>AVENIDA EXEMPLO</xLgr>
+					<nro>1</nro>
+					<xBairro>CENTRO</xBairro>
+					<cMun>3550308</cMun>
+					<xMun>SAO PAULO</xMun>
+					<CEP>01000000</CEP>
+					<UF>SP</UF>
+					<cPais>1058</cPais>
+					<xPais>BRASIL</xPais>
+				</enderToma>
+			</toma>
+			<infCarga>
+				<vCarga>2000.00</vCarga>
+				<proPred>MERCADORIA DE TESTE</proPred>
+				<infQ>
+					<cUnid>01</cUnid>
+					<tpMed>01</tpMed>
+					<qCarga>200.0000</qCarga>
+				</infQ>
+			</infCarga>
+			<det nItem="1">
+				<cMunIni>3550308</cMunIni>
+				<xMunIni>SAO PAULO</xMunIni>
+				<cMunFim>3509502</cMunFim>
+				<xMunFim>CAMPINAS</xMunFim>
+				<vPrest>100.00</vPrest>
+				<vRec>100.00</vRec>
+				<Comp>
+					<xNome>FRETE PESO</xNome>
+					<vComp>100.00</vComp>
+				</Comp>
+				<infNFe>
+					<chNFe>35260911111111000191550010000001231876543217</chNFe>
+				</infNFe>
+			</det>
+			<det nItem="2">
+				<cMunIni>3550308</cMunIni>
+				<xMunIni>SAO PAULO</xMunIni>
+				<cMunFim>3509502</cMunFim>
+				<xMunFim>CAMPINAS</xMunFim>
+				<vPrest>100.00</vPrest>
+				<vRec>100.00</vRec>
+				<Comp>
+					<xNome>FRETE PESO</xNome>
+					<vComp>100.00</vComp>
+				</Comp>
+				<infNFe>
+					<chNFe>35260911111111000191550010000001241765432104</chNFe>
+				</infNFe>
+			</det>
+			<infModal versaoModal="4.00">
+				<rodo>
+					<RNTRC>99999999</RNTRC>
+				</rodo>
+			</infModal>
+			<imp>
+				<ICMS>
+					<ICMS00>
+						<CST>00</CST>
+						<vBC>200.00</vBC>
+						<pICMS>12.00</pICMS>
+						<vICMS>24.00</vICMS>
+					</ICMS00>
+				</ICMS>
+			</imp>
+			<total>
+				<vTPrest>200.00</vTPrest>
+				<vTRec>200.00</vTRec>
+			</total>
+			<infRespTec>
+				<CNPJ>99999999000191</CNPJ>
+				<xContato>CONTATO TESTE</xContato>
+				<email>teste@example.com</email>
+				<fone>1100000000</fone>
+			</infRespTec>
+		</infCte>
+		<infCTeSupl>
+			<qrCodCTe>https://homologacao.example.gov.br/qrcode?chCTe=35261099999999000191570010000000021456789010&amp;tpAmb=2</qrCodCTe>
+		</infCTeSupl>
+		<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+			<SignedInfo>
+				<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+				<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+				<Reference URI="#CTe35261099999999000191570010000000021456789010">
+					<Transforms>
+						<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+						<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+					</Transforms>
+					<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+					<DigestValue>AAAAAAAAAAAAAAAAAAAAAAAAAAA=</DigestValue>
+				</Reference>
+			</SignedInfo>
+			<SignatureValue>AAAA</SignatureValue>
+			<KeyInfo>
+				<X509Data>
+					<X509Certificate>AAAA</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</Signature>
+	</CTeSimp>
+	<protCTe versao="4.00">
+		<infProt>
+			<tpAmb>2</tpAmb>
+			<verAplic>SVRS-TESTE</verAplic>
+			<chCTe>35261099999999000191570010000000021456789010</chCTe>
+			<dhRecbto>2026-10-01T10:00:05-03:00</dhRecbto>
+			<nProt>135260000000004</nProt>
+			<digVal>AAAAAAAAAAAAAAAAAAAAAAAAAAA=</digVal>
+			<cStat>100</cStat>
+			<xMotivo>Autorizado o uso do CT-e</xMotivo>
+		</infProt>
+	</protCTe>
+</cteSimpProc>

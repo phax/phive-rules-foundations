@@ -1,0 +1,33 @@
+Provenance of the CT-e test files (namespace http://www.portalfiscal.inf.br/cte, layout 4.00,
+validated against PL_CTe_400_NT2026.002_RTC_1.01_corr_2)
+
+All files in this folder were WRITTEN FROM SCRATCH, following the XSDs only
+(cteTiposBasico_v4.00.xsd, proc*_v4.00.xsd, cteModalRodoviario_v4.00.xsd,
+cteModalRodoviarioOS_v4.00.xsd, xmldsig-core-schema_v1.01.xsd). No content was copied
+from any third-party sample (MIT or otherwise). They were generated with a small Python script.
+
+Common properties of all files:
+- tpAmb=2 (homologacao), dates 2026-10-01
+- Fake parties only: emitter CNPJ 99999999000191, other parties CNPJ 11111111000191,
+  IE 999999999999 / 111111111111, names like "REMETENTE TESTE LTDA", streets "RUA DE TESTE",
+  vehicle plate AAA0A00, RNTRC 99999999, TAF 999999999999
+- Municipality codes are the public IBGE codes of Sao Paulo (3550308) and Campinas (3509502)
+- Access keys are synthetic (cUF 35, AAMM 2610, emitter CNPJ, mod, serie, number, tpEmis, cCT)
+  with a correct modulo-11 check digit; Id = "CTe" + key; cCT/cDV in ide match the key
+- QR code URL uses a placeholder host (homologacao.example.gov.br)
+- Dummy enveloped ds:Signature with the fixed ICP-Brasil algorithm URIs, Reference URI="#<Id>",
+  dummy DigestValue/SignatureValue/X509Certificate (no real certificate)
+- Proc wrappers add a synthetic protCTe/infProt (cStat 100, nProt 1352600000000xx, dummy digVal)
+
+Files:
+- cte-rodoviario.xml       CTe (mod 57, tpCTe 0, ICMS00, one referenced NF-e key, infModal/rodo
+                           with versaoModal 4.00 - rodo content valid against cteModalRodoviario_v4.00.xsd)
+- cte-proc-rodoviario.xml  cteProc = the CTe above + protCTe (TProtCTe)
+- cte-os.xml               CTeOS (mod 67, tpServ 6 fretamento, toma, infServico, infModal/rodoOS
+                           valid against cteModalRodoviarioOS_v4.00.xsd)
+- cte-os-proc.xml          cteOSProc = the CTeOS above + protCTe (TProtCTeOS)
+- gtve.xml                 GTVe (mod 64, tpCTe 4, tpServ 9, detGTV with one infEspecie and one vehicle)
+- gtve-proc.xml            GTVeProc = the GTVe above + protCTe (TProtGTVe)
+- cte-simp.xml             CTeSimp (mod 57, tpCTe 5, two det items each with one NF-e key,
+                           infModal/rodo valid against cteModalRodoviario_v4.00.xsd)
+- cte-simp-proc.xml        cteSimpProc = the CTeSimp above + protCTe (TProtCTe)
