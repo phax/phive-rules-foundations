@@ -3,3 +3,22 @@
 =============================================================================
 This product includes Open Source Software developed by
 Philip Helger - https://www.helger.com/
+
+The contained NAV Online Invoice System (Online Szamla, OSA) XML schemas are originally from the
+Hungarian National Tax and Customs Administration (NAV)
+(https://onlineszamla.nav.gov.hu/dokumentaciok, https://github.com/nav-gov-hu/Online-Invoice):
+  Files:     invoiceAnnulment.xsd, invoiceApi.xsd, invoiceData.xsd, serviceMetrics.xsd (v2.0 and v3.0),
+             common.xsd and invoiceBase.xsd (v3.0)
+  Versions:  2.0 and 3.0 (OSA versions)
+  Copyright: Copyright (c) 2019 Nemzeti Ado- es Vamhivatal (NAV), as stated in the LICENCE.md of
+             the NAV Online-Invoice GitHub repository; the files themselves only name
+             "NAV Informatikai Intezet" as author
+  License:   MIT License (SPDX: MIT), as stated in the LICENCE.md of the NAV Online-Invoice GitHub
+             repository. The XSD files themselves contain no license header.
+
+These XSD files are redistributed as provided by upstream.
+
+Licensing of this artefact is per file:
+  - The Java code and all other files of this module are licensed under the Apache License 2.0 (see LICENSE).
+  - The XSD files listed above are third-party content and are not covered by the Apache License 2.0.
+    The MIT License requires its copyright and permission notice to be included in all copies.

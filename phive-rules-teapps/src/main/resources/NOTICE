@@ -3,3 +3,16 @@
 =============================================================================
 This product includes Open Source Software developed by
 Philip Helger - https://www.helger.com/
+
+The contained TEAPPSXML e-invoice XML schemas are originally from Tieto Finland Oy
+(https://www.tieto.com/en/campaign/2026/teappsxml/):
+  Files:     TEAPPSXMLv272_schema_INVOICES.xsd, teappsxmlv30_schema_invoices_0.xsd
+  Versions:  2.7.2 and 3.0 (TEAPPSXML versions; 3.0 dated 26.3.2018)
+  Copyright: Copyright Tieto Finland Oy, Value Networks (as stated in the file headers)
+  License:   No license text is contained in the files; no license statement could be verified
+
+These XSD files are redistributed as provided by upstream.
+
+Licensing of this artefact is per file:
+  - The Java code and all other files of this module are licensed under the Apache License 2.0 (see LICENSE).
+  - The XSD files listed above are third-party content and are not covered by the Apache License 2.0.

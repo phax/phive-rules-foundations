@@ -3,3 +3,20 @@
 =============================================================================
 This product includes Open Source Software developed by
 Philip Helger - https://www.helger.com/
+
+The contained KSeF (Krajowy System e-Faktur) e-invoice XML schemas are originally from the
+Ministerstwo Finansow (Polish Ministry of Finance)
+(https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/struktura-logiczna-fa-3/):
+  Files:     schema.xsd (1.0.0 and 2.0.0), schemat.xsd (3.0.0), StrukturyDanych_*.xsd,
+             ElementarneTypyDanych_*.xsd, KodyKrajow_*.xsd
+  Versions:  1.0.0 (FA(1), namespace http://crd.gov.pl/wzor/2021/11/29/11089/),
+             2.0.0 (FA(2)) and 3.0.0 (FA(3), namespace http://crd.gov.pl/wzor/2025/06/25/13775/)
+  Copyright: No copyright line is contained in the files
+  License:   No license text is contained in the files; no license statement could be verified
+
+These XSD files are redistributed as provided by upstream. The only change is a minor local patch
+(marked with "[PH]") in 3.0.0/schemat.xsd, where a maxOccurs value of "50000" was changed to "unbounded".
+
+Licensing of this artefact is per file:
+  - The Java code and all other files of this module are licensed under the Apache License 2.0 (see LICENSE).
+  - The XSD files listed above are third-party content and are not covered by the Apache License 2.0.

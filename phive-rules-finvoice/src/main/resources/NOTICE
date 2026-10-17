@@ -3,3 +3,17 @@
 =============================================================================
 This product includes Open Source Software developed by
 Philip Helger - https://www.helger.com/
+
+The contained Finvoice XML schemas are originally from Finanssiala ry / Finance Finland
+(https://www.finanssiala.fi/en/topics/finvoice-standard/):
+  Files:     Finvoice1.3.xsd, Finvoice2.0.xsd, Finvoice2.01.xsd, Finvoice3.0.xsd
+  Versions:  1.3, 2.0, 2.01 and 3.0 (Finvoice versions)
+  Copyright: No copyright line is contained in the files
+  License:   No formal license text is contained in the files or published by upstream. The upstream
+             page states: "All materials on this page are freely usable."
+
+These XSD files are redistributed as provided by upstream.
+
+Licensing of this artefact is per file:
+  - The Java code and all other files of this module are licensed under the Apache License 2.0 (see LICENSE).
+  - The XSD files listed above are third-party content and are not covered by the Apache License 2.0.

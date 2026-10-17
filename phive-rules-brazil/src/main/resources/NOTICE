@@ -3,3 +3,48 @@
 =============================================================================
 This product includes Open Source Software developed by
 Philip Helger - https://www.helger.com/
+
+The contained Brazilian electronic fiscal document XML Schemas (XSD) are originally from the Brazilian
+tax authorities and their technical portals. No license or terms of use are stated in the files
+or in the downloaded packages; no license is claimed here for them:
+  NF-e / NFC-e (model 55 / 65), Portal Nacional da NF-e (ENCAT)
+    (https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=BMPFMBoln3w=)
+    Package:  PL_010f_v1.04 (Pacote de Liberacao n. 010f, NT 2025.002 v1.50 and NT 2026.007 v1.00)
+    Files:    external/schemas/nfe/PL_010f_v1.04/ (procNFe_v4.00.xsd is taken from the package PL_009p_NT2024_003_v1.03)
+  CT-e, CT-e OS, GTV-e, CT-e Simplificado, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/Cte/Documentos)
+    Package:  PL_CTe_400_NT2026.002 RTC_1.01_corr_2
+    Files:    external/schemas/cte/PL_CTe_400_NT2026.002_RTC_1.01_corr_2/
+  MDF-e, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/Mdfe/Documentos)
+    Package:  PL_MDFe_300b_NT012025_1.04
+    Files:    external/schemas/mdfe/PL_MDFe_300b_NT012025_1.04/
+  NFCom, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/NFCOM/Documentos)
+    Package:  PL_NFCOM_1.00_NT2026.002 RTC_1.01
+    Files:    external/schemas/nfcom/PL_NFCOM_1.00_NT2026.002_RTC_1.01/
+  NF3e, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/NF3E/Documentos)
+    Package:  PL_NF3E_1.00a_NT2026.002 RTC_1.01
+    Files:    external/schemas/nf3e/PL_NF3E_1.00a_NT2026.002_RTC_1.01/
+  BP-e, BP-e TM, BP-e TA, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/BPE/Documentos)
+    Package:  PL_BPe_100b_NT2026.002 RTC_1.01
+    Files:    external/schemas/bpe/PL_BPe_100b_NT2026.002_RTC_1.01/
+  NFAg, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/NFAG/Documentos)
+    Package:  PL_NFAg_NT2026.002 RTC_1.01
+    Files:    external/schemas/nfag/PL_NFAg_NT2026.002_RTC_1.01/
+  NFGas, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/NFGAS/Documentos)
+    Package:  PL_NFGas_NT2026.002 RTC_1.01
+    Files:    external/schemas/nfgas/PL_NFGas_NT2026.002_RTC_1.01/
+  NFS-e Padrao Nacional, Receita Federal / CGNFS-e
+    (https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita)
+    Package:  esquemas-nfse-rtc-v1-01-20260727 (NFSe-ESQUEMAS_XSD-PRODREST-v1.01-20260727)
+    Files:    external/schemas/nfse/esquemas-nfse-rtc-v1-01-20260727/ (except xmldsig-core-schema.xsd, see below)
+
+The contained W3C XML Signature schema, as shipped with the NFS-e package:
+  Files:     external/schemas/nfse/esquemas-nfse-rtc-v1-01-20260727/xmldsig-core-schema.xsd
+  Source:    http://www.w3.org/2000/09/xmldsig#
+  Copyright: Copyright 2001 The Internet Society and W3C (Massachusetts Institute of Technology,
+             Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.
+  License:   W3C Software License (http://www.w3.org/Consortium/Legal/copyright-software-19980720)
+             as stated in the file header
+
+These XSD files are redistributed unchanged, exactly as provided by the upstream packages
+(the original ZIP files are kept in the docs folder of the source repository).
+Only the files required by the registered root elements were extracted from the packages.

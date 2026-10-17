@@ -3,3 +3,17 @@
 =============================================================================
 This product includes Open Source Software developed by
 Philip Helger - https://www.helger.com/
+
+The contained Common Reporting Standard (CRS) XML schemas are originally from the OECD
+(https://www.oecd.org/en/publications/common-reporting-standard-status-message-xml-schema_6c08db84-en/support-materials.html):
+  Files:     CrsXML_v2.0.xsd / CrsXML_v3.0.xsd, CommonTypesFatcaCrs_v2.0.xsd, FatcaTypes_v1.2.xsd,
+             isocrstypes_v1.1.xsd, oecdcrstypes_v5.0.xsd
+  Versions:  2.0 and 3.0 (CRS XML schema versions)
+  Copyright: No copyright line is contained in the files
+  License:   No license text is contained in the files; no license statement could be verified
+
+These XSD files are redistributed as provided by upstream.
+
+Licensing of this artefact is per file:
+  - The Java code and all other files of this module are licensed under the Apache License 2.0 (see LICENSE).
+  - The XSD files listed above are third-party content and are not covered by the Apache License 2.0.

@@ -3,3 +3,17 @@
 =============================================================================
 This product includes Open Source Software developed by
 Philip Helger - https://www.helger.com/
+
+The contained Facturae XML Schemas (XSD) are originally from the Facturae format
+published by the Ministerio de Hacienda (previously Ministerio de Industria, Energia y Turismo)
+of Spain (https://www.facturae.gob.es/formato/Paginas/formato.aspx):
+  Files:     external/schemas/Facturae30.xsd (format 3.0)
+             external/schemas/Facturaev31.xsd (format 3.1)
+             external/schemas/Facturaev3_2.xsd (format 3.2)
+             external/schemas/Facturaev3_2_1.xsd (format 3.2.1)
+             external/schemas/Facturaev3_2_2.xsd (format 3.2.2)
+  Source:    https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx
+  Copyright: not stated in the files
+  License:   not stated by the publisher for the schema files
+
+These XSD files are redistributed as provided by the upstream publisher.
