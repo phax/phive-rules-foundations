@@ -109,7 +109,7 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 
 # News and noteworthy
 
-v5.0.6 - work in progress
+v5.0.6 - 2026-10-22
 * Added the new module `phive-rules-brazil` with the XML Schemas of the Brazilian electronic fiscal documents, Group ID `br.gov.nfe`.
   Only the current schema package of each document type is contained:
   * NF-e/NFC-e (model 55/65) "Pacote de Liberação 010f v1.04" - `nfe` and `nfe-proc` with version `4.0.0-pl010f_v1_04`
