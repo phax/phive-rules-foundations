@@ -34,6 +34,7 @@ import com.helger.phive.brazil.BrazilValidation;
 import com.helger.phive.xml.source.IValidationSourceXML;
 
 @Immutable
+@SuppressWarnings ("deprecation")
 public final class CTestFiles
 {
   public static final ValidationExecutorSetRegistry <IValidationSourceXML> VES_REGISTRY = new ValidationExecutorSetRegistry <> ();
@@ -51,32 +52,57 @@ public final class CTestFiles
   {
     final ICommonsList <PhiveTestFile> ret = new CommonsArrayList <> ();
     for (final DVRCoordinate aVESID : new DVRCoordinate [] { BrazilValidation.VID_NFE_PL010F,
+                                                             BrazilValidation.VID_NFE_PL010G,
                                                              BrazilValidation.VID_NFE_PROC_PL010F,
+                                                             BrazilValidation.VID_NFE_PROC_PL010G,
                                                              BrazilValidation.VID_CTE_NT2026_002,
+                                                             BrazilValidation.VID_CTE_NT2026_005,
                                                              BrazilValidation.VID_CTE_PROC_NT2026_002,
+                                                             BrazilValidation.VID_CTE_PROC_NT2026_005,
                                                              BrazilValidation.VID_CTE_OS_NT2026_002,
+                                                             BrazilValidation.VID_CTE_OS_NT2026_005,
                                                              BrazilValidation.VID_CTE_OS_PROC_NT2026_002,
+                                                             BrazilValidation.VID_CTE_OS_PROC_NT2026_005,
                                                              BrazilValidation.VID_GTVE_NT2026_002,
+                                                             BrazilValidation.VID_GTVE_NT2026_005,
                                                              BrazilValidation.VID_GTVE_PROC_NT2026_002,
+                                                             BrazilValidation.VID_GTVE_PROC_NT2026_005,
                                                              BrazilValidation.VID_CTE_SIMP_NT2026_002,
+                                                             BrazilValidation.VID_CTE_SIMP_NT2026_005,
                                                              BrazilValidation.VID_CTE_SIMP_PROC_NT2026_002,
+                                                             BrazilValidation.VID_CTE_SIMP_PROC_NT2026_005,
                                                              BrazilValidation.VID_MDFE_NT2025_001,
                                                              BrazilValidation.VID_MDFE_PROC_NT2025_001,
                                                              BrazilValidation.VID_NFCOM_NT2026_002,
+                                                             BrazilValidation.VID_NFCOM_NT2026_005,
                                                              BrazilValidation.VID_NFCOM_PROC_NT2026_002,
+                                                             BrazilValidation.VID_NFCOM_PROC_NT2026_005,
                                                              BrazilValidation.VID_NF3E_NT2026_002,
+                                                             BrazilValidation.VID_NF3E_NT2026_004,
                                                              BrazilValidation.VID_NF3E_PROC_NT2026_002,
+                                                             BrazilValidation.VID_NF3E_PROC_NT2026_004,
                                                              BrazilValidation.VID_BPE_NT2026_002,
+                                                             BrazilValidation.VID_BPE_NT2026_005,
                                                              BrazilValidation.VID_BPE_PROC_NT2026_002,
+                                                             BrazilValidation.VID_BPE_PROC_NT2026_005,
                                                              BrazilValidation.VID_BPE_TM_NT2026_002,
+                                                             BrazilValidation.VID_BPE_TM_NT2026_005,
                                                              BrazilValidation.VID_BPE_TM_PROC_NT2026_002,
+                                                             BrazilValidation.VID_BPE_TM_PROC_NT2026_005,
                                                              BrazilValidation.VID_BPE_TA_NT2026_002,
+                                                             BrazilValidation.VID_BPE_TA_NT2026_005,
                                                              BrazilValidation.VID_NFAG_NT2026_002,
+                                                             BrazilValidation.VID_NFAG_NT2026_004,
                                                              BrazilValidation.VID_NFAG_PROC_NT2026_002,
+                                                             BrazilValidation.VID_NFAG_PROC_NT2026_004,
                                                              BrazilValidation.VID_NFGAS_NT2026_002,
+                                                             BrazilValidation.VID_NFGAS_NT2026_004,
                                                              BrazilValidation.VID_NFGAS_PROC_NT2026_002,
+                                                             BrazilValidation.VID_NFGAS_PROC_NT2026_004,
                                                              BrazilValidation.VID_NFSE_DPS_20260727,
-                                                             BrazilValidation.VID_NFSE_20260727 })
+                                                             BrazilValidation.VID_NFSE_DPS_20261020,
+                                                             BrazilValidation.VID_NFSE_20260727,
+                                                             BrazilValidation.VID_NFSE_20261020 })
       for (final IReadableResource aRes : getAllMatchingTestFiles (aVESID))
       {
         assertTrue ("Not existing test file: " + aRes.getPath (), aRes.exists ());
@@ -105,11 +131,11 @@ public final class CTestFiles
     // and Unimake or hand written synthetic documents with fake data and a dummy signature.
 
     // NF-e
-    if (aVESID.equals (BrazilValidation.VID_NFE_PL010F))
+    if (aVESID.equals (BrazilValidation.VID_NFE_PL010F) || aVESID.equals (BrazilValidation.VID_NFE_PL010G))
       return _list ("nfe",
                     "nfe-from-nfelib-35180834128745000152550010000476711079516696.xml",
                     "nfe-from-nfelib-reforma-tributaria.xml");
-    if (aVESID.equals (BrazilValidation.VID_NFE_PROC_PL010F))
+    if (aVESID.equals (BrazilValidation.VID_NFE_PROC_PL010F) || aVESID.equals (BrazilValidation.VID_NFE_PROC_PL010G))
       return _list ("nfe",
                     "26180875335849000115550010000016871192213331-nfe.xml",
                     "35180834128745000152550010000474281920007498-nfe.xml",
@@ -126,21 +152,27 @@ public final class CTestFiles
                     "nfe_reforma_tributaria.xml");
 
     // CT-e, CT-e OS, GTV-e, CT-e Simplificado
-    if (aVESID.equals (BrazilValidation.VID_CTE_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_CTE_NT2026_002) || aVESID.equals (BrazilValidation.VID_CTE_NT2026_005))
       return _list ("cte", "cte-rodoviario.xml");
-    if (aVESID.equals (BrazilValidation.VID_CTE_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_CTE_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_CTE_PROC_NT2026_005))
       return _list ("cte", "cte-proc-rodoviario.xml");
-    if (aVESID.equals (BrazilValidation.VID_CTE_OS_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_CTE_OS_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_CTE_OS_NT2026_005))
       return _list ("cte", "cte-os.xml");
-    if (aVESID.equals (BrazilValidation.VID_CTE_OS_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_CTE_OS_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_CTE_OS_PROC_NT2026_005))
       return _list ("cte", "cte-os-proc.xml");
-    if (aVESID.equals (BrazilValidation.VID_GTVE_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_GTVE_NT2026_002) || aVESID.equals (BrazilValidation.VID_GTVE_NT2026_005))
       return _list ("cte", "gtve.xml");
-    if (aVESID.equals (BrazilValidation.VID_GTVE_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_GTVE_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_GTVE_PROC_NT2026_005))
       return _list ("cte", "gtve-proc.xml");
-    if (aVESID.equals (BrazilValidation.VID_CTE_SIMP_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_CTE_SIMP_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_CTE_SIMP_NT2026_005))
       return _list ("cte", "cte-simp.xml");
-    if (aVESID.equals (BrazilValidation.VID_CTE_SIMP_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_CTE_SIMP_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_CTE_SIMP_PROC_NT2026_005))
       return _list ("cte", "cte-simp-proc.xml");
 
     // MDF-e
@@ -154,35 +186,47 @@ public final class CTestFiles
       return _list ("nfcom", "nfcom.xml");
     if (aVESID.equals (BrazilValidation.VID_NFCOM_PROC_NT2026_002))
       return _list ("nfcom", "nfcom-proc.xml");
+    // Since NT 2026.004 "cBenefUFDest" must have 8 or 10 characters
+    if (aVESID.equals (BrazilValidation.VID_NFCOM_NT2026_005))
+      return _list ("nfcom", "nfcom-nt2026_005.xml");
+    if (aVESID.equals (BrazilValidation.VID_NFCOM_PROC_NT2026_005))
+      return _list ("nfcom", "nfcom-proc-nt2026_005.xml");
 
     // NF3e
-    if (aVESID.equals (BrazilValidation.VID_NF3E_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_NF3E_NT2026_002) || aVESID.equals (BrazilValidation.VID_NF3E_NT2026_004))
       return _list ("nf3e", "nf3e.xml");
-    if (aVESID.equals (BrazilValidation.VID_NF3E_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_NF3E_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_NF3E_PROC_NT2026_004))
       return _list ("nf3e", "nf3e-proc.xml");
 
     // BP-e
-    if (aVESID.equals (BrazilValidation.VID_BPE_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_BPE_NT2026_002) || aVESID.equals (BrazilValidation.VID_BPE_NT2026_005))
       return _list ("bpe", "bpe.xml");
-    if (aVESID.equals (BrazilValidation.VID_BPE_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_BPE_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_BPE_PROC_NT2026_005))
       return _list ("bpe", "bpe-proc.xml");
-    if (aVESID.equals (BrazilValidation.VID_BPE_TM_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_BPE_TM_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_BPE_TM_NT2026_005))
       return _list ("bpe", "bpe-tm.xml");
-    if (aVESID.equals (BrazilValidation.VID_BPE_TM_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_BPE_TM_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_BPE_TM_PROC_NT2026_005))
       return _list ("bpe", "bpe-tm-proc.xml");
-    if (aVESID.equals (BrazilValidation.VID_BPE_TA_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_BPE_TA_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_BPE_TA_NT2026_005))
       return _list ("bpe", "bpe-ta.xml");
 
     // NFAg
-    if (aVESID.equals (BrazilValidation.VID_NFAG_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_NFAG_NT2026_002) || aVESID.equals (BrazilValidation.VID_NFAG_NT2026_004))
       return _list ("nfag", "nfag.xml");
-    if (aVESID.equals (BrazilValidation.VID_NFAG_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_NFAG_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_NFAG_PROC_NT2026_004))
       return _list ("nfag", "nfag-proc.xml");
 
     // NFGas
-    if (aVESID.equals (BrazilValidation.VID_NFGAS_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_NFGAS_NT2026_002) || aVESID.equals (BrazilValidation.VID_NFGAS_NT2026_004))
       return _list ("nfgas", "nfgas.xml");
-    if (aVESID.equals (BrazilValidation.VID_NFGAS_PROC_NT2026_002))
+    if (aVESID.equals (BrazilValidation.VID_NFGAS_PROC_NT2026_002) ||
+        aVESID.equals (BrazilValidation.VID_NFGAS_PROC_NT2026_004))
       return _list ("nfgas", "nfgas-proc.xml");
 
     // NFS-e
@@ -194,6 +238,15 @@ public final class CTestFiles
                     "GerarNfseTagsIBSCBS-env-loterps.xml");
     if (aVESID.equals (BrazilValidation.VID_NFSE_20260727))
       return _list ("nfse", "ConsultarNFSeEnvio-ped-sitnfse.xml", "unimake-RetornoNACIONAL.xml");
+    // The NT 009 layout of 2026-10-20 moved and removed elements - see PROVENANCE.txt
+    if (aVESID.equals (BrazilValidation.VID_NFSE_DPS_20261020))
+      return _list ("nfse",
+                    "dps-simples-nt009.xml",
+                    "ConsultarNFSeRPS-ped-sitnfserps-nt009.xml",
+                    "GerarNfseMinima-env-loterps-nt009.xml",
+                    "GerarNfseTagsIBSCBS-env-loterps-nt009.xml");
+    if (aVESID.equals (BrazilValidation.VID_NFSE_20261020))
+      return _list ("nfse", "ConsultarNFSeEnvio-ped-sitnfse-nt009.xml", "unimake-RetornoNACIONAL-nt009.xml");
 
     throw new IllegalArgumentException ("Invalid VESID: " + aVESID);
   }

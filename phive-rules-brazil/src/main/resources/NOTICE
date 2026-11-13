@@ -11,34 +11,51 @@ or in the downloaded packages; no license is claimed here for them:
     (https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=BMPFMBoln3w=)
     Package:  PL_010f_v1.04 (Pacote de Liberacao n. 010f, NT 2025.002 v1.50 and NT 2026.007 v1.00)
     Files:    external/schemas/nfe/PL_010f_v1.04/ (procNFe_v4.00.xsd is taken from the package PL_009p_NT2024_003_v1.03)
+    Package:  PL_010g_v1.03 (Pacote de Liberacao n. 010g, NT 2026.006 v1.00 and NT 2026.008 v1.00)
+    Files:    external/schemas/nfe/PL_010g_v1.03/ (procNFe_v4.00.xsd is taken from the package PL_009p_NT2024_003_v1.03)
   CT-e, CT-e OS, GTV-e, CT-e Simplificado, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/Cte/Documentos)
     Package:  PL_CTe_400_NT2026.002 RTC_1.01_corr_2
     Files:    external/schemas/cte/PL_CTe_400_NT2026.002_RTC_1.01_corr_2/
+    Package:  PL_CTe_400_NT2026.005 RTC SN_1.00_corr
+    Files:    external/schemas/cte/PL_CTe_400_NT2026.005_RTC_SN_1.00_corr/
   MDF-e, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/Mdfe/Documentos)
     Package:  PL_MDFe_300b_NT012025_1.04
     Files:    external/schemas/mdfe/PL_MDFe_300b_NT012025_1.04/
   NFCom, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/NFCOM/Documentos)
     Package:  PL_NFCOM_1.00_NT2026.002 RTC_1.01
     Files:    external/schemas/nfcom/PL_NFCOM_1.00_NT2026.002_RTC_1.01/
+    Package:  PL_NFCOM_1.00_NT2026.005 RTC SN 1.00
+    Files:    external/schemas/nfcom/PL_NFCOM_1.00_NT2026.005_RTC_SN_1.00/
   NF3e, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/NF3E/Documentos)
     Package:  PL_NF3E_1.00a_NT2026.002 RTC_1.01
     Files:    external/schemas/nf3e/PL_NF3E_1.00a_NT2026.002_RTC_1.01/
+    Package:  PL_NF3E_1.00a_NT2026.004 RTC_1.01
+    Files:    external/schemas/nf3e/PL_NF3E_1.00a_NT2026.004_RTC_1.01/
   BP-e, BP-e TM, BP-e TA, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/BPE/Documentos)
     Package:  PL_BPe_100b_NT2026.002 RTC_1.01
     Files:    external/schemas/bpe/PL_BPe_100b_NT2026.002_RTC_1.01/
+    Package:  PL_BPe_100b_NT2026.005 RTC SN_1.00_corr
+    Files:    external/schemas/bpe/PL_BPe_100b_NT2026.005_RTC_SN_1.00_corr/
   NFAg, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/NFAG/Documentos)
     Package:  PL_NFAg_NT2026.002 RTC_1.01
     Files:    external/schemas/nfag/PL_NFAg_NT2026.002_RTC_1.01/
+    Package:  PL_NFAg_NT2026.004 RTC_1.01
+    Files:    external/schemas/nfag/PL_NFAg_NT2026.004_RTC_1.01/
   NFGas, ENCAT / SVRS (https://dfe-portal.svrs.rs.gov.br/NFGAS/Documentos)
     Package:  PL_NFGas_NT2026.002 RTC_1.01
     Files:    external/schemas/nfgas/PL_NFGas_NT2026.002_RTC_1.01/
+    Package:  PL_NFGas_NT2026.004 RTC_1.01
+    Files:    external/schemas/nfgas/PL_NFGas_NT2026.004_RTC_1.01/
   NFS-e Padrao Nacional, Receita Federal / CGNFS-e
     (https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita)
     Package:  esquemas-nfse-rtc-v1-01-20260727 (NFSe-ESQUEMAS_XSD-PRODREST-v1.01-20260727)
     Files:    external/schemas/nfse/esquemas-nfse-rtc-v1-01-20260727/ (except xmldsig-core-schema.xsd, see below)
+    Package:  esquemas_prod_restrita_20261020 (Producao Restrita package of 2026-10-20, NT 009)
+    Files:    external/schemas/nfse/esquemas_prod_restrita_20261020/ (except xmldsig-core-schema.xsd, see below)
 
 The contained W3C XML Signature schema, as shipped with the NFS-e package:
   Files:     external/schemas/nfse/esquemas-nfse-rtc-v1-01-20260727/xmldsig-core-schema.xsd
+             external/schemas/nfse/esquemas_prod_restrita_20261020/xmldsig-core-schema.xsd
   Source:    http://www.w3.org/2000/09/xmldsig#
   Copyright: Copyright 2001 The Internet Society and W3C (Massachusetts Institute of Technology,
              Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.

@@ -33,7 +33,7 @@
       "current": "2.5",
       "upstream-latest": "os-UBL-2.5 (2026-08-12); no 2.6 directory yet",
       "status": "up-to-date",
-      "last-checked": "2026-09-30",
+      "last-checked": "2026-11-13",
       "detect": "new os-UBL-*/csd*-UBL-* directories in the listing; plus new ph-ublNN modules in com.helger.ubl:ph-ubl-parent-pom",
       "notes": "A new UBL line (2.6) needs a ph-ubl release and a new initUBLNN method - it is a new family, not a version bump."
     },
@@ -94,15 +94,15 @@
         "at.ebinterface:invoice"
       ],
       "publisher": "AUSTRIAPRO / WKO",
-      "via-library": "com.helger:ph-ebinterface:8.1.0",
+      "via-library": "com.helger:ph-ebinterface:8.1.1",
       "check": "web-page",
       "url": "https://www.wko.at/service/netzwerke/was-ist-ebinterface.html",
       "url-status": "verified",
       "current": "6.1",
-      "upstream-latest": "6.1 (2022-08-25) - 7.0 is announced but not yet released",
+      "upstream-latest": "6.1 (2022-08-25) - 7.0 is announced for Q4 2026 but not yet released",
       "status": "up-to-date",
-      "last-checked": "2026-09-30",
-      "notes": "https://www.ebinterface.at redirects to the WKO page. The page announces 7.0 (with EN 16931 syntax binding); once released it needs a ph-ebinterface release first."
+      "last-checked": "2026-11-13",
+      "notes": "https://www.ebinterface.at redirects to the WKO page. The page announces 7.0 (with EN 16931 syntax binding); once released it needs a ph-ebinterface release first. The URL now redirects to https://www.wko.at/netzwerke/was-ist-ebinterface (verified 2026-11-13)."
     },
     {
       "id": "facturae",
@@ -118,8 +118,8 @@
       "current": "3.2.2",
       "upstream-latest": "3.2.2",
       "status": "up-to-date",
-      "last-checked": "2026-09-30",
-      "notes": "XSDs bundled in this repo. QUESTION: docs/ has Guia_*_Facturae_3_4.pdf - a guide/tool version or a schema version?"
+      "last-checked": "2026-11-13",
+      "notes": "XSDs bundled in this repo. QUESTION: docs/ has Guia_*_Facturae_3_4.pdf - a guide/tool version or a schema version? The URL now redirects to https://www.facturae.gob.es/formato/ultima-version (verified 2026-11-13, still 3.2.2)."
     },
     {
       "id": "fatturapa",
@@ -128,15 +128,15 @@
         "it.fatturapa:invoice"
       ],
       "publisher": "Agenzia delle Entrate / SdI",
-      "via-library": "com.helger:ph-fatturapa:3.1.1-SNAPSHOT",
+      "via-library": "com.helger:ph-fatturapa:3.1.1",
       "check": "web-page",
       "url": "https://www.fatturapa.gov.it/it/norme-e-regole/documentazione-fattura-elettronica/formato-fatturapa/",
       "url-status": "verified",
       "current": "1.2.3",
       "upstream-latest": "Schema FatturaPA 1.2.3 (valid from 2025-04-01), Fattura Semplificata 1.0.2, Specifiche tecniche 1.4",
       "status": "up-to-date",
-      "last-checked": "2026-09-30",
-      "notes": "Needs ph-fatturapa 3.1.1 to be released before phive-rules-foundations. Schema_VFPA12_V1.2.3.xsd and Schema_VFPR12_v1.2.3.xsd are byte-identical. Fattura Semplificata (1.0.2) is not covered.",
+      "last-checked": "2026-11-13",
+      "notes": "ph-fatturapa 3.1.1 was released 2026-09-30 and is used by the pom. Schema_VFPA12_V1.2.3.xsd and Schema_VFPR12_v1.2.3.xsd are byte-identical. Fattura Semplificata (1.0.2) is not covered.",
       "issue": "https://github.com/phax/phive-rules-foundations/issues/2"
     },
     {
@@ -152,9 +152,9 @@
       "url-status": "verified",
       "current": "3.0",
       "status": "up-to-date",
-      "last-checked": "2026-09-30",
+      "last-checked": "2026-11-13",
       "notes": "The repo Finvoice3.0.xsd (\"Modified 1.11.2019\") differs from the current official schema only in comments (header and a commented-out VatPointDateCode block) - functionally identical. Found via https://www.ediverse.io/en/countries/finland/finvoice-national-standard/ (its link https://www.finanssiala.fi/aineisto/finvoice/ is 404). Finnish page: https://www.finanssiala.fi/aiheet/verkkolaskutus-finvoice/ (finvoice.info redirects there). Implementation guideline updates (e.g. 2025-03-05, 2025-09-16) do not change the schema.",
-      "upstream-latest": "3.0 - schema Finvoice3.0.xsd dated 1.12.2020 and 27.9.2023 (identical files, header \"Modified 17.12.2020 (back to version 11/2019\"); last guideline change 16 Sep 2025",
+      "upstream-latest": "3.0 - schema Finvoice3.0.xsd dated 1.12.2020 and 27.9.2023 (identical files, header \"Modified 17.12.2020 (back to version 11/2019\"); last guideline change 09 Oct 2025 (bank-specific Credit Note/Reminder guidelines, no schema change)",
       "detect": "the \"Updates and changes\" list and the dated XSD links on the page (a new Finvoice version would appear as a new schema link); hash of https://file.finanssiala.fi/finvoice/Finvoice3.0.xsd and https://file.finanssiala.fi/finvoice/css/270923/Finvoice3.0.xsd"
     },
     {
@@ -171,10 +171,10 @@
       "current": "3.0.0",
       "current-upstream": "FA(3), namespace http://crd.gov.pl/wzor/2025/06/25/13775/",
       "status": "up-to-date",
-      "last-checked": "2026-09-30",
+      "last-checked": "2026-11-13",
       "notes": "Sources collected in issues #20 and #39. A new FA(n) gets a new crd.gov.pl/wzor/<date>/<id>/ namespace. DVR versions (1.0.0/2.0.0/3.0.0) are repo-internal.",
       "upstream-latest": "FA(3), published 2025-06-25 (http://crd.gov.pl/wzor/2025/06/25/13775/), mandatory from 2026-02-01",
-      "detect": "the page is specific to FA(3) - a successor FA(4) will probably get its own page, so also watch https://www.podatki.gov.pl/ksef/baza-wiedzy-ksef/pliki-do-pobrania-ksef/ and https://ksef.podatki.gov.pl/"
+      "detect": "the page is specific to FA(3) - a successor FA(4) will probably get its own page, so also watch https://ksef.podatki.gov.pl/pliki-do-pobrania-ksef-20/ (the former https://www.podatki.gov.pl/ksef/baza-wiedzy-ksef/pliki-do-pobrania-ksef/ returns 404 since 2026-11-13) and https://ksef.podatki.gov.pl/"
     },
     {
       "id": "osa",
@@ -191,9 +191,9 @@
       "current": "3.0",
       "upstream-latest": "3.0",
       "status": "up-to-date",
-      "last-checked": "2026-09-30",
+      "last-checked": "2026-11-13",
       "detect": "hash of the v3 ZIP - NAV re-publishes it with fixes and no version bump",
-      "notes": "https://onlineszamla.nav.gov.hu/dokumentaciok is a JS app (not fetchable). Secondary signal: commits on https://github.com/nav-gov-hu/Online-Invoice (last 2026-02-13)."
+      "notes": "https://onlineszamla.nav.gov.hu/dokumentaciok is a JS app (not fetchable). Secondary signal: commits on https://github.com/nav-gov-hu/Online-Invoice (last 2026-02-13). 2026-11-13: ZIP SHA-256 05bc28c9... identical to docs/OSA Schemas_v3 2025-08-28.zip."
     },
     {
       "id": "teapps",
@@ -208,7 +208,7 @@
       "url-status": "verified",
       "current": "3.0 (schema \"updated 30.9.2019 ROUNDINGS -pattern\")",
       "status": "up-to-date",
-      "last-checked": "2026-09-30",
+      "last-checked": "2026-11-13",
       "notes": "The repo has the original 2018-03-26 schema (teappsxmlv30_schema_invoices_0.xsd). Upstream changed the ROUNDINGS pattern from \\d{0,1} to \\d{0,15} integer digits (2019-09-30). 2.7.2 is legacy upstream.",
       "upstream-latest": "3.0 - schema teappsxmlv30_schema_invoices.xsd \"updated 30.9.2019 ROUNDINGS -pattern\" (Last-Modified 2026-06-04); implementation guide updated 21.5.2026",
       "detect": "hash of https://www.tieto.com/siteassets/04-indtech/teappsxml/teappsxmlv30_schema_invoices.xsd and the \"Updated\" dates on the page",
@@ -242,11 +242,11 @@
       "check": "web-page",
       "url": "https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=BMPFMBoln3w=",
       "url-status": "verified",
-      "current": "4.0.0-pl010f_v1_04",
-      "current-upstream": "PL_010f_v1.04.zip - Pacote de Liberação nº 010f (NT 2025.002 v1.50, NT 2026.007 v1.00)",
-      "upstream-latest": "PL_010f_v1.04 (published 31/08/2026)",
+      "current": "4.0.0-pl010g_v1_03",
+      "current-upstream": "PL_010g_v1.03.zip - Pacote de Liberação nº 010g (NT 2026.006 v1.00, NT 2026.008 v1.00)",
+      "upstream-latest": "PL_010g_v1.03.zip - Pacote de Liberação nº 010g v.1.03 (NT 2026.006 v1.00 and NT 2026.008 v1.00), published 26/10/2026; changes leiauteNFe_v4.00.xsd and DFeTiposBasicos_v1.00.xsd, adds event schemas e110001/e110300; still no procNFe",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "newest \"Schemas XML NF-e - Pacote de Liberação\" entry in the list; the page needs a cookie jar (curl -c/-b) because of the AspxAutoDetectCookieSupport redirect; download links are opaque exibirArquivo.aspx?conteudo=<token> URLs",
       "notes": "Covers NF-e (55) and NFC-e (65). The 010 packages contain no procNFe_v4.00.xsd - the one from PL_009p is used (it only includes leiauteNFe_v4.00.xsd). Event schemas (separate packages on the same page) are not registered. A new package = new DVR version 4.0.0-pl<package>_v<x>_<yy> and deprecation of the old one."
     },
@@ -268,13 +268,13 @@
       "check": "web-page",
       "url": "https://dfe-portal.svrs.rs.gov.br/Cte/Documentos",
       "url-status": "verified",
-      "current": "4.0.0-nt2026_002_v1_01_corr2",
-      "current-upstream": "PL_CTe_400_NT2026.002 RTC_1.01_corr_2.zip",
-      "upstream-latest": "PL_CTe_400_NT2026.002 RTC_1.01_corr_2.zip (21/08/2026); NT 2026.004 v1.00 announced (homologation 16/11/2026 for CT-e Simplificado, 01/02/2027 others) without schema package yet",
+      "current": "4.0.0-nt2026_005_sn_v1_00_corr",
+      "current-upstream": "PL_CTe_400_NT2026.005 RTC SN_1.00_corr.zip",
+      "upstream-latest": "PL_CTe_400_NT2026.005 RTC SN_1.00_corr.zip (11/11/2026, Simples Nacional: tpRegimeIBSCBS in emit) on top of PL_CTe_400_NT2026.004 RTC_1.01_corr.zip (11/11/2026, EPEC in tpEmis of CTe/CTeSimp)",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('CTE', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/CTE/DownloadArquivoEstatico/?sistema=CTE&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
-      "notes": "Same package also at the national portal https://www.cte.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=0xlG1bdBass= (opaque links). Corrections get a new file name (e.g. _corr_2). The modal parts (infModal) are xs:any skip and therefore not validated."
+      "notes": "Same package also at the national portal https://www.cte.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=0xlG1bdBass= (opaque links). Corrections get a new file name (e.g. _corr_2). The modal parts (infModal) are xs:any skip and therefore not validated. The NT 2026.005 SN packages (CT-e, NFCom, BP-e) are cumulative over NT 2026.004 - verified by XSD diff on 2026-11-13; only the newest package is stored."
     },
     {
       "id": "brazil-mdfe",
@@ -290,9 +290,9 @@
       "url-status": "verified",
       "current": "3.0.0-nt2025_001_v1_04",
       "current-upstream": "PL_MDFe_300b_NT012025_1.04.zip (inner folder PL_MDFe_300b_NT012025_1.05)",
-      "upstream-latest": "PL_MDFe_300b_NT012025_1.04.zip (25/04/2026); NT 2026.001 (CIOT mandatory, production 23/11/2026) has no new schema package",
+      "upstream-latest": "PL_MDFe_300b_NT012025_1.04.zip (25/04/2026), still the newest",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('MDFE', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/MDFE/DownloadArquivoEstatico/?sistema=MDFE&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
       "notes": "maxOccurs 20000 in mdfeTiposBasico requires jdk.xml.maxOccurLimit to be raised (custom SchemaFactory in BrazilValidation). https://mdfe-portal.sefaz.rs.gov.br did not respond."
     },
@@ -308,13 +308,13 @@
       "check": "web-page",
       "url": "https://dfe-portal.svrs.rs.gov.br/NFCOM/Documentos",
       "url-status": "verified",
-      "current": "1.0.0-nt2026_002_v1_01",
-      "current-upstream": "PL_NFCOM_1.00_NT2026.002 RTC_1.01.zip",
-      "upstream-latest": "PL_NFCOM_1.00_NT2026.002 RTC_1.01.zip (29/06/2026)",
+      "current": "1.0.0-nt2026_005_sn_v1_00",
+      "current-upstream": "PL_NFCOM_1.00_NT2026.005 RTC SN 1.00.zip",
+      "upstream-latest": "PL_NFCOM_1.00_NT2026.005 RTC SN 1.00.zip (30/10/2026) on top of PL_NFCOM_1.00_NT2026.004 RTC_1.01.zip (30/10/2026)",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('NFCOM', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/NFCOM/DownloadArquivoEstatico/?sistema=NFCOM&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
-      "notes": "NT 2026.004 RTC was published 01/10/2026 without a schema package yet - expect a new package soon."
+      "notes": "Since NT 2026.004 cBenefUFDest must have 8 or 10 characters - the test file was adapted (nfcom-nt2026_005.xml)."
     },
     {
       "id": "brazil-nf3e",
@@ -328,13 +328,13 @@
       "check": "web-page",
       "url": "https://dfe-portal.svrs.rs.gov.br/NF3E/Documentos",
       "url-status": "verified",
-      "current": "1.0.0-nt2026_002_v1_01",
-      "current-upstream": "PL_NF3E_1.00a_NT2026.002 RTC_1.01.zip",
-      "upstream-latest": "PL_NF3E_1.00a_NT2026.002 RTC_1.01.zip (29/06/2026)",
+      "current": "1.0.0-nt2026_004_v1_01",
+      "current-upstream": "PL_NF3E_1.00a_NT2026.004 RTC_1.01.zip",
+      "upstream-latest": "PL_NF3E_1.00a_NT2026.004 RTC_1.01.zip (30/10/2026); no NT 2026.005 package",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('NF3E', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/NF3E/DownloadArquivoEstatico/?sistema=NF3E&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
-      "notes": "NT 2026.004 RTC was published 01/10/2026 without a schema package yet - expect a new package soon."
+      "notes": "The NT 2026.004 RTC schema package appeared on 30/10/2026."
     },
     {
       "id": "brazil-bpe",
@@ -351,13 +351,13 @@
       "check": "web-page",
       "url": "https://dfe-portal.svrs.rs.gov.br/BPE/Documentos",
       "url-status": "verified",
-      "current": "1.0.0-nt2026_002_v1_01",
-      "current-upstream": "PL_BPe_100b_NT2026.002 RTC_1.01.zip",
-      "upstream-latest": "PL_BPe_100b_NT2026.002 RTC_1.01.zip (22/06/2026)",
+      "current": "1.0.0-nt2026_005_sn_v1_00_corr",
+      "current-upstream": "PL_BPe_100b_NT2026.005 RTC SN_1.00_corr.zip",
+      "upstream-latest": "PL_BPe_100b_NT2026.005 RTC SN_1.00_corr.zip (11/11/2026) on top of PL_BPe_100b_NT2026.004 RTC 1.01_corr.zip (11/11/2026, fines/interest removed from BPeTM)",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('BPE', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/BPE/DownloadArquivoEstatico/?sistema=BPE&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
-      "notes": "No official proc schema for BP-e TA. The ZIP contains a stray unreferenced DFeTiposBasicos_v1.00_old.xsd. NT 2026.004 RTC was published 01/10/2026 without a schema package yet."
+      "notes": "No official proc schema for BP-e TA. The ZIP contains a stray unreferenced DFeTiposBasicos_v1.00_old.xsd."
     },
     {
       "id": "brazil-nfag",
@@ -371,11 +371,11 @@
       "check": "web-page",
       "url": "https://dfe-portal.svrs.rs.gov.br/NFAG/Documentos",
       "url-status": "verified",
-      "current": "1.0.0-nt2026_002_v1_01",
-      "current-upstream": "PL_NFAg_NT2026.002 RTC_1.01.zip",
-      "upstream-latest": "PL_NFAg_NT2026.002 RTC_1.01.zip (29/06/2026)",
+      "current": "1.0.0-nt2026_004_v1_01",
+      "current-upstream": "PL_NFAg_NT2026.004 RTC_1.01.zip",
+      "upstream-latest": "PL_NFAg_NT2026.004 RTC_1.01.zip (30/10/2026, optional link to the aggregating invoice)",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('NFAG', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/NFAG/DownloadArquivoEstatico/?sistema=NFAG&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
       "notes": "NFAg (model 75, water/sanitation) is in production since 12/2025. The ZIP contains a stray unreferenced DFeTiposBasicos_v1.00_old.xsd."
     },
@@ -391,11 +391,11 @@
       "check": "web-page",
       "url": "https://dfe-portal.svrs.rs.gov.br/NFGAS/Documentos",
       "url-status": "verified",
-      "current": "1.0.0-nt2026_002_v1_01",
-      "current-upstream": "PL_NFGas_NT2026.002 RTC_1.01.zip",
-      "upstream-latest": "PL_NFGas_NT2026.002 RTC_1.01.zip (29/06/2026)",
+      "current": "1.0.0-nt2026_004_v1_01",
+      "current-upstream": "PL_NFGas_NT2026.004 RTC_1.01.zip",
+      "upstream-latest": "PL_NFGas_NT2026.004 RTC_1.01.zip (30/10/2026)",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "scrape the zip names from onclick=\"download_arquivo_estatico('NFGAS', 2, '<name>.zip')\" in the \"Schemas\" section of the listing page (newest first); download URL https://dfe-portal.svrs.rs.gov.br/NFGAS/DownloadArquivoEstatico/?sistema=NFGAS&tipoArquivo=2&nomeArquivo=<url-encoded name> - a non-existing name returns HTTP 200 with 0 bytes",
       "notes": "NFGas (model 76): homologation since 23/01/2026. QUESTION: is production open yet? The portal news of 31/08/2026 lists NFGas among the formats with NT 2026.002 in production."
     },
@@ -411,13 +411,13 @@
       "check": "web-page",
       "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/producao-restrita",
       "url-status": "verified",
-      "current": "1.1.0-v20260727",
-      "current-upstream": "NFSe-ESQUEMAS_XSD-PRODREST-v1.01-20260727 (esquemas-nfse-rtc-v1-01-20260727.zip)",
-      "upstream-latest": "Produção Restrita package of 2026-07-27; production page still links nfse-esquemas_xsd-v1-01-20260209.zip; NT 009 v1.01 (Anexo VI v1.04.01, 11/09/2026) has no XSDs yet",
+      "current": "1.1.0-v20261020",
+      "current-upstream": "esquemas_prod_restrita_20261020.zip (Produção Restrita, NT 009)",
+      "upstream-latest": "Produção Restrita package esquemas_prod_restrita_20261020.zip (page \"Atualizado em 20/10/2026\", NT 009 implementation: vAjusteBC replaces vDedRed/gReeRepRes, TSIdeDedRed -> TSRTCTpAjusteBC, TSRTCTpReeRepRes removed, new taxable events 99.02-99.04); documentacao-atual (04/11/2026) still links nfse-esquemas_xsd-v1-01-20260209.zip; rtc page still the 2025-12-10 package",
       "status": "up-to-date",
-      "last-checked": "2026-10-02",
+      "last-checked": "2026-11-13",
       "detect": "\"Esquemas XSD\" links on .../documentacao-tecnica/producao-restrita, .../documentacao-tecnica/documentacao-atual and .../documentacao-tecnica/rtc, plus the Plone \"Atualizado em\" stamp (span.documentModified); go-live dates on .../atualizacoes-e-implantacoes. URLs are Plone slugs that change with every release.",
-      "notes": "The production package of 2026-02-09 is not used: its TSSerieDPS pattern ^0{0,4}\\d{1,5}$ rejects all real documents in XSD. The RTC-page package of 2025-12-10 does not compile (lookahead in regex). Group ID br.gov.nfe was chosen by the maintainer although the namespace is http://www.sped.fazenda.gov.br/nfse. Events (pedRegEvento/evento) and CNC are not registered."
+      "notes": "The production package of 2026-02-09 is not used: its TSSerieDPS pattern ^0{0,4}\\d{1,5}$ rejects all real documents in XSD. The RTC-page package of 2025-12-10 does not compile (lookahead in regex). Group ID br.gov.nfe was chosen by the maintainer although the namespace is http://www.sped.fazenda.gov.br/nfse. Events (pedRegEvento/evento) and CNC are not registered. The 2026-10-20 package (NT 009) moved finNFSe into infDPS, moved cNBS and CST/cClassTrib and replaced vDedRed/gReeRepRes with vAjusteBC - test files adapted as *-nt009.xml."
     }
   ]
 }

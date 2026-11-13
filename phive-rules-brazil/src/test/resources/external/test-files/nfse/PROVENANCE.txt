@@ -13,3 +13,13 @@ From Unimake/Uninfe (https://github.com/Unimake/Uninfe, MIT License), folder "ex
 From Unimake/DFe (https://github.com/Unimake/DFe, MIT License, commit 897f3529a83da13d485f9b5216bc9aa93b40bd5a),
 file source/Unimake.DFe.Test/NFSe/Resources/NACIONAL/1.01/RetornoNACIONAL.xml:
   unimake-RetornoNACIONAL.xml (signed NFS-e 1.01 with IBSCBS from "Produção Restrita")
+
+Adapted copies for the NT 009 layout of the schema package of 2026-10-20 (file name suffix "-nt009"):
+  dps-simples-nt009.xml, ConsultarNFSeRPS-ped-sitnfserps-nt009.xml, ConsultarNFSeEnvio-ped-sitnfse-nt009.xml,
+  GerarNfseMinima-env-loterps-nt009.xml, GerarNfseTagsIBSCBS-env-loterps-nt009.xml, unimake-RetornoNACIONAL-nt009.xml
+  Derived from the files above with structural changes only, no values changed:
+  - "finNFSe" moved from "IBSCBS" to "infDPS" (directly after "tpEmit"), where it is now mandatory - added with value "0" where missing
+  - "cNBS" moved before "xDescServ" in "cServ"
+  - "CST" and "cClassTrib" moved from "IBSCBS/valores/trib/gIBSCBS" directly into "trib" (the then empty "gIBSCBS" was removed)
+  - "vCalcReeRepRes" (value 0.00) removed from the NFS-e "IBSCBS/valores", as it no longer exists
+  The signature of unimake-RetornoNACIONAL-nt009.xml is therefore no longer valid (not checked by the XML Schema).

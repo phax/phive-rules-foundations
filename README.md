@@ -109,6 +109,16 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 
 # News and noteworthy
 
+v5.0.7 - work in progress
+* Added the new Brazilian schema packages to `phive-rules-brazil` and deprecated the previous ones:
+  * NF-e/NFC-e "Pacote de Liberação 010g v1.03" (NT 2026.006 and NT 2026.008) - `nfe` and `nfe-proc` with version `4.0.0-pl010g_v1_03`
+  * CT-e, CT-e OS, GTV-e and CT-e Simplificado, NT 2026.005 RTC SN v1.00 corr (cumulative over NT 2026.004 RTC v1.01 corr) - version `4.0.0-nt2026_005_sn_v1_00_corr`
+  * NFCom, NT 2026.005 RTC SN v1.00 (cumulative over NT 2026.004 RTC v1.01) - version `1.0.0-nt2026_005_sn_v1_00`
+  * BP-e, BP-e TM and BP-e TA, NT 2026.005 RTC SN v1.00 corr (cumulative over NT 2026.004 RTC v1.01 corr) - version `1.0.0-nt2026_005_sn_v1_00_corr`
+  * NF3e, NFAg and NFGas, NT 2026.004 RTC v1.01 - version `1.0.0-nt2026_004_v1_01`
+  * NFS-e Padrão Nacional layout 1.01, "Produção Restrita" schema package of 2026-10-20 (NT 009) - `nfse-dps` and `nfse` with version `1.1.0-v20261020`
+  The MDF-e package is unchanged.
+
 v5.0.6 - 2026-10-22
 * Added the new module `phive-rules-brazil` with the XML Schemas of the Brazilian electronic fiscal documents, Group ID `br.gov.nfe`.
   Only the current schema package of each document type is contained:

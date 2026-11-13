@@ -14,3 +14,7 @@ nfcom.xml
 nfcom-proc.xml
   Built from nfcom.xml wrapped into <nfcomProc versao="1.00"> plus a synthetic <protNFCom versao="1.00">
 - protocol (infProt) is synthetic: tpAmb 2, verAplic SVRS-TESTE-1.0, dummy nProt/digVal, cStat 100, xMotivo "Autorizado o uso da NFCom"
+
+nfcom-nt2026_005.xml and nfcom-proc-nt2026_005.xml
+  Copies of nfcom.xml and nfcom-proc.xml for the NT 2026.004/2026.005 schema packages, where "cBenefUFDest" must have
+  8 or 10 characters: the value "11" was replaced by the dummy value "TESTE011". Nothing else was changed.
