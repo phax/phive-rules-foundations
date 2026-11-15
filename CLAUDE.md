@@ -10,7 +10,7 @@ It was extracted from [phive-rules](https://github.com/phax/phive-rules) in 2026
 
 Part of the Peppol solution stack: https://github.com/phax/peppol
 
-The repository contains 11 XSD-only format modules. The shared base (`IValidationRulesRegistrarSPI`, `ValidationRulesRegistrar` and the helper classes) is no longer here — it was extracted into the standalone `phive-rules-shared` project and is consumed as an external dependency.
+The repository contains 11 XSD-only format modules plus the `phive-rules-foundations-bom` module, a Maven BOM managing the versions of all of them (since v5.0.7). The shared base (`IValidationRulesRegistrarSPI`, `ValidationRulesRegistrar` and the helper classes) is no longer here — it was extracted into the standalone `phive-rules-shared` project and is consumed as an external dependency.
 
 ## Build Commands
 
@@ -26,7 +26,7 @@ CI targets Java 17 (built/tested on 17, 21, 25), matching `phive-rules`.
 ### Relationship to `phive-rules`
 
 - The Maven coordinates (`com.helger.phive.rules:phive-rules-<format>`) and the VES/DVR coordinates of the moved modules are **unchanged** from their previous home in `phive-rules` — only the git repository and the artifact version line differ.
-- `phive-rules` (the sibling repo) imports this project's parent POM as a BOM and depends on the artifacts built here, so **this project must be installed/released before `phive-rules` builds**. Locally: run `mvn install` here first. In turn, this project depends on `phive-rules-shared`, so **`phive-rules-shared` must be installed/released before this project builds** (run `mvn install` in `../phive-rules-shared` first).
+- `phive-rules` (the sibling repo) imports this project's `phive-rules-foundations-bom` and depends on the artifacts built here, so **this project must be installed/released before `phive-rules` builds**. Locally: run `mvn install` here first. In turn, this project depends on `phive-rules-shared`, so **`phive-rules-shared` must be installed/released before this project builds** (run `mvn install` in `../phive-rules-shared` first).
 - Do not introduce a dependency from this project onto `phive-rules` — the dependency direction is strictly `phive-rules` → `phive-rules-foundations`. Keeping foundations self-contained is the whole point of the split.
 
 ## Architecture
@@ -85,7 +85,7 @@ Every module ships a `{Format}ValidationSPI` implementing `com.helger.phive.rule
 
 There is no aggregator module here; the `phive-rules-all` / `phive-rules-all-legacy` aggregators live in the `phive-rules` repo and depend on these artifacts.
 
-When adding a module, wire all of: the `init…` method, the `{Format}ValidationSPI` + its `META-INF/services` file, the `<module>` entry and the `dependencyManagement` BOM entry in the parent POM. Also add it to the `phive-rules` repo's `phive-rules-all` aggregator (pom dependency + a call in `initPhiveRules`).
+When adding a module, wire all of: the `init…` method, the `{Format}ValidationSPI` + its `META-INF/services` file, the `<module>` entry and the `dependencyManagement` entry in the parent POM, and the `dependencyManagement` entry in `phive-rules-foundations-bom/pom.xml`. Also add it to the `phive-rules` repo's `phive-rules-all` aggregator (pom dependency + a call in `initPhiveRules`).
 
 ### Naming new VES Coordinates
 
@@ -134,4 +134,4 @@ This codebase uses **ph-commons 12.x** (restructured packages) and **JSpecify** 
 
 ## Packaging
 
-All format modules produce plain JARs (`<packaging>jar</packaging>`).
+All format modules produce plain JARs (`<packaging>jar</packaging>`). `phive-rules-foundations-bom` has `<packaging>pom</packaging>` and uses `com.helger:parent-pom` as its parent (not this project's parent POM), so it manages only the phive-rules-foundations artefacts and no third-party versions.

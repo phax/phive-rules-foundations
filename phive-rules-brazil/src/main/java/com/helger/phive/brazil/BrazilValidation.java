@@ -55,8 +55,8 @@ import com.helger.xml.schema.XMLSchemaCache;
  * For each document there is one VES for the document itself as transmitted by the issuer (e.g.
  * <code>NFe</code>) and one for the authorized document wrapper including the protocol of the tax
  * authority (e.g. <code>nfeProc</code>). The modal specific parts of CT-e and MDF-e
- * (<code>infModal</code>) are declared as <code>xs:any</code> with <code>processContents="skip"</code>
- * and are therefore not validated.
+ * (<code>infModal</code>) are declared as <code>xs:any</code> with
+ * <code>processContents="skip"</code> and are therefore not validated.
  *
  * @author Philip Helger
  */
@@ -78,8 +78,8 @@ public final class BrazilValidation
   private static final String VERSION_NFE_PL010G = "4.0.0-pl010g_v1_03";
   public static final DVRCoordinate VID_NFE_PL010G = DVRHelper.createCoordinate (GROUP_ID, "nfe", VERSION_NFE_PL010G);
   public static final DVRCoordinate VID_NFE_PROC_PL010G = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                       "nfe-proc",
-                                                                                       VERSION_NFE_PL010G);
+                                                                                      "nfe-proc",
+                                                                                      VERSION_NFE_PL010G);
 
   // CT-e (model 57), CT-e OS (model 67), GTV-e (model 64) and CT-e Simplificado - NT 2026.002 RTC
   // v1.01 corr 2
@@ -121,29 +121,29 @@ public final class BrazilValidation
   // SN v1.00 corr (cumulative over NT 2026.004 RTC v1.01 corr)
   private static final String VERSION_CTE_NT2026_005 = "4.0.0-nt2026_005_sn_v1_00_corr";
   public static final DVRCoordinate VID_CTE_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                      "cte",
-                                                                                      VERSION_CTE_NT2026_005);
+                                                                                     "cte",
+                                                                                     VERSION_CTE_NT2026_005);
   public static final DVRCoordinate VID_CTE_PROC_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                           "cte-proc",
-                                                                                           VERSION_CTE_NT2026_005);
+                                                                                          "cte-proc",
+                                                                                          VERSION_CTE_NT2026_005);
   public static final DVRCoordinate VID_CTE_OS_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                         "cte-os",
-                                                                                         VERSION_CTE_NT2026_005);
+                                                                                        "cte-os",
+                                                                                        VERSION_CTE_NT2026_005);
   public static final DVRCoordinate VID_CTE_OS_PROC_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                              "cte-os-proc",
-                                                                                              VERSION_CTE_NT2026_005);
+                                                                                             "cte-os-proc",
+                                                                                             VERSION_CTE_NT2026_005);
   public static final DVRCoordinate VID_GTVE_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                       "gtve",
-                                                                                       VERSION_CTE_NT2026_005);
+                                                                                      "gtve",
+                                                                                      VERSION_CTE_NT2026_005);
   public static final DVRCoordinate VID_GTVE_PROC_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                            "gtve-proc",
-                                                                                            VERSION_CTE_NT2026_005);
-  public static final DVRCoordinate VID_CTE_SIMP_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                           "cte-simp",
+                                                                                           "gtve-proc",
                                                                                            VERSION_CTE_NT2026_005);
+  public static final DVRCoordinate VID_CTE_SIMP_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
+                                                                                          "cte-simp",
+                                                                                          VERSION_CTE_NT2026_005);
   public static final DVRCoordinate VID_CTE_SIMP_PROC_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                                "cte-simp-proc",
-                                                                                                VERSION_CTE_NT2026_005);
+                                                                                               "cte-simp-proc",
+                                                                                               VERSION_CTE_NT2026_005);
 
   // MDF-e (model 58) - NT 2025.001 v1.04
   private static final String VERSION_MDFE_NT2025_001 = "3.0.0-nt2025_001_v1_04";
@@ -214,51 +214,51 @@ public final class BrazilValidation
   // NFCom (model 62) - NT 2026.005 RTC SN v1.00 (cumulative over NT 2026.004 RTC v1.01)
   private static final String VERSION_NFCOM_NT2026_005 = "1.0.0-nt2026_005_sn_v1_00";
   public static final DVRCoordinate VID_NFCOM_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                        "nfcom",
-                                                                                        VERSION_NFCOM_NT2026_005);
+                                                                                       "nfcom",
+                                                                                       VERSION_NFCOM_NT2026_005);
   public static final DVRCoordinate VID_NFCOM_PROC_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                             "nfcom-proc",
-                                                                                             VERSION_NFCOM_NT2026_005);
+                                                                                            "nfcom-proc",
+                                                                                            VERSION_NFCOM_NT2026_005);
 
   // BP-e (model 63) - NT 2026.005 RTC SN v1.00 corr (cumulative over NT 2026.004 RTC v1.01 corr)
   private static final String VERSION_BPE_NT2026_005 = "1.0.0-nt2026_005_sn_v1_00_corr";
   public static final DVRCoordinate VID_BPE_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                      "bpe",
-                                                                                      VERSION_BPE_NT2026_005);
+                                                                                     "bpe",
+                                                                                     VERSION_BPE_NT2026_005);
   public static final DVRCoordinate VID_BPE_PROC_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                           "bpe-proc",
-                                                                                           VERSION_BPE_NT2026_005);
+                                                                                          "bpe-proc",
+                                                                                          VERSION_BPE_NT2026_005);
   public static final DVRCoordinate VID_BPE_TM_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                         "bpe-tm",
-                                                                                         VERSION_BPE_NT2026_005);
+                                                                                        "bpe-tm",
+                                                                                        VERSION_BPE_NT2026_005);
   public static final DVRCoordinate VID_BPE_TM_PROC_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                              "bpe-tm-proc",
-                                                                                              VERSION_BPE_NT2026_005);
+                                                                                             "bpe-tm-proc",
+                                                                                             VERSION_BPE_NT2026_005);
   // No official proc schema exists for BP-e TA
   public static final DVRCoordinate VID_BPE_TA_NT2026_005 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                         "bpe-ta",
-                                                                                         VERSION_BPE_NT2026_005);
+                                                                                        "bpe-ta",
+                                                                                        VERSION_BPE_NT2026_005);
 
   // NF3e (model 66), NFAg (model 75) and NFGas (model 76) - NT 2026.004 RTC v1.01
   private static final String VERSION_NT2026_004 = "1.0.0-nt2026_004_v1_01";
   public static final DVRCoordinate VID_NF3E_NT2026_004 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                       "nf3e",
-                                                                                       VERSION_NT2026_004);
+                                                                                      "nf3e",
+                                                                                      VERSION_NT2026_004);
   public static final DVRCoordinate VID_NF3E_PROC_NT2026_004 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                            "nf3e-proc",
-                                                                                            VERSION_NT2026_004);
+                                                                                           "nf3e-proc",
+                                                                                           VERSION_NT2026_004);
   public static final DVRCoordinate VID_NFAG_NT2026_004 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                       "nfag",
-                                                                                       VERSION_NT2026_004);
+                                                                                      "nfag",
+                                                                                      VERSION_NT2026_004);
   public static final DVRCoordinate VID_NFAG_PROC_NT2026_004 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                            "nfag-proc",
-                                                                                            VERSION_NT2026_004);
+                                                                                           "nfag-proc",
+                                                                                           VERSION_NT2026_004);
   public static final DVRCoordinate VID_NFGAS_NT2026_004 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                        "nfgas",
-                                                                                        VERSION_NT2026_004);
+                                                                                       "nfgas",
+                                                                                       VERSION_NT2026_004);
   public static final DVRCoordinate VID_NFGAS_PROC_NT2026_004 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                             "nfgas-proc",
-                                                                                             VERSION_NT2026_004);
+                                                                                            "nfgas-proc",
+                                                                                            VERSION_NT2026_004);
 
   // NFS-e Padrão Nacional layout 1.01 - schema package of 2026-07-27
   private static final String VERSION_NFSE_20260727 = "1.1.0-v20260727";
@@ -274,11 +274,11 @@ public final class BrazilValidation
   // NFS-e Padrão Nacional layout 1.01 - schema package of 2026-10-20 (NT 009)
   private static final String VERSION_NFSE_20261020 = "1.1.0-v20261020";
   public static final DVRCoordinate VID_NFSE_DPS_20261020 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                         "nfse-dps",
-                                                                                         VERSION_NFSE_20261020);
+                                                                                        "nfse-dps",
+                                                                                        VERSION_NFSE_20261020);
   public static final DVRCoordinate VID_NFSE_20261020 = DVRHelper.createCoordinate (GROUP_ID,
-                                                                                     "nfse",
-                                                                                     VERSION_NFSE_20261020);
+                                                                                    "nfse",
+                                                                                    VERSION_NFSE_20261020);
 
   private static final Logger LOGGER = LoggerFactory.getLogger (BrazilValidation.class);
 
@@ -473,7 +473,6 @@ public final class BrazilValidation
    * @param aRegistry
    *        The registry to add the artefacts. May not be <code>null</code>.
    */
-  @SuppressWarnings ("deprecation")
   public static void initBrazil (@NonNull final IValidationExecutorSetRegistry <IValidationSourceXML> aRegistry)
   {
     ValueEnforcer.notNull (aRegistry, "Registry");
@@ -635,7 +634,8 @@ public final class BrazilValidation
 
     // NFS-e Padrão Nacional
     // The schema packages for "Produção Restrita" are used, as the production package of 2026-02-09
-    // contains an invalid XSD regular expression for the DPS series ("^0{0,4}\d{1,5}$" where "^" and
+    // contains an invalid XSD regular expression for the DPS series ("^0{0,4}\d{1,5}$" where "^"
+    // and
     // "$" are literals in XSD) that rejects all real documents
     _registerNFSe (aRegistry,
                    "nfse/esquemas-nfse-rtc-v1-01-20260727/",

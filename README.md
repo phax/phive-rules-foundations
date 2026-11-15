@@ -18,6 +18,7 @@ All projects found in here rely on the PHIVE validation engine provided by https
 The shared API used by all rule modules - the validation rules registration SPI (`IValidationRulesRegistrarSPI`), the `ValidationRulesRegistrar`, and the core helper classes (`DVRHelper`, `PhiveRulesTestHelper`, `PhiveRulesInitializationException`) - now lives in the separate [phive-rules-shared](https://github.com/phax/phive-rules-shared) project (Maven artifact `com.helger.phive.rules:phive-rules-shared`).
 
 This project is divided into the following sub-projects:
+* phive-rules-foundations-bom - a Maven Bill of Materials (BOM) that manages the versions of all phive-rules-foundations artefacts (since v5.0.7)
 * phive-rules-brazil - Validation rules for the Brazilian DF-e documents (NF-e/NFC-e, CT-e, CT-e OS, GTV-e, CT-e Simplificado, MDF-e, NFCom, NF3e, BP-e, NFAg, NFGas) and the NFS-e Padrão Nacional (since v5.0.6)
 * phive-rules-cii - Validation rules for pure UN/CEFACT CII (without any Schematron)
 * phive-rules-crs - Validation rules for the OECD Common Reporting Standard (CRS) XML Schema V2.0 and V3.0 (since v5.0.4)
@@ -107,9 +108,24 @@ Add the following to your `pom.xml` to use this artifact, replacing `x.y.z` with
 </dependency>
 ```
 
+Alternate usage as a Maven BOM (since v5.0.7) - add it to the `<dependencyManagement>` section and omit the versions of the phive-rules-foundations artefacts in your `<dependencies>`:
+
+```xml
+<dependency>
+  <groupId>com.helger.phive.rules</groupId>
+  <artifactId>phive-rules-foundations-bom</artifactId>
+  <version>x.y.z</version>
+  <type>pom</type>
+  <scope>import</scope>
+</dependency>
+```
+
+`phive-rules-foundations-bom` only manages the versions of the phive-rules-foundations artefacts.
+Before v5.0.7, `phive-rules-foundations-parent-pom` had to be imported instead, which also manages the versions of many third-party dependencies.
+
 # News and noteworthy
 
-v5.0.7 - work in progress
+v5.0.7 - 2026-11-15
 * Added the new Brazilian schema packages to `phive-rules-brazil` and deprecated the previous ones:
   * NF-e/NFC-e "Pacote de Liberação 010g v1.03" (NT 2026.006 and NT 2026.008) - `nfe` and `nfe-proc` with version `4.0.0-pl010g_v1_03`
   * CT-e, CT-e OS, GTV-e and CT-e Simplificado, NT 2026.005 RTC SN v1.00 corr (cumulative over NT 2026.004 RTC v1.01 corr) - version `4.0.0-nt2026_005_sn_v1_00_corr`
@@ -118,6 +134,8 @@ v5.0.7 - work in progress
   * NF3e, NFAg and NFGas, NT 2026.004 RTC v1.01 - version `1.0.0-nt2026_004_v1_01`
   * NFS-e Padrão Nacional layout 1.01, "Produção Restrita" schema package of 2026-10-20 (NT 009) - `nfse-dps` and `nfse` with version `1.1.0-v20261020`
   The MDF-e package is unchanged.
+* Added new submodule `phive-rules-foundations-bom` - a Maven Bill of Materials (BOM) for all phive-rules-foundations artefacts. Use it instead of importing `phive-rules-foundations-parent-pom`.
+* The parent POM now imports the new BOMs of ph-commons, ph-schematron, ph-diver and phive instead of their parent POMs
 
 v5.0.6 - 2026-10-22
 * Added the new module `phive-rules-brazil` with the XML Schemas of the Brazilian electronic fiscal documents, Group ID `br.gov.nfe`.
