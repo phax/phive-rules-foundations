@@ -125,8 +125,9 @@ Before v5.0.7, `phive-rules-foundations-parent-pom` had to be imported instead, 
 
 # News and noteworthy
 
-v5.0.8 - work in progress
-* Added the new Brazilian NF-e/NFC-e schema package "Pacote de Liberação 010h v1.03" (NT 2026.006, NT 2026.008 v1.01 and NT 2026.005) to `phive-rules-brazil` - `nfe` and `nfe-proc` with version `4.0.0-pl010h_v1_03`; version `4.0.0-pl010g_v1_03` is deprecated. See https://github.com/phax/phive-rules-foundations/issues/3
+v5.0.8 - 2026-11-24
+* Added the new Brazilian NF-e/NFC-e schema package "Pacote de Liberação 010h v1.03" (NT 2026.006, NT 2026.008 v1.01 and NT 2026.005) to `phive-rules-brazil` - `nfe` and `nfe-proc` with version `4.0.0-pl010h_v1_03`; version `4.0.0-pl010g_v1_03` is deprecated.
+  See https://github.com/phax/phive-rules-foundations/issues/3
   * New optional elements `emit/tpRegimeIBSCBS` and `det/prod/cAtivSN`, new optional Simples Nacional groups `gTribSN` (type `TTribSN`) in the item and total taxes
   * The unique/key constraints below `gPgtoVinc` now apply to all child elements
 * Added the fatturaPA 1.2.4 XML Schema (valid from 2027-01-11), VES coordinate `it.fatturapa:invoice:1.2.4`, and deprecated `it.fatturapa:invoice:1.2.3`.
@@ -144,7 +145,8 @@ v5.0.7 - 2026-11-15
   * NF3e, NFAg and NFGas, NT 2026.004 RTC v1.01 - version `1.0.0-nt2026_004_v1_01`
   * NFS-e Padrão Nacional layout 1.01, "Produção Restrita" schema package of 2026-10-20 (NT 009) - `nfse-dps` and `nfse` with version `1.1.0-v20261020`
   The MDF-e package is unchanged.
-* Added new submodule `phive-rules-foundations-bom` - a Maven Bill of Materials (BOM) for all phive-rules-foundations artefacts. Use it instead of importing `phive-rules-foundations-parent-pom`.
+* Added new submodule `phive-rules-foundations-bom` - a Maven Bill of Materials (BOM) for all phive-rules-foundations artefacts.
+  Use it instead of importing `phive-rules-foundations-parent-pom`.
 * The parent POM now imports the new BOMs of ph-commons, ph-schematron, ph-diver and phive instead of their parent POMs
 
 v5.0.6 - 2026-10-22
