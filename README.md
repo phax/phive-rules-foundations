@@ -125,6 +125,16 @@ Before v5.0.7, `phive-rules-foundations-parent-pom` had to be imported instead, 
 
 # News and noteworthy
 
+v5.0.8 - work in progress
+* Added the new Brazilian NF-e/NFC-e schema package "Pacote de Liberação 010h v1.03" (NT 2026.006, NT 2026.008 v1.01 and NT 2026.005) to `phive-rules-brazil` - `nfe` and `nfe-proc` with version `4.0.0-pl010h_v1_03`; version `4.0.0-pl010g_v1_03` is deprecated. See https://github.com/phax/phive-rules-foundations/issues/3
+  * New optional elements `emit/tpRegimeIBSCBS` and `det/prod/cAtivSN`, new optional Simples Nacional groups `gTribSN` (type `TTribSN`) in the item and total taxes
+  * The unique/key constraints below `gPgtoVinc` now apply to all child elements
+* Added the fatturaPA 1.2.4 XML Schema (valid from 2027-01-11), VES coordinate `it.fatturapa:invoice:1.2.4`, and deprecated `it.fatturapa:invoice:1.2.3`.
+  See [issue #4](https://github.com/phax/phive-rules-foundations/issues/4).
+  Compared to 1.2.3 it adds the tax regime `RF21`; all other changes are documentation only.
+  This requires `ph-fatturapa` 3.1.2, which is therefore a release prerequisite.
+  The "Fattura Semplificata" is still not supported
+
 v5.0.7 - 2026-11-15
 * Added the new Brazilian schema packages to `phive-rules-brazil` and deprecated the previous ones:
   * NF-e/NFC-e "Pacote de Liberação 010g v1.03" (NT 2026.006 and NT 2026.008) - `nfe` and `nfe-proc` with version `4.0.0-pl010g_v1_03`

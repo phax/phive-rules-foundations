@@ -76,10 +76,19 @@ public final class BrazilValidation
 
   // NF-e / NFC-e (model 55 / 65) - Pacote de Liberação 010g v1.03
   private static final String VERSION_NFE_PL010G = "4.0.0-pl010g_v1_03";
+  @Deprecated
   public static final DVRCoordinate VID_NFE_PL010G = DVRHelper.createCoordinate (GROUP_ID, "nfe", VERSION_NFE_PL010G);
+  @Deprecated
   public static final DVRCoordinate VID_NFE_PROC_PL010G = DVRHelper.createCoordinate (GROUP_ID,
                                                                                       "nfe-proc",
                                                                                       VERSION_NFE_PL010G);
+
+  // NF-e / NFC-e (model 55 / 65) - Pacote de Liberação 010h v1.03
+  private static final String VERSION_NFE_PL010H = "4.0.0-pl010h_v1_03";
+  public static final DVRCoordinate VID_NFE_PL010H = DVRHelper.createCoordinate (GROUP_ID, "nfe", VERSION_NFE_PL010H);
+  public static final DVRCoordinate VID_NFE_PROC_PL010H = DVRHelper.createCoordinate (GROUP_ID,
+                                                                                      "nfe-proc",
+                                                                                      VERSION_NFE_PL010H);
 
   // CT-e (model 57), CT-e OS (model 67), GTV-e (model 64) and CT-e Simplificado - NT 2026.002 RTC
   // v1.01 corr 2
@@ -484,7 +493,8 @@ public final class BrazilValidation
     // The 010 packages contain no "procNFe_v4.00.xsd" - it is taken unchanged from PL_009p, as it
     // only includes "leiauteNFe_v4.00.xsd" which contains the type "TNfeProc"
     _registerNFe (aRegistry, "nfe/PL_010f_v1.04/", VID_NFE_PL010F, VID_NFE_PROC_PL010F, bDeprecated);
-    _registerNFe (aRegistry, "nfe/PL_010g_v1.03/", VID_NFE_PL010G, VID_NFE_PROC_PL010G, bNotDeprecated);
+    _registerNFe (aRegistry, "nfe/PL_010g_v1.03/", VID_NFE_PL010G, VID_NFE_PROC_PL010G, bDeprecated);
+    _registerNFe (aRegistry, "nfe/PL_010h_v1.03/", VID_NFE_PL010H, VID_NFE_PROC_PL010H, bNotDeprecated);
 
     // CT-e, CT-e OS, GTV-e and CT-e Simplificado
     _registerCTe (aRegistry,

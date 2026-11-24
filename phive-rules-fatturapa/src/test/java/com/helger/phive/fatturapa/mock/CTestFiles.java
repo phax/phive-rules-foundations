@@ -52,7 +52,8 @@ public final class CTestFiles
     for (final DVRCoordinate aVESID : new DVRCoordinate [] { FatturaPAValidation.VID_FATTURAPA_120,
                                                              FatturaPAValidation.VID_FATTURAPA_121,
                                                              FatturaPAValidation.VID_FATTURAPA_122,
-                                                             FatturaPAValidation.VID_FATTURAPA_123 })
+                                                             FatturaPAValidation.VID_FATTURAPA_123,
+                                                             FatturaPAValidation.VID_FATTURAPA_124 })
       for (final IReadableResource aRes : getAllMatchingTestFiles (aVESID))
       {
         assertTrue ("Not existing test file: " + aRes.getPath (), aRes.exists ());
@@ -75,6 +76,8 @@ public final class CTestFiles
       return EFatturaPATestFiles.V122.getTestResources ();
     if (aVESID.equals (FatturaPAValidation.VID_FATTURAPA_123))
       return EFatturaPATestFiles.V123.getTestResources ();
+    if (aVESID.equals (FatturaPAValidation.VID_FATTURAPA_124))
+      return EFatturaPATestFiles.V124.getTestResources ();
 
     throw new IllegalArgumentException ("Invalid VESID: " + aVESID);
   }

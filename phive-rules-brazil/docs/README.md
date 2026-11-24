@@ -12,6 +12,8 @@ NF-e / NFC-e (model 55 / 65)
     https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=8ITFuBLltXs=
   PL_010g_v1.03.zip - "Pacote de Liberação nº 010g v.1.03 - NT 2026.006 v.1.00 e NT 2026.008 v.1.00" (Publicado em 26/10/26)
     https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=EQhOQMgipXY=
+  PL_010h_v1.03.zip - "Pacote de Liberação nº 010h v.1.03 - NT 2026.006 v.1.00, NT 2026.008 v.1.01 e NT 2026.005 v.1.00" (Publicado em 13/11/26)
+    https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=YhWikFoTxUo=
   PL_009p_NT2024_003_v1.03.zip - only used for "procNFe_v4.00.xsd" (root element "nfeProc"), which is not part of the 010 packages
     https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=sjdK/JDjQs8=
   Note: the portal requires cookies (curl -c/-b cookie jar) and the download links are opaque tokens

@@ -65,7 +65,7 @@
   <properties>
     <ph-cii.version>4.1.4</ph-cii.version>
     <ph-ebinterface.version>8.1.1</ph-ebinterface.version>
-    <ph-fatturapa.version>3.1.1</ph-fatturapa.version>
+    <ph-fatturapa.version>3.1.2</ph-fatturapa.version>
     <ph-ubl.version>10.3.0</ph-ubl.version>
   </properties>
 

@@ -53,8 +53,10 @@ public final class CTestFiles
     final ICommonsList <PhiveTestFile> ret = new CommonsArrayList <> ();
     for (final DVRCoordinate aVESID : new DVRCoordinate [] { BrazilValidation.VID_NFE_PL010F,
                                                              BrazilValidation.VID_NFE_PL010G,
+                                                             BrazilValidation.VID_NFE_PL010H,
                                                              BrazilValidation.VID_NFE_PROC_PL010F,
                                                              BrazilValidation.VID_NFE_PROC_PL010G,
+                                                             BrazilValidation.VID_NFE_PROC_PL010H,
                                                              BrazilValidation.VID_CTE_NT2026_002,
                                                              BrazilValidation.VID_CTE_NT2026_005,
                                                              BrazilValidation.VID_CTE_PROC_NT2026_002,
@@ -131,11 +133,15 @@ public final class CTestFiles
     // and Unimake or hand written synthetic documents with fake data and a dummy signature.
 
     // NF-e
-    if (aVESID.equals (BrazilValidation.VID_NFE_PL010F) || aVESID.equals (BrazilValidation.VID_NFE_PL010G))
+    if (aVESID.equals (BrazilValidation.VID_NFE_PL010F) ||
+        aVESID.equals (BrazilValidation.VID_NFE_PL010G) ||
+        aVESID.equals (BrazilValidation.VID_NFE_PL010H))
       return _list ("nfe",
                     "nfe-from-nfelib-35180834128745000152550010000476711079516696.xml",
                     "nfe-from-nfelib-reforma-tributaria.xml");
-    if (aVESID.equals (BrazilValidation.VID_NFE_PROC_PL010F) || aVESID.equals (BrazilValidation.VID_NFE_PROC_PL010G))
+    if (aVESID.equals (BrazilValidation.VID_NFE_PROC_PL010F) ||
+        aVESID.equals (BrazilValidation.VID_NFE_PROC_PL010G) ||
+        aVESID.equals (BrazilValidation.VID_NFE_PROC_PL010H))
       return _list ("nfe",
                     "26180875335849000115550010000016871192213331-nfe.xml",
                     "35180834128745000152550010000474281920007498-nfe.xml",

@@ -101,7 +101,7 @@ Follow the **DVR Coordinate naming conventions** in `../ph-diver/README.md` (sec
 | `ph-ubl` (10.2.0) | OASIS UBL bindings (`phive-rules-ubl`) |
 | `ph-cii` (4.1.2) | UN/CEFACT CII bindings (`phive-rules-cii`) |
 | `ph-ebinterface` (8.1.0) | ebInterface bindings (`phive-rules-ebinterface`) |
-| `ph-fatturapa` (3.1.0) | FatturaPA bindings (`phive-rules-fatturapa`) |
+| `ph-fatturapa` (3.1.2) | FatturaPA bindings (`phive-rules-fatturapa`) |
 | `ph-commons` (12.3.3) | Core utilities (collections, IO, etc.) |
 | `ph-diver` (4.2.1) | DVR coordinates / VESID |
 
