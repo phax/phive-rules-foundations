@@ -27,7 +27,7 @@
   </parent>
   <groupId>com.helger.phive.rules</groupId>
   <artifactId>phive-rules-foundations-bom</artifactId>
-  <version>5.0.8-SNAPSHOT</version>
+  <version>5.0.8</version>
   <packaging>pom</packaging>
   <name>phive-rules-foundations-bom</name>
   <description>Bill of Materials for all phive-rules-foundations artifacts</description>
@@ -111,4 +111,8 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <scm>
+    <tag>phive-rules-foundations-parent-pom-5.0.8</tag>
+  </scm>
 </project>
